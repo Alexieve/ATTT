@@ -1,17 +1,57 @@
 /*
  CS1 - Nhân viên cơ bản
 */
-
 -- CS1.1
--- Tạo view chỉ được xem mỗi dòng dữ liệu của mình trên bảng NHANSU
-CREATE OR REPLACE VIEW UV_NHANSU_CURRENT_USER AS
-SELECT *
-FROM NHANSU
-WHERE MANV = SYS_CONTEXT('USERENV', 'SESSION_USER');
+-- Tạo Policy function lấy Username của Sinh viên hiện tại
+CREATE OR REPLACE FUNCTION POL_FUNC_CURRENT_USER_NHANSU (
+    P_SCHEMA IN VARCHAR2, 
+    P_OBJECT IN VARCHAR2
+)
+RETURN VARCHAR2
+AS
+    P_USER_ROLE VARCHAR2(20) DEFAULT '';
+BEGIN
+    -- Kiểm tra có phải là DBA không
+    P_USER_ROLE := SYS_CONTEXT('USERENV', 'SESSION_USER');
+    IF P_USER_ROLE = 'C##ADMIN' THEN
+        RETURN '';
+    END IF;
+    
+--    -- Kiểm tra role của các tài khoản còn lại
+    SELECT GRANTED_ROLE INTO P_USER_ROLE
+    FROM USER_ROLE_PRIVS 
+    WHERE GRANTED_ROLE = 'RL_NVCOBAN';
+    IF P_USER_ROLE = 'RL_NVCOBAN' THEN
+        RETURN 'MANV = ''' || SYS_CONTEXT('USERENV', 'SESSION_USER') || '''';
+    ELSE
+        RETURN '';
+    END IF;
+END;
 /
--- Cấp quyền trên View UV_NHANSU_CURRENT_USER
-GRANT SELECT ON UV_NHANSU_CURRENT_USER TO RL_NVCOBAN;
-GRANT UPDATE (SDT) ON UV_NHANSU_CURRENT_USER TO RL_NVCOBAN;
+-- Thêm chính sách cho policy function POL_FUNC_CURRENT_USER_NHANSU
+BEGIN
+    DBMS_RLS.DROP_POLICY(
+        OBJECT_SCHEMA => 'C##ADMIN',
+        OBJECT_NAME => 'NHANSU',
+        POLICY_NAME => 'POL_NHANSU_CURRENT_USER'
+    );
+END;
+/
+BEGIN
+    DBMS_RLS.ADD_POLICY(
+        OBJECT_SCHEMA => 'C##ADMIN',
+        OBJECT_NAME => 'NHANSU',
+        POLICY_NAME => 'POL_NHANSU_CURRENT_USER',
+        POLICY_FUNCTION => 'POL_FUNC_CURRENT_USER_NHANSU',
+        STATEMENT_TYPES => 'SELECT, UPDATE',
+        UPDATE_CHECK => TRUE
+    );
+END;
+/
+-- Cấp quyền trên bảng NHANSU
+GRANT SELECT ON NHANSU TO RL_NVCOBAN;
+GRANT UPDATE (SDT) ON NHANSU TO RL_NVCOBAN;
+
 
 -- CS1.2
 -- Cấp quyền xem thông tin của tất cả SINHVIEN, ĐƠNVỊ, HOCPHAN, KHMO
@@ -104,6 +144,14 @@ RETURN VARCHAR2
 AS
     P_USER_ROLE VARCHAR2(20) DEFAULT '';
 BEGIN
+    -- Kiểm tra có phải là DBA không
+    SELECT SYS_CONTEXT('USERENV', 'SESSION_USER') INTO P_USER_ROLE
+    FROM DUAL;
+    IF P_USER_ROLE = 'C##ADMIN' THEN
+        RETURN '';
+    END IF;
+    
+    -- Kiểm tra role của các tài khoản còn lại
     SELECT GRANTED_ROLE INTO P_USER_ROLE
     FROM USER_ROLE_PRIVS 
     WHERE GRANTED_ROLE = 'RL_SINHVIEN';
@@ -149,6 +197,14 @@ AS
     P_USER_ROLE VARCHAR2(20) := '';
     P_SINHVIEN_MANGANH SINHVIEN.MANGANH%TYPE := '';
 BEGIN
+    -- Kiểm tra có phải là DBA không
+    SELECT SYS_CONTEXT('USERENV', 'SESSION_USER') INTO P_USER_ROLE
+    FROM DUAL;
+    IF P_USER_ROLE = 'C##ADMIN' THEN
+        RETURN '';
+    END IF;
+    
+    -- Kiểm tra role của các tài khoản còn lại
     SELECT GRANTED_ROLE INTO P_USER_ROLE
     FROM USER_ROLE_PRIVS 
     WHERE GRANTED_ROLE = 'RL_SINHVIEN';
@@ -192,6 +248,14 @@ AS
     P_USER_ROLE VARCHAR2(20) := '';
     P_HOCPHAN_LIST_MAHP VARCHAR2(5000) := '';
 BEGIN
+    -- Kiểm tra có phải là DBA không
+    SELECT SYS_CONTEXT('USERENV', 'SESSION_USER') INTO P_USER_ROLE
+    FROM DUAL;
+    IF P_USER_ROLE = 'C##ADMIN' THEN
+        RETURN '';
+    END IF;
+    
+    -- Kiểm tra role của các tài khoản còn lại
     SELECT GRANTED_ROLE INTO P_USER_ROLE
     FROM USER_ROLE_PRIVS 
     WHERE GRANTED_ROLE = 'RL_SINHVIEN';

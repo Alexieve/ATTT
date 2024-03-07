@@ -53,10 +53,10 @@ END;
 --WHERE grantee = 'RL_NVCOBAN'
 --ORDER BY grantee;
 ---- Xem các quyền của role được cấp cho User
---SELECT *
---FROM dba_role_privs
---WHERE grantee = 'RL_NVCOBAN'
---ORDER BY grantee;
+-- SELECT *
+-- FROM dba_role_privs
+-- WHERE grantee = 'NV00000018'
+-- ORDER BY grantee;
 
 
 -- 3.Tạo mới, Xóa, Sửa (hiệu chỉnh) user hoặc role. 
