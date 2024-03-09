@@ -1,8 +1,8 @@
 /*
- CS1 - Nhân viên cơ bản
+ CS1 - Nh�n vi�n c� b?n
 */
 -- CS1.1
--- Tạo Policy function lấy Username của Sinh viên hiện tại
+-- T?o Policy function l?y Username c?a Sinh vi�n hi?n t?i
 CREATE OR REPLACE FUNCTION POL_FUNC_CURRENT_USER_NHANSU (
     P_SCHEMA IN VARCHAR2, 
     P_OBJECT IN VARCHAR2
@@ -11,24 +11,24 @@ RETURN VARCHAR2
 AS
     P_USER_ROLE VARCHAR2(20) DEFAULT '';
 BEGIN
-    -- Kiểm tra có phải là DBA không
+    -- Ki?m tra c� ph?i l� DBA kh�ng
     P_USER_ROLE := SYS_CONTEXT('USERENV', 'SESSION_USER');
     IF P_USER_ROLE = 'C##ADMIN' THEN
         RETURN '';
     END IF;
     
---    -- Kiểm tra role của các tài khoản còn lại
+--    -- Ki?m tra role c?a c�c t�i kho?n c?n l?i
     SELECT GRANTED_ROLE INTO P_USER_ROLE
     FROM USER_ROLE_PRIVS 
-    WHERE GRANTED_ROLE = 'RL_NVCOBAN';
-    IF P_USER_ROLE = 'RL_NVCOBAN' THEN
+    WHERE GRANTED_ROLE = 'RL_NVCOBAN' OR GRANTED_ROLE = 'RL_GIANGVIEN';
+    IF P_USER_ROLE = 'RL_NVCOBAN' OR P_USER_ROLE = 'RL_GIANGVIEN' THEN
         RETURN 'MANV = ''' || SYS_CONTEXT('USERENV', 'SESSION_USER') || '''';
     ELSE
         RETURN '';
     END IF;
 END;
 /
--- Thêm chính sách cho policy function POL_FUNC_CURRENT_USER_NHANSU
+-- Th�m ch�nh s�ch cho policy function POL_FUNC_CURRENT_USER_NHANSU
 BEGIN
     DBMS_RLS.DROP_POLICY(
         OBJECT_SCHEMA => 'C##ADMIN',
@@ -48,13 +48,13 @@ BEGIN
     );
 END;
 /
--- Cấp quyền trên bảng NHANSU
+-- C?p quy?n tr�n b?ng NHANSU
 GRANT SELECT ON NHANSU TO RL_NVCOBAN;
 GRANT UPDATE (SDT) ON NHANSU TO RL_NVCOBAN;
 
 
 -- CS1.2
--- Cấp quyền xem thông tin của tất cả SINHVIEN, ĐƠNVỊ, HOCPHAN, KHMO
+-- C?p quy?n xem th�ng tin c?a t?t c? SINHVIEN, ��NV?, HOCPHAN, KHMO
 GRANT SELECT ON SINHVIEN TO RL_NVCOBAN;
 GRANT SELECT ON DONVI TO RL_NVCOBAN;
 GRANT SELECT ON HOCPHAN TO RL_NVCOBAN;
@@ -66,24 +66,56 @@ GRANT SELECT ON KHMO TO RL_NVCOBAN;
 
 
 /*
- CS2 - Giảng viên
+ CS2 - Gi?ng vi�n
 */
 
 -- CS2.1
-
-
+    GRANT SELECT ON NHANSU TO RL_GIANGVIEN;
+    GRANT UPDATE (SDT) ON NHANSU TO RL_GIANGVIEN; 
+    GRANT SELECT ON SINHVIEN TO RL_GIANGVIEN;
+    GRANT SELECT ON DONVI TO RL_GIANGVIEN;
+    GRANT SELECT ON HOCPHAN TO RL_GIANGVIEN;
+    GRANT SELECT ON KHMO TO RL_GIANGVIEN;
 -- CS2.2
-
-
+-- T?o policy function l?y MANV c?a GIANGVIEN
+CREATE OR REPLACE FUNCTION POL_FUNC_CURRENT_USER_PHANCONG (
+    P_SCHEMA IN VARCHAR2, 
+    P_OBJECT IN VARCHAR2
+)
+RETURN VARCHAR2
+AS
+BEGIN
+    RETURN 'MAGV = ''' || SYS_CONTEXT('USERENV', 'SESSION_USER') || '''';
+END;
+/
+BEGIN
+    DBMS_RLS.ADD_POLICY(
+        OBJECT_SCHEMA => 'C##ADMIN',
+        OBJECT_NAME => 'PHANCONG',
+        POLICY_NAME => 'POL_NHANSU_CURRENT_GIANGVIEN',
+        POLICY_FUNCTION => 'POL_FUNC_CURRENT_USER_PHANCONG',
+        STATEMENT_TYPES => 'SELECT'
+    );
+END;
+/
+GRANT SELECT ON PHANCONG TO RL_GIANGVIEN;
 -- CS2.3
-
-
+BEGIN
+    DBMS_RLS.ADD_POLICY(
+        OBJECT_SCHEMA => 'C##ADMIN',
+        OBJECT_NAME => 'DANGKY',
+        POLICY_NAME => 'POL_NHANSU_CURRENT_GIANGVIEN',
+        POLICY_FUNCTION => 'POL_FUNC_CURRENT_USER_DANGKY',
+        STATEMENT_TYPES => 'SELECT, UPDATE',
+        UPDATE_CHECK => TRUE
+    );
+END;
+/
+GRANT SELECT ON DANGKY TO RL_GIANGVIEN;
 -- CS2.4
-
-
-
+GRANT UPDATE (DIEMTH, DIEMQT, DIEMCK, DIEMTK) ON DANGKY TO RL_GIANGVIEN;
 /*
- CS3 - Giáo vụ
+ CS3 - Gi�o v?
 */
 
 -- CS3.1
@@ -100,7 +132,7 @@ GRANT SELECT ON KHMO TO RL_NVCOBAN;
 
 
 /*
- CS4 - Trưởng đơn vị
+ CS4 - Tr�?ng ��n v?
 */
 
 -- CS4.1
@@ -114,7 +146,7 @@ GRANT SELECT ON KHMO TO RL_NVCOBAN;
 
 
 /*
- CS5 - Trưởng khoa
+ CS5 - Tr�?ng khoa
 */
 
 -- CS5.1
@@ -131,11 +163,11 @@ GRANT SELECT ON KHMO TO RL_NVCOBAN;
 
 
 /*
- CS6 - Sinh viên
+ CS6 - Sinh vi�n
 */
 
 -- CS6.1
--- Tạo Policy function lấy Username của Sinh viên hiện tại
+-- T?o Policy function l?y Username c?a Sinh vi�n hi?n t?i
 CREATE OR REPLACE FUNCTION POL_FUNC_CURRENT_USER_SINHVIEN (
     P_SCHEMA IN VARCHAR2, 
     P_OBJECT IN VARCHAR2
@@ -144,14 +176,14 @@ RETURN VARCHAR2
 AS
     P_USER_ROLE VARCHAR2(20) DEFAULT '';
 BEGIN
-    -- Kiểm tra có phải là DBA không
+    -- Ki?m tra c� ph?i l� DBA kh�ng
     SELECT SYS_CONTEXT('USERENV', 'SESSION_USER') INTO P_USER_ROLE
     FROM DUAL;
     IF P_USER_ROLE = 'C##ADMIN' THEN
         RETURN '';
     END IF;
     
-    -- Kiểm tra role của các tài khoản còn lại
+    -- Ki?m tra role c?a c�c t�i kho?n c?n l?i
     SELECT GRANTED_ROLE INTO P_USER_ROLE
     FROM USER_ROLE_PRIVS 
     WHERE GRANTED_ROLE = 'RL_SINHVIEN';
@@ -162,7 +194,7 @@ BEGIN
     END IF;
 END;
 /
--- Thêm chính sách cho policy function POL_FUNC_CURRENT_USER_SINHVIEN
+-- Th�m ch�nh s�ch cho policy function POL_FUNC_CURRENT_USER_SINHVIEN
 BEGIN
     DBMS_RLS.DROP_POLICY(
         OBJECT_SCHEMA => 'C##ADMIN',
@@ -182,12 +214,12 @@ BEGIN
     );
 END;
 /
--- Cấp quyền trên bảng SINHVIEN
+-- C?p quy?n tr�n b?ng SINHVIEN
 GRANT SELECT ON SINHVIEN TO RL_SINHVIEN;
 GRANT UPDATE (DCHI, SDT) ON SINHVIEN TO RL_SINHVIEN;
 
 -- CS6.2
--- Tạo Policy function lấy MANGANH của Sinh viên hiện tại
+-- T?o Policy function l?y MANGANH c?a Sinh vi�n hi?n t?i
 CREATE OR REPLACE FUNCTION POL_FUNC_CURRENT_MANGANH_SINHVIEN (
     P_SCHEMA IN VARCHAR2, 
     P_OBJECT IN VARCHAR2
@@ -197,14 +229,14 @@ AS
     P_USER_ROLE VARCHAR2(20) := '';
     P_SINHVIEN_MANGANH SINHVIEN.MANGANH%TYPE := '';
 BEGIN
-    -- Kiểm tra có phải là DBA không
+    -- Ki?m tra c� ph?i l� DBA kh�ng
     SELECT SYS_CONTEXT('USERENV', 'SESSION_USER') INTO P_USER_ROLE
     FROM DUAL;
     IF P_USER_ROLE = 'C##ADMIN' THEN
         RETURN '';
     END IF;
     
-    -- Kiểm tra role của các tài khoản còn lại
+    -- Ki?m tra role c?a c�c t�i kho?n c?n l?i
     SELECT GRANTED_ROLE INTO P_USER_ROLE
     FROM USER_ROLE_PRIVS 
     WHERE GRANTED_ROLE = 'RL_SINHVIEN';
@@ -217,7 +249,7 @@ BEGIN
     END IF;
 END;
 /
--- Thêm chính sách cho policy function POL_FUNC_CURRENT_MANGANH_SINHVIEN
+-- Th�m ch�nh s�ch cho policy function POL_FUNC_CURRENT_MANGANH_SINHVIEN
 BEGIN
     DBMS_RLS.DROP_POLICY(
         OBJECT_SCHEMA => 'C##ADMIN',
@@ -238,7 +270,7 @@ END;
 /
 GRANT SELECT ON HOCPHAN TO RL_SINHVIEN;
 
--- Tạo Policy function lấy MAHP của một đơn vị
+-- T?o Policy function l?y MAHP c?a m?t ��n v?
 CREATE OR REPLACE FUNCTION POL_FUNC_CURRENT_MAHP_HOCPHAN (
     P_SCHEMA IN VARCHAR2, 
     P_OBJECT IN VARCHAR2
@@ -248,14 +280,14 @@ AS
     P_USER_ROLE VARCHAR2(20) := '';
     P_HOCPHAN_LIST_MAHP VARCHAR2(5000) := '';
 BEGIN
-    -- Kiểm tra có phải là DBA không
+    -- Ki?m tra c� ph?i l� DBA kh�ng
     SELECT SYS_CONTEXT('USERENV', 'SESSION_USER') INTO P_USER_ROLE
     FROM DUAL;
     IF P_USER_ROLE = 'C##ADMIN' THEN
         RETURN '';
     END IF;
     
-    -- Kiểm tra role của các tài khoản còn lại
+    -- Ki?m tra role c?a c�c t�i kho?n c?n l?i
     SELECT GRANTED_ROLE INTO P_USER_ROLE
     FROM USER_ROLE_PRIVS 
     WHERE GRANTED_ROLE = 'RL_SINHVIEN';
@@ -270,7 +302,7 @@ BEGIN
     END IF;
 END;
 /
--- Thêm chính sách cho policy function POL_FUNC_CURRENT_MAHP_HOCPHAN
+-- Th�m ch�nh s�ch cho policy function POL_FUNC_CURRENT_MAHP_HOCPHAN
 BEGIN
     DBMS_RLS.DROP_POLICY(
         OBJECT_SCHEMA => 'C##ADMIN',
@@ -313,6 +345,3 @@ BEGIN
 END;
 /
 GRANT SELECT, INSERT, DELETE ON DANGKY TO RL_SINHVIEN;
-
-
-
