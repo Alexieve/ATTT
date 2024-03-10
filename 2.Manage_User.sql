@@ -53,10 +53,11 @@ END;
 --WHERE grantee = 'RL_NVCOBAN'
 --ORDER BY grantee;
 ---- Xem các quyền của role được cấp cho User
--- SELECT *
--- FROM dba_role_privs
--- WHERE grantee = 'NV00000018'
--- ORDER BY grantee;
+--SELECT *
+--FROM dba_role_privs
+--WHERE grantee = 'NV00000008'
+--ORDER BY grantee;
+--
 
 
 -- 3.Tạo mới, Xóa, Sửa (hiệu chỉnh) user hoặc role. 
@@ -242,7 +243,7 @@ BEGIN
             EXECUTE IMMEDIATE ('GRANT RL_NVCOBAN TO ' || SP_USER);
         ELSIF SP_USER_RL = N'Giảng viên' THEN
             EXECUTE IMMEDIATE ('GRANT RL_GIANGVIEN TO ' || SP_USER);
-        ELSIF SP_USER_RL = N'Giáo viên' THEN
+        ELSIF SP_USER_RL = N'Giáo vụ' THEN
             EXECUTE IMMEDIATE ('GRANT RL_GIAOVU TO ' || SP_USER);
         ELSIF SP_USER_RL = N'Trưởng đơn vị' THEN
             EXECUTE IMMEDIATE ('GRANT RL_TRUONGDV TO ' || SP_USER);
@@ -253,3 +254,44 @@ BEGIN
     CLOSE CUR2;
 END; 
 /
+
+-- Kiểm tra Role A có phải cha của Role B không
+CREATE OR REPLACE FUNCTION IS_ROLE_SUBROLE(
+    F_PARENT_ROLE IN VARCHAR2,
+    F_CHILD_ROLE IN VARCHAR2
+)
+RETURN VARCHAR2
+IS
+    CHECK_ROLE VARCHAR2(20);
+BEGIN
+    IF F_PARENT_ROLE = F_CHILD_ROLE THEN
+        RETURN F_CHILD_ROLE;
+    END IF;
+    SELECT CHILD_ROLE INTO CHECK_ROLE
+    FROM (
+        SELECT GRANTED_ROLE AS child_role, ROLE AS parent_role
+        FROM ROLE_ROLE_PRIVS
+        WHERE ROLE = F_PARENT_ROLE -- Thay 'ROLE_NAME' bằng tên role bạn quan tâm
+        
+        UNION ALL
+        
+        SELECT rrp.GRANTED_ROLE, rrp.ROLE
+        FROM ROLE_ROLE_PRIVS rrp
+        JOIN (
+          SELECT GRANTED_ROLE, ROLE
+          FROM ROLE_ROLE_PRIVS
+          WHERE ROLE = F_PARENT_ROLE -- Thay 'ROLE_NAME' bằng tên role bạn quan tâm
+        ) rh ON rrp.ROLE = rh.GRANTED_ROLE
+    )
+    WHERE CHILD_ROLE = F_CHILD_ROLE;
+    RETURN CHECK_ROLE;
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        RETURN 'RL_NONE'; -- Trả về FALSE nếu không tìm thấy dữ liệu
+END;
+/
+
+
+
+
+
