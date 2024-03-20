@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|d:\\study\\year3\\hk2\\attt\\project\\ph1\\attt\\attt\\form\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\form\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|d:\\study\\year3\\hk2\\attt\\project\\ph1\\attt\\attt\\attt.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\attt.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|d:\\study\\year3\\hk2\\attt\\project\\ph1\\attt\\attt\\form\\homeform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\form\\homeform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|d:\\study\\year3\\hk2\\attt\\project\\ph1\\attt\\attt\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|d:\\study\\year3\\hk2\\attt\\project\\ph1\\attt\\attt\\form\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\form\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ATTT",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\ATTT.csproj",
+              "RelativeDocumentMoniker": "ATTT\\ATTT.csproj",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\ATTT.csproj",
+              "RelativeToolTip": "ATTT\\ATTT.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-20T10:37:50.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeForm.cs [Design]",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Form\\HomeForm.cs",
+              "RelativeDocumentMoniker": "ATTT\\Form\\HomeForm.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Form\\HomeForm.cs [Design]",
+              "RelativeToolTip": "ATTT\\Form\\HomeForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T10:36:29.108Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeForm.Designer.cs",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Form\\HomeForm.Designer.cs",
+              "RelativeDocumentMoniker": "ATTT\\Form\\HomeForm.Designer.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Form\\HomeForm.Designer.cs",
+              "RelativeToolTip": "ATTT\\Form\\HomeForm.Designer.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwGwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T10:12:40.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Connection.cs",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Connection.cs",
+              "RelativeDocumentMoniker": "ATTT\\Connection.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Connection.cs",
+              "RelativeToolTip": "ATTT\\Connection.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAqwBkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T09:48:24.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Form\\LoginForm.cs",
+              "RelativeDocumentMoniker": "ATTT\\Form\\LoginForm.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Form\\LoginForm.cs",
+              "RelativeToolTip": "ATTT\\Form\\LoginForm.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAmwBAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T09:42:46.003Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
