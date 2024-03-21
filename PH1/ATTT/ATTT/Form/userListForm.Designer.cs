@@ -34,7 +34,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(394, 303);
+            label1.Location = new Point(375, 310);
             label1.Name = "label1";
             label1.Size = new Size(50, 20);
             label1.TabIndex = 0;
@@ -44,7 +44,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(869, 652);
+            ClientSize = new Size(1315, 652);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "userListForm";

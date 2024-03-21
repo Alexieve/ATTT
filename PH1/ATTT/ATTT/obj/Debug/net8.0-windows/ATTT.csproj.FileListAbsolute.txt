@@ -29,3 +29,4 @@ D:\Study\Year3\HK2\ATTT\Project\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.chec
 D:\Study\Year3\HK2\ATTT\Project\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.privManageForm.resources
 D:\Study\Year3\HK2\ATTT\Project\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.roleManageForm.resources
 D:\Study\Year3\HK2\ATTT\Project\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.userManageForm.resources
+D:\Study\Year3\HK2\ATTT\Project\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.GrantPrivForm.resources

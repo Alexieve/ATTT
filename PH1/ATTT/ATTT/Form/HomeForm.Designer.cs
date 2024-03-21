@@ -249,14 +249,14 @@
             // 
             childFormPanel.Location = new Point(269, 0);
             childFormPanel.Name = "childFormPanel";
-            childFormPanel.Size = new Size(869, 652);
+            childFormPanel.Size = new Size(1315, 652);
             childFormPanel.TabIndex = 2;
             // 
             // HomeForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1135, 652);
+            ClientSize = new Size(1582, 652);
             Controls.Add(childFormPanel);
             Controls.Add(sidePanel);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;

@@ -61,7 +61,6 @@
             mainLabel.TabIndex = 0;
             mainLabel.Text = "ỨNG DỤNG QUẢN TRỊ CSDL";
             mainLabel.TextAlign = ContentAlignment.TopCenter;
-            mainLabel.Click += label1_Click;
             // 
             // usernameBox
             // 

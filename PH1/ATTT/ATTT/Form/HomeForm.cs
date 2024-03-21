@@ -7,15 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace ATTT
 {
     public partial class HomeForm : Form
     {
         private Button currentButton;
+        private Form activeForm = null;
         public HomeForm()
         {
             InitializeComponent();
+            Connection.Connect("C##ADMIN", "Atlas2003.");
         }
 
         private void HomeForm_Load(object sender, EventArgs e)
@@ -56,8 +59,6 @@ namespace ATTT
             ActiveButton(sender);
 
         }
-
-        private Form activeForm = null;
 
         private void openChildForm(Form childForm)
         {

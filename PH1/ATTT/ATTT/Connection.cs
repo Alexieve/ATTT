@@ -35,8 +35,6 @@ namespace ATTT
                 Connection.username = "";
                 Connection.role = "";
                 con = null;
-                //throw new Exception(err.Message);
-                //MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!", "Thông báo");
             }
         }
         public static void Close()

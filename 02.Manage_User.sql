@@ -40,25 +40,26 @@ END;
 -- Xem các quyền được cấp theo mức độ bảng
 --SELECT GRANTEE, OWNER, TABLE_NAME, GRANTOR, PRIVILEGE, GRANTABLE
 --FROM dba_tab_privs
---WHERE grantee = 'C##ADMIN'
+--WHERE grantee LIKE 'RL%'
 --ORDER BY grantee, table_name;
 ---- Xem các quyền được cấp theo mức độ cột
---SELECT *
---FROM dba_col_privs
---WHERE grantee = 'C##ADMIN'
---ORDER BY grantee, table_name, column_name;
+SELECT *
+FROM dba_col_privs
+WHERE grantee = 'RL_GIAOVU'
+ORDER BY grantee, table_name, column_name;
 ---- Xem các quyền hệ thống 
---SELECT grantee, privilege
---FROM dba_sys_privs
---WHERE grantee = 'RL_NVCOBAN'
---ORDER BY grantee;
+SELECT grantee, privilege
+FROM dba_sys_privs
+WHERE grantee = 'NV00000008'
+ORDER BY grantee;
 ---- Xem các quyền của role được cấp cho User
 --SELECT *
 --FROM dba_role_privs
 --WHERE grantee = 'NV00000008'
 --ORDER BY grantee;
 --
-
+SELECT * FROM USER_TAB_PRIVS
+WHERE GRANTEE = 'NV0000001';
 
 -- 3.Tạo mới, Xóa, Sửa (hiệu chỉnh) user hoặc role. 
 -- Tạo user

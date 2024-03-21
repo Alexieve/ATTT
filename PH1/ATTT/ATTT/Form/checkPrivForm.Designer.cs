@@ -34,7 +34,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(869, 652);
+            ClientSize = new Size(1315, 652);
             FormBorderStyle = FormBorderStyle.None;
             Name = "checkPrivForm";
             Text = "checkPrivForm";
