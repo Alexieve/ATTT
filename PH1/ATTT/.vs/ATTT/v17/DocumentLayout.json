@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\grantroleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|d:\\study\\year3\\hk2\\attt\\project\\ph1\\attt\\attt\\form\\privmanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\attt\\form\\privmanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\form\\privmanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -45,8 +45,7 @@
               "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Form\\PrivManageForm.cs [Design]",
               "RelativeToolTip": "ATTT\\Form\\PrivManageForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T16:04:14.482Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-03-22T16:04:14.482Z"
             },
             {
               "$type": "Document",
