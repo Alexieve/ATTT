@@ -59,6 +59,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             groupBox1.Controls.Add(Modify);
             groupBox1.Controls.Add(User);
             groupBox1.Controls.Add(Delete);
@@ -72,7 +73,7 @@
             groupBox1.Size = new Size(778, 189);
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Quản lí user";
+            groupBox1.Text = "Quản lý user";
             groupBox1.Enter += groupBox1_Enter;
             // 
             // Modify
@@ -138,13 +139,14 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 163);
             label3.Location = new Point(548, 18);
             label3.Name = "label3";
-            label3.Size = new Size(190, 41);
+            label3.Size = new Size(197, 41);
             label3.TabIndex = 4;
-            label3.Text = "Quản lí User";
+            label3.Text = "Quản lý User";
             label3.Click += label3_Click_1;
             // 
             // groupBox2
@@ -181,6 +183,7 @@
             // 
             // listView1
             // 
+            listView1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1 });
             listView1.Location = new Point(16, 55);
             listView1.Name = "listView1";

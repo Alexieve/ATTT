@@ -67,12 +67,12 @@
             groupBox1.Controls.Add(Password);
             groupBox1.Controls.Add(label1);
             groupBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            groupBox1.Location = new Point(268, 108);
+            groupBox1.Location = new Point(249, 98);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(778, 189);
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Quản lí Role";
+            groupBox1.Text = "Quản lý Role";
             // 
             // Modify
             // 
@@ -138,7 +138,7 @@
             groupBox2.Controls.Add(findUser);
             groupBox2.Controls.Add(listView1);
             groupBox2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            groupBox2.Location = new Point(268, 340);
+            groupBox2.Location = new Point(249, 330);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(778, 285);
             groupBox2.TabIndex = 8;
@@ -184,11 +184,11 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label3.Location = new Point(567, 28);
+            label3.Location = new Point(548, 18);
             label3.Name = "label3";
-            label3.Size = new Size(189, 41);
+            label3.Size = new Size(196, 41);
             label3.TabIndex = 7;
-            label3.Text = "Quản lí Role";
+            label3.Text = "Quản lý Role";
             label3.Click += label3_Click;
             // 
             // roleManageForm

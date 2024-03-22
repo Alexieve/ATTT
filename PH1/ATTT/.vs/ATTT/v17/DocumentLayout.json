@@ -3,15 +3,27 @@
   "WorkspaceRootPath": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|d:\\study\\year3\\hk2\\attt\\project\\ph1\\attt\\attt\\form\\rolemanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\form\\rolemanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|d:\\study\\year3\\hk2\\attt\\project\\ph1\\attt\\attt\\form\\usermanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\form\\usermanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|d:\\study\\year3\\hk2\\attt\\project\\ph1\\attt\\attt\\form\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\form\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|d:\\study\\year3\\hk2\\attt\\project\\ph1\\attt\\attt\\form\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|d:\\study\\year3\\hk2\\attt\\project\\ph1\\attt\\attt\\form\\usermanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\form\\usermanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\attt\\form\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\form\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|d:\\study\\year3\\hk2\\attt\\project\\ph1\\attt\\attt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\attt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 59,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +54,44 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "userManageForm.cs",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Form\\userManageForm.cs",
+              "RelativeDocumentMoniker": "ATTT\\Form\\userManageForm.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Form\\userManageForm.cs",
+              "RelativeToolTip": "ATTT\\Form\\userManageForm.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAA6wHAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T19:02:23.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "roleManageForm.cs [Design]",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Form\\roleManageForm.cs",
+              "RelativeDocumentMoniker": "ATTT\\Form\\roleManageForm.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Form\\roleManageForm.cs [Design]",
+              "RelativeToolTip": "ATTT\\Form\\roleManageForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T19:03:48.989Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "userManageForm.cs [Design]",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Form\\userManageForm.cs",
+              "RelativeDocumentMoniker": "ATTT\\Form\\userManageForm.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Form\\userManageForm.cs [Design]",
+              "RelativeToolTip": "ATTT\\Form\\userManageForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T19:03:44.719Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "HomeForm.cs",
               "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Form\\HomeForm.cs",
               "RelativeDocumentMoniker": "ATTT\\Form\\HomeForm.cs",
@@ -55,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "HomeForm.cs [Design]",
               "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Form\\HomeForm.cs",
               "RelativeDocumentMoniker": "ATTT\\Form\\HomeForm.cs",
@@ -67,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Program.cs",
               "RelativeDocumentMoniker": "ATTT\\Program.cs",
@@ -75,8 +124,7 @@
               "RelativeToolTip": "ATTT\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T17:07:47.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T17:07:47.366Z"
             }
           ]
         }
