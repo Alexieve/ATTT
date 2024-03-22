@@ -118,7 +118,7 @@
             GrantRoleButton.Name = "GrantRoleButton";
             GrantRoleButton.Size = new Size(431, 90);
             GrantRoleButton.TabIndex = 0;
-            GrantRoleButton.Text = "Cấp / Thu hồi role của user";
+            GrantRoleButton.Text = "Cấp / Thu hồi role của \r\nuser / role";
             GrantRoleButton.UseVisualStyleBackColor = true;
             GrantRoleButton.Click += GrantRoleButton_Click;
             // 
