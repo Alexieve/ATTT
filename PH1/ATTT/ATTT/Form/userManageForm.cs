@@ -59,9 +59,12 @@ namespace ATTT
             {
                 OracleCommand cmd = new OracleCommand();
                 cmd.Connection = Connection.con;
-                cmd.CommandText = "CREATE USER " + username + " IDENTIFIED BY " + password;
-                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "USP_CREATE_USER";
+                cmd.Parameters.Add("SP_USERNAME", OracleDbType.Varchar2, ParameterDirection.Input).Value = username;
+                cmd.Parameters.Add("SP_PASSWORD", OracleDbType.Varchar2, ParameterDirection.Input).Value = password;
                 cmd.ExecuteNonQuery();
+                cmd.Dispose();
                 MessageBox.Show("Thêm user thành công!", "Thông báo");
             }
             catch (OracleException err)
