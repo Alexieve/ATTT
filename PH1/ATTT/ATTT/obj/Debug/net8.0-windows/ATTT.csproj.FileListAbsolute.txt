@@ -30,6 +30,7 @@ D:\Study\Year3\HK2\ATTT\Project\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.priv
 D:\Study\Year3\HK2\ATTT\Project\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.roleManageForm.resources
 D:\Study\Year3\HK2\ATTT\Project\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.userManageForm.resources
 D:\Study\Year3\HK2\ATTT\Project\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.GrantPrivForm.resources
+<<<<<<< HEAD
 E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\bin\Debug\net8.0-windows\ATTT.exe
 E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\bin\Debug\net8.0-windows\ATTT.deps.json
 E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\bin\Debug\net8.0-windows\ATTT.runtimeconfig.json
@@ -63,3 +64,7 @@ E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.pdb
 E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.genruntimeconfig.cache
 E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ref\ATTT.dll
 E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\bin\Debug\net8.0-windows\ATTT.dll.config
+=======
+D:\Study\Year3\HK2\ATTT\Project\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.GrantPrivColForm.resources
+D:\Study\Year3\HK2\ATTT\Project\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.GrantRoleForm.resources
+>>>>>>> ba7d861a2c2852ecec6bee00a92e27d1b2817eeb

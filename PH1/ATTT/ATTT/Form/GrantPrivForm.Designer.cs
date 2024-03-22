@@ -32,12 +32,12 @@
             UserRoleBox = new TextBox();
             CheckButton = new Button();
             GrantPrivTable = new DataGridView();
-            GrantButton = new Button();
             TableNameCol = new DataGridViewTextBoxColumn();
             SCol = new DataGridViewCheckBoxColumn();
             ICol = new DataGridViewCheckBoxColumn();
             UCol = new DataGridViewCheckBoxColumn();
             DCol = new DataGridViewCheckBoxColumn();
+            GrantButton = new Button();
             ((System.ComponentModel.ISupportInitialize)GrantPrivTable).BeginInit();
             SuspendLayout();
             // 
@@ -45,7 +45,7 @@
             // 
             UserRoleLabel.AutoSize = true;
             UserRoleLabel.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            UserRoleLabel.Location = new Point(50, 21);
+            UserRoleLabel.Location = new Point(12, 20);
             UserRoleLabel.Name = "UserRoleLabel";
             UserRoleLabel.Size = new Size(183, 30);
             UserRoleLabel.TabIndex = 0;
@@ -54,9 +54,9 @@
             // UserRoleBox
             // 
             UserRoleBox.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            UserRoleBox.Location = new Point(250, 19);
+            UserRoleBox.Location = new Point(201, 13);
             UserRoleBox.Name = "UserRoleBox";
-            UserRoleBox.Size = new Size(609, 37);
+            UserRoleBox.Size = new Size(825, 37);
             UserRoleBox.TabIndex = 1;
             // 
             // CheckButton
@@ -65,7 +65,7 @@
             CheckButton.BackColor = Color.RoyalBlue;
             CheckButton.FlatAppearance.BorderColor = Color.White;
             CheckButton.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CheckButton.Location = new Point(879, 16);
+            CheckButton.Location = new Point(1032, 11);
             CheckButton.Name = "CheckButton";
             CheckButton.Size = new Size(124, 40);
             CheckButton.TabIndex = 2;
@@ -80,11 +80,52 @@
             GrantPrivTable.Anchor = AnchorStyles.Bottom;
             GrantPrivTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             GrantPrivTable.Columns.AddRange(new DataGridViewColumn[] { TableNameCol, SCol, ICol, UCol, DCol });
-            GrantPrivTable.Location = new Point(250, 72);
+            GrantPrivTable.Location = new Point(12, 72);
             GrantPrivTable.Name = "GrantPrivTable";
             GrantPrivTable.RowHeadersWidth = 51;
-            GrantPrivTable.Size = new Size(753, 471);
+            GrantPrivTable.Size = new Size(1289, 471);
             GrantPrivTable.TabIndex = 3;
+            // 
+            // TableNameCol
+            // 
+            TableNameCol.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            TableNameCol.HeaderText = "TABLE";
+            TableNameCol.MinimumWidth = 6;
+            TableNameCol.Name = "TableNameCol";
+            TableNameCol.ReadOnly = true;
+            // 
+            // SCol
+            // 
+            SCol.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            SCol.HeaderText = "SELECT";
+            SCol.MinimumWidth = 6;
+            SCol.Name = "SCol";
+            SCol.ThreeState = true;
+            // 
+            // ICol
+            // 
+            ICol.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            ICol.HeaderText = "INSERT";
+            ICol.MinimumWidth = 6;
+            ICol.Name = "ICol";
+            ICol.ThreeState = true;
+            // 
+            // UCol
+            // 
+            UCol.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            UCol.HeaderText = "UPDATE";
+            UCol.MinimumWidth = 6;
+            UCol.Name = "UCol";
+            UCol.ThreeState = true;
+            // 
+            // DCol
+            // 
+            DCol.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            DCol.HeaderText = "DELETE";
+            DCol.MinimumWidth = 6;
+            DCol.Name = "DCol";
+            DCol.Resizable = DataGridViewTriState.True;
+            DCol.ThreeState = true;
             // 
             // GrantButton
             // 
@@ -92,54 +133,13 @@
             GrantButton.BackColor = Color.Lime;
             GrantButton.FlatAppearance.BorderColor = Color.White;
             GrantButton.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            GrantButton.Location = new Point(1028, 16);
+            GrantButton.Location = new Point(1162, 11);
             GrantButton.Name = "GrantButton";
             GrantButton.Size = new Size(139, 40);
             GrantButton.TabIndex = 4;
             GrantButton.Text = "Cấp quyền";
             GrantButton.UseVisualStyleBackColor = false;
             GrantButton.Click += GrantButton_Click;
-            // 
-            // TableNameCol
-            // 
-            TableNameCol.HeaderText = "TABLE";
-            TableNameCol.MinimumWidth = 6;
-            TableNameCol.Name = "TableNameCol";
-            TableNameCol.ReadOnly = true;
-            TableNameCol.Width = 200;
-            // 
-            // SCol
-            // 
-            SCol.HeaderText = "SELECT";
-            SCol.MinimumWidth = 6;
-            SCol.Name = "SCol";
-            SCol.ThreeState = true;
-            SCol.Width = 125;
-            // 
-            // ICol
-            // 
-            ICol.HeaderText = "INSERT";
-            ICol.MinimumWidth = 6;
-            ICol.Name = "ICol";
-            ICol.ThreeState = true;
-            ICol.Width = 125;
-            // 
-            // UCol
-            // 
-            UCol.HeaderText = "UPDATE";
-            UCol.MinimumWidth = 6;
-            UCol.Name = "UCol";
-            UCol.ThreeState = true;
-            UCol.Width = 125;
-            // 
-            // DCol
-            // 
-            DCol.HeaderText = "DELETE";
-            DCol.MinimumWidth = 6;
-            DCol.Name = "DCol";
-            DCol.Resizable = DataGridViewTriState.True;
-            DCol.ThreeState = true;
-            DCol.Width = 125;
             // 
             // GrantPrivForm
             // 

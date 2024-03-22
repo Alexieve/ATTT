@@ -38,13 +38,13 @@ END;
 
 -- 2.Xem thông tin về quyền (privileges) của mỗi user/ role trên các đối tượng dữ liệu.
 -- Xem các quyền được cấp theo mức độ bảng
---SELECT GRANTEE, OWNER, TABLE_NAME, GRANTOR, PRIVILEGE, GRANTABLE
---FROM dba_tab_privs
---WHERE grantee LIKE 'RL%'
---ORDER BY grantee, table_name;
+SELECT GRANTEE, OWNER, TABLE_NAME, GRANTOR, PRIVILEGE, GRANTABLE
+FROM dba_tab_privs
+WHERE grantee = 'NV00000001' 
+ORDER BY grantee, table_name;
 ---- Xem các quyền được cấp theo mức độ cột
 SELECT *
-FROM dba_col_privs
+FROM user_col_privs
 WHERE grantee = 'RL_GIAOVU'
 ORDER BY grantee, table_name, column_name;
 ---- Xem các quyền hệ thống 
@@ -53,10 +53,10 @@ FROM dba_sys_privs
 WHERE grantee = 'NV00000008'
 ORDER BY grantee;
 ---- Xem các quyền của role được cấp cho User
---SELECT *
---FROM dba_role_privs
---WHERE grantee = 'NV00000008'
---ORDER BY grantee;
+SELECT *
+FROM dba_role_privs
+WHERE grantee = 'RL_GIANGVIEN'
+ORDER BY grantee;
 --
 SELECT * FROM USER_TAB_PRIVS
 WHERE GRANTEE = 'NV0000001';
@@ -71,7 +71,6 @@ AS
 BEGIN
     EXECUTE IMMEDIATE 'CREATE USER ' || SP_USERNAME || ' IDENTIFIED BY ' || SP_PASSWORD;
     EXECUTE IMMEDIATE 'GRANT CREATE SESSION TO ' || SP_USERNAME;
-    EXECUTE IMMEDIATE 'GRANT CONNECT TO ' || SP_USERNAME;
     EXECUTE IMMEDIATE 'GRANT CREATE TABLE TO ' || SP_USERNAME;
     EXECUTE IMMEDIATE 'GRANT UNLIMITED TABLESPACE TO ' || SP_USERNAME;
 END;

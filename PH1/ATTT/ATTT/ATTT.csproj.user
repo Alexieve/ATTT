@@ -4,6 +4,15 @@
     <Compile Update="Form\CheckPrivForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Form\GrantPrivColForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form\GrantPrivForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form\GrantRoleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form\HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -20,9 +29,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form\UserManageForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="GrantPrivForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
