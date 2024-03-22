@@ -251,6 +251,7 @@
             childFormPanel.Name = "childFormPanel";
             childFormPanel.Size = new Size(1315, 652);
             childFormPanel.TabIndex = 2;
+            childFormPanel.Paint += childFormPanel_Paint;
             // 
             // HomeForm
             // 

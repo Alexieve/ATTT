@@ -1,22 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\",
+  "WorkspaceRootPath": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\PH1\\ATTT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|d:\\study\\year3\\hk2\\attt\\project\\ph1\\attt\\attt\\form\\privmanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\form\\privmanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|e:\\k\u00EC 2 n\u0103m 3\\atbm\\attt\\ph1\\attt\\attt\\form\\checkprivform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\form\\checkprivform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|d:\\study\\year3\\hk2\\attt\\project\\ph1\\attt\\attt\\form\\privmanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\form\\privmanageform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|d:\\study\\year3\\hk2\\attt\\project\\ph1\\attt\\attt\\grantprivform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\grantprivform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|d:\\study\\year3\\hk2\\attt\\project\\ph1\\attt\\attt\\grantprivform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\grantprivform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|e:\\k\u00EC 2 n\u0103m 3\\atbm\\attt\\ph1\\attt\\attt\\form\\checkprivform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\form\\checkprivform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,51 +39,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PrivManageForm.cs [Design]",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Form\\PrivManageForm.cs",
-              "RelativeDocumentMoniker": "ATTT\\Form\\PrivManageForm.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Form\\PrivManageForm.cs [Design]",
-              "RelativeToolTip": "ATTT\\Form\\PrivManageForm.cs [Design]",
+              "Title": "checkPrivForm.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\Form\\checkPrivForm.cs",
+              "RelativeDocumentMoniker": "ATTT\\Form\\checkPrivForm.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\Form\\checkPrivForm.cs",
+              "RelativeToolTip": "ATTT\\Form\\checkPrivForm.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAIwGwAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T15:48:17.153Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-03-22T08:11:38.98Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PrivManageForm.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Form\\PrivManageForm.cs",
-              "RelativeDocumentMoniker": "ATTT\\Form\\PrivManageForm.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\Form\\PrivManageForm.cs",
-              "RelativeToolTip": "ATTT\\Form\\PrivManageForm.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBwAAAAeAAAA",
+              "Title": "checkPrivForm.cs [Design]",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\Form\\checkPrivForm.cs",
+              "RelativeDocumentMoniker": "ATTT\\Form\\checkPrivForm.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\Form\\checkPrivForm.cs [Design]",
+              "RelativeToolTip": "ATTT\\Form\\checkPrivForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T15:29:10.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GrantPrivForm.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\GrantPrivForm.cs",
-              "RelativeDocumentMoniker": "ATTT\\GrantPrivForm.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\GrantPrivForm.cs",
-              "RelativeToolTip": "ATTT\\GrantPrivForm.cs",
-              "ViewState": "AQIAAIkAAAAAAAAAAAAjwJsAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T09:01:52.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GrantPrivForm.cs [Design]",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\GrantPrivForm.cs",
-              "RelativeDocumentMoniker": "ATTT\\GrantPrivForm.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\GrantPrivForm.cs [Design]",
-              "RelativeToolTip": "ATTT\\GrantPrivForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T08:50:41.386Z",
+              "WhenOpened": "2024-03-22T20:06:23.586Z",
               "EditorCaption": " [Design]"
             }
           ]

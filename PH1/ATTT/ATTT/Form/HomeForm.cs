@@ -18,7 +18,7 @@ namespace ATTT
         public HomeForm()
         {
             InitializeComponent();
-            Connection.Connect("C##ADMIN", "Atlas2003.");
+            Connection.Connect("C##ADMIN", "123");
         }
 
         private void HomeForm_Load(object sender, EventArgs e)
@@ -107,5 +107,9 @@ namespace ATTT
             }
         }
 
+        private void childFormPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
