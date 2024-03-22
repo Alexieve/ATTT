@@ -36,7 +36,12 @@ namespace ATTT
 
         private void CheckButton_Click(object sender, EventArgs e)
         {
-            string UserRoleValue = UserRoleBox.Text.Trim();
+            string userRoleValue = UserRoleBox.Text.ToUpper().Trim();
+            if (userRoleValue == "")
+            {
+                MessageBox.Show("Vui lòng nhập Role/User!");
+                return;
+            }
 
             // Reset
             for (int i = 0; i < GrantPrivTable.Rows.Count; i++)
@@ -54,7 +59,7 @@ namespace ATTT
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.CommandText = "USP_GET_PRIV";
-                cmd.Parameters.Add(new("P_ROLE_USER_NAME", OracleDbType.Varchar2, ParameterDirection.Input)).Value = UserRoleValue;
+                cmd.Parameters.Add(new("P_ROLE_USER_NAME", OracleDbType.Varchar2, ParameterDirection.Input)).Value = userRoleValue;
                 cmd.Parameters.Add(new("P_ROLE_USER_PRIV", OracleDbType.RefCursor, ParameterDirection.Output));
 
                 OracleDataReader dr = cmd.ExecuteReader();
@@ -70,47 +75,19 @@ namespace ATTT
                         {
                             if (privilege == "SELECT")
                             {
-                                if (grantable == "YES")
-                                {
-                                    GrantPrivTable.Rows[i].Cells[1].Value = CheckState.Indeterminate;
-                                }
-                                else
-                                {
-                                    GrantPrivTable.Rows[i].Cells[1].Value = CheckState.Checked;
-                                }
+                                GrantPrivTable.Rows[i].Cells[1].Value = grantable == "YES" ? CheckState.Indeterminate : CheckState.Checked;
                             }
                             else if (privilege == "INSERT")
                             {
-                                if (grantable == "YES")
-                                {
-                                    GrantPrivTable.Rows[i].Cells[2].Value = CheckState.Indeterminate;
-                                }
-                                else
-                                {
-                                    GrantPrivTable.Rows[i].Cells[2].Value = CheckState.Checked;
-                                }
+                                GrantPrivTable.Rows[i].Cells[2].Value = grantable == "YES" ? CheckState.Indeterminate : CheckState.Checked;
                             }
                             else if (privilege == "UPDATE")
                             {
-                                if (grantable == "YES")
-                                {
-                                    GrantPrivTable.Rows[i].Cells[3].Value = CheckState.Indeterminate;
-                                }
-                                else
-                                {
-                                    GrantPrivTable.Rows[i].Cells[3].Value = CheckState.Checked;
-                                }
+                                GrantPrivTable.Rows[i].Cells[3].Value = grantable == "YES" ? CheckState.Indeterminate : CheckState.Checked;
                             }
                             else if (privilege == "DELETE")
                             {
-                                if (grantable == "YES")
-                                {
-                                    GrantPrivTable.Rows[i].Cells[4].Value = CheckState.Indeterminate;
-                                }
-                                else
-                                {
-                                    GrantPrivTable.Rows[i].Cells[4].Value = CheckState.Checked;
-                                }
+                                GrantPrivTable.Rows[i].Cells[4].Value = grantable == "YES" ? CheckState.Indeterminate : CheckState.Checked;
                             }
                         }
                     }
@@ -120,20 +97,20 @@ namespace ATTT
             catch (Exception ex)
             {
                 MessageBox.Show("Không có Role/User nào tương ứng!");
-            }        
+            }
         }
-        
+
         private void GrantButton_Click(object sender, EventArgs e)
         {
-            string UserRoleValue = UserRoleBox.Text.ToUpper().Trim();
-            
+            string userRoleValue = UserRoleBox.Text.ToUpper().Trim();
+
             try
             {
                 OracleCommand cmd = new OracleCommand();
                 cmd.Connection = Connection.con;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "USP_REVOKE_ALL_PRIV_ON_SCHEMA";
-                cmd.Parameters.Add(new("P_ROLE_USER_NAME", OracleDbType.Varchar2, ParameterDirection.Input)).Value = UserRoleValue;
+                cmd.Parameters.Add(new("P_ROLE_USER_NAME", OracleDbType.Varchar2, ParameterDirection.Input)).Value = userRoleValue;
                 cmd.ExecuteNonQuery();
                 cmd.Dispose();
 
@@ -161,7 +138,7 @@ namespace ATTT
                         cmd.Connection = Connection.con;
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.CommandText = "USP_GRANT_PRIV";
-                        cmd.Parameters.Add(new("P_ROLE_USER_NAME", OracleDbType.Varchar2, ParameterDirection.Input)).Value = UserRoleValue;
+                        cmd.Parameters.Add(new("P_ROLE_USER_NAME", OracleDbType.Varchar2, ParameterDirection.Input)).Value = userRoleValue;
                         cmd.Parameters.Add(new("P_TABLE_NAME", OracleDbType.Varchar2, ParameterDirection.Input)).Value = tableName;
                         cmd.Parameters.Add(new("P_PRIVILEGE", OracleDbType.Varchar2, ParameterDirection.Input)).Value = privilege;
                         cmd.Parameters.Add(new("P_GRANTABLE", OracleDbType.Varchar2, ParameterDirection.Input)).Value = grantable;
@@ -169,6 +146,7 @@ namespace ATTT
                         cmd.Dispose();
                     }
                 }
+                MessageBox.Show("Cấp quyền thành công!");
             }
             catch (Exception ex)
             {

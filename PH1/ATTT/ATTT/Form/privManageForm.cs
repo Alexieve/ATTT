@@ -17,6 +17,8 @@ namespace ATTT
         public privManageForm()
         {
             InitializeComponent();
+            openChildForm(new GrantPrivForm());
+            ActiveButton(GrantPrivButton);
         }
 
         private void GrantPrivButton_Click(object sender, EventArgs e)
@@ -28,12 +30,14 @@ namespace ATTT
 
         private void GrantPrivColButton_Click(object sender, EventArgs e)
         {
+            openChildForm(new GrantPrivColForm());
             ActiveButton(sender);
 
         }
 
         private void GrantRoleButton_Click(object sender, EventArgs e)
         {
+            openChildForm(new GrantRoleForm());
             ActiveButton(sender);
 
         }
