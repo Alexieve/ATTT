@@ -18,10 +18,14 @@ namespace ATTT
         public HomeForm()
         {
             InitializeComponent();
+<<<<<<< HEAD
+            Connection.Connect("C##ADMIN", "123");
+=======
             //Connection.Connect("C##ADMIN", "123");
             // Open list user form first and active button
             //openChildForm(new privManageForm());
             //ActiveButton(privManagePanel);
+>>>>>>> ba7d861a2c2852ecec6bee00a92e27d1b2817eeb
         }
 
         private void HomeForm_Load(object sender, EventArgs e)
@@ -110,5 +114,9 @@ namespace ATTT
             }
         }
 
+        private void childFormPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

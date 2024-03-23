@@ -30,5 +30,41 @@ D:\Study\Year3\HK2\ATTT\Project\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.priv
 D:\Study\Year3\HK2\ATTT\Project\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.roleManageForm.resources
 D:\Study\Year3\HK2\ATTT\Project\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.userManageForm.resources
 D:\Study\Year3\HK2\ATTT\Project\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.GrantPrivForm.resources
+<<<<<<< HEAD
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\bin\Debug\net8.0-windows\ATTT.exe
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\bin\Debug\net8.0-windows\ATTT.deps.json
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\bin\Debug\net8.0-windows\ATTT.runtimeconfig.json
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\bin\Debug\net8.0-windows\ATTT.dll
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\bin\Debug\net8.0-windows\ATTT.pdb
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\bin\Debug\net8.0-windows\Oracle.ManagedDataAccess.dll
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\bin\Debug\net8.0-windows\System.DirectoryServices.Protocols.dll
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\bin\Debug\net8.0-windows\runtimes\linux\lib\net6.0\System.DirectoryServices.Protocols.dll
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\bin\Debug\net8.0-windows\runtimes\osx\lib\net6.0\System.DirectoryServices.Protocols.dll
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.DirectoryServices.Protocols.dll
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.csproj.AssemblyReference.cache
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.checkPrivForm.resources
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.HomeForm.resources
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.LoginForm.resources
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.privManageForm.resources
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.roleManageForm.resources
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.userListForm.resources
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.userManageForm.resources
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.GrantPrivForm.resources
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.Properties.Resources.resources
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.csproj.GenerateResource.cache
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.GeneratedMSBuildEditorConfig.editorconfig
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.AssemblyInfoInputs.cache
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.AssemblyInfo.cs
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.csproj.CoreCompileInputs.cache
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.sourcelink.json
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.csproj.Up2Date
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.dll
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\refint\ATTT.dll
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.pdb
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.genruntimeconfig.cache
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ref\ATTT.dll
+E:\Kì 2 năm 3\ATBM\ATTT\PH1\ATTT\ATTT\bin\Debug\net8.0-windows\ATTT.dll.config
+=======
 D:\Study\Year3\HK2\ATTT\Project\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.GrantPrivColForm.resources
 D:\Study\Year3\HK2\ATTT\Project\PH1\ATTT\ATTT\obj\Debug\net8.0-windows\ATTT.GrantRoleForm.resources
+>>>>>>> ba7d861a2c2852ecec6bee00a92e27d1b2817eeb
