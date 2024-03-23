@@ -1,3 +1,6 @@
+using Oracle.ManagedDataAccess.Client;
+using System.Data;
+
 namespace ATTT
 {
     partial class userListForm
@@ -35,6 +38,9 @@ namespace ATTT
             UCol = new DataGridViewTextBoxColumn();
             DCol = new DataGridViewTextBoxColumn();
             label3 = new Label();
+            txtSearch = new TextBox();
+            label1 = new Label();
+            btnSearch = new Button();
             ((System.ComponentModel.ISupportInitialize)GrantPrivTable).BeginInit();
             SuspendLayout();
             // 
@@ -99,6 +105,31 @@ namespace ATTT
             label3.TabIndex = 5;
             label3.Text = "Danh sách User";
             // 
+            // txtSearch
+            // 
+            txtSearch.Location = new Point(105, 70);
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(200, 27);
+            txtSearch.TabIndex = 6;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(12, 73);
+            label1.Name = "label1";
+            label1.Size = new Size(93, 20);
+            label1.TabIndex = 7;
+            label1.Text = "USERNAME: ";
+            // 
+            // btnSearch
+            // 
+            btnSearch.Location = new Point(325, 70);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new Size(100, 27);
+            btnSearch.TabIndex = 0;
+            btnSearch.Text = "Tìm kiếm";
+            btnSearch.Click += btnSearch_Click;
+            // 
             // userListForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -106,6 +137,9 @@ namespace ATTT
             ClientSize = new Size(1315, 652);
             Controls.Add(label3);
             Controls.Add(GrantPrivTable);
+            Controls.Add(label1);
+            Controls.Add(txtSearch);
+            Controls.Add(btnSearch);
             FormBorderStyle = FormBorderStyle.None;
             Name = "userListForm";
             Text = "Form1";
@@ -122,6 +156,11 @@ namespace ATTT
         private DataGridViewTextBoxColumn ICol;
         private DataGridViewTextBoxColumn UCol;
         private DataGridViewTextBoxColumn DCol;
+        private TextBox txtSearch;
+        private Label label1;
         private Label label3;
+        private Button btnSearch;
+        
     }
+
 }
