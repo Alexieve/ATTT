@@ -95,9 +95,9 @@ namespace ATTT
             else
             {
                 
-                if (roleName.Length < 2 || roleName[0] != 'R' || roleName[1] != 'L')
+                if (roleName.Length < 3 || roleName[0] != 'R' || roleName[1] != 'L' || roleName[2] != '_')
                 {
-                    MessageBox.Show("Tên role phải bắt đầu bằng RL!", "Thông báo");
+                    MessageBox.Show("Tên role phải bắt đầu bằng RL_!", "Thông báo");
                     Show("RL");
                     return;
                 }
@@ -149,9 +149,9 @@ namespace ATTT
             }
             else
             {
-                if (roleName.Length < 2 || roleName[0] != 'R' || roleName[1] != 'L')
+                if (roleName.Length < 3 || roleName[0] != 'R' || roleName[1] != 'L' || roleName[2] != '_')
                 {
-                    MessageBox.Show("Tên role phải bắt đầu bằng RL!", "Thông báo");
+                    MessageBox.Show("Tên role phải bắt đầu bằng RL_!", "Thông báo");
                     Show("RL");
                     return;
                 }
@@ -184,9 +184,9 @@ namespace ATTT
             }
             else
             {
-                if (roleName.Length < 2 || roleName[0] != 'R' || roleName[1] != 'L')
+                if (roleName.Length < 3 || roleName[0] != 'R' || roleName[1] != 'L' || roleName[2] != '_')
                 {
-                    MessageBox.Show("Tên role phải bắt đầu bằng RL!", "Thông báo");
+                    MessageBox.Show("Tên role phải bắt đầu bằng RL_!", "Thông báo");
                     Show("RL");
                     return;
                 }
