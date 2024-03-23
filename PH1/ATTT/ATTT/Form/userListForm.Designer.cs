@@ -1,4 +1,4 @@
-﻿namespace ATTT
+namespace ATTT
 {
     partial class userListForm
     {
@@ -28,33 +28,100 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            GrantPrivTable = new DataGridView();
+            TableNameCol = new DataGridViewTextBoxColumn();
+            SCol = new DataGridViewTextBoxColumn();
+            ICol = new DataGridViewTextBoxColumn();
+            UCol = new DataGridViewTextBoxColumn();
+            DCol = new DataGridViewTextBoxColumn();
+            label3 = new Label();
+            ((System.ComponentModel.ISupportInitialize)GrantPrivTable).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // GrantPrivTable
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(375, 310);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
+            GrantPrivTable.AllowUserToAddRows = false;
+            GrantPrivTable.AllowUserToDeleteRows = false;
+            GrantPrivTable.Anchor = AnchorStyles.Bottom;
+            GrantPrivTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            GrantPrivTable.Columns.AddRange(new DataGridViewColumn[] { TableNameCol, SCol, ICol, UCol, DCol });
+            GrantPrivTable.Location = new Point(13, 103);
+            GrantPrivTable.Name = "GrantPrivTable";
+            GrantPrivTable.RowHeadersWidth = 51;
+            GrantPrivTable.Size = new Size(1289, 516);
+            GrantPrivTable.TabIndex = 4;
+            // 
+            // TableNameCol
+            // 
+            TableNameCol.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            TableNameCol.HeaderText = "USERNAME";
+            TableNameCol.MinimumWidth = 6;
+            TableNameCol.Name = "TableNameCol";
+            TableNameCol.ReadOnly = true;
+            // 
+            // SCol
+            // 
+            SCol.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            SCol.HeaderText = "ACCOUNT_STATUS";
+            SCol.MinimumWidth = 6;
+            SCol.Name = "SCol";
+            // 
+            // ICol
+            // 
+            ICol.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            ICol.HeaderText = "DEFAULT_TABLESPACE";
+            ICol.MinimumWidth = 6;
+            ICol.Name = "ICol";
+            // 
+            // UCol
+            // 
+            UCol.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            UCol.HeaderText = "CREATED";
+            UCol.MinimumWidth = 6;
+            UCol.Name = "UCol";
+            // 
+            // DCol
+            // 
+            DCol.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            DCol.HeaderText = "AUTHENCATION_TYPE";
+            DCol.MinimumWidth = 6;
+            DCol.Name = "DCol";
+            DCol.Resizable = DataGridViewTriState.True;
+            // 
+            // label3
+            // 
+            label3.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label3.Location = new Point(548, 18);
+            label3.Name = "label3";
+            label3.Size = new Size(232, 41);
+            label3.TabIndex = 5;
+            label3.Text = "Danh sách User";
             // 
             // userListForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1315, 652);
-            Controls.Add(label1);
+            Controls.Add(label3);
+            Controls.Add(GrantPrivTable);
             FormBorderStyle = FormBorderStyle.None;
             Name = "userListForm";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)GrantPrivTable).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
+        private DataGridView GrantPrivTable;
+        private DataGridViewTextBoxColumn TableNameCol;
+        private DataGridViewTextBoxColumn SCol;
+        private DataGridViewTextBoxColumn ICol;
+        private DataGridViewTextBoxColumn UCol;
+        private DataGridViewTextBoxColumn DCol;
+        private Label label3;
     }
 }
