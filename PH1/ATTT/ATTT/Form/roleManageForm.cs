@@ -94,7 +94,7 @@ namespace ATTT
             }
             else
             {
-                
+
                 if (roleName.Length < 3 || roleName[0] != 'R' || roleName[1] != 'L' || roleName[2] != '_')
                 {
                     MessageBox.Show("Tên role phải bắt đầu bằng RL_!", "Thông báo");
@@ -210,6 +210,39 @@ namespace ATTT
                 MessageBox.Show("Role không tồn tại hoặc lỗi hệ thống", "Thông báo");
             }
             Show("RL");
+        }
+
+        private void DeletePassword_Click(object sender, EventArgs e)
+        {
+            string roleName = Role.Text.Trim().ToUpper();
+            //string password = Password.Text.Trim();
+            if (roleName == "")
+            {
+                MessageBox.Show("Vui lòng nhập tên role!", "Thông báo");
+                return;
+            }
+            else
+            {
+                if (roleName.Length < 3 || roleName[0] != 'R' || roleName[1] != 'L' || roleName[2] != '_')
+                {
+                    MessageBox.Show("Tên role phải bắt đầu bằng RL_!", "Thông báo");
+                    Show("RL");
+                    return;
+                }
+            }
+            try
+            {
+                OracleCommand cmd = new OracleCommand();
+                cmd.Connection = Connection.con;
+                cmd.CommandText = "ALTER ROLE " + roleName + " NOT IDENTIFIED";
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Xóa mật khẩu Role thành công!", "Thông báo");
+            }
+            catch (OracleException err)
+            {
+                MessageBox.Show("Role không tồn tại hoặc lỗi hệ thống", "Thông báo");
+            }
         }
     }
 }
