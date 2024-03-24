@@ -35,9 +35,10 @@
             RoleLabel = new Label();
             GrantButton = new Button();
             CheckButton = new Button();
-            UserRoleBox = new TextBox();
             UserRoleLabel = new Label();
             RevokeButton = new Button();
+            UserRoleBox = new ComboBox();
+            changeObj = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)RoleTable).BeginInit();
             SuspendLayout();
             // 
@@ -48,10 +49,10 @@
             RoleTable.Anchor = AnchorStyles.Bottom;
             RoleTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             RoleTable.Columns.AddRange(new DataGridViewColumn[] { GRANTEE, GRANTED_ROLE });
-            RoleTable.Location = new Point(12, 72);
+            RoleTable.Location = new Point(12, 99);
             RoleTable.Name = "RoleTable";
             RoleTable.RowHeadersWidth = 51;
-            RoleTable.Size = new Size(1289, 471);
+            RoleTable.Size = new Size(1289, 444);
             RoleTable.TabIndex = 18;
             // 
             // GRANTEE
@@ -75,16 +76,16 @@
             RoleBox.DropDownStyle = ComboBoxStyle.DropDownList;
             RoleBox.Font = new Font("Segoe UI", 13.2000008F);
             RoleBox.FormattingEnabled = true;
-            RoleBox.Location = new Point(678, 13);
+            RoleBox.Location = new Point(702, 13);
             RoleBox.Name = "RoleBox";
-            RoleBox.Size = new Size(348, 38);
+            RoleBox.Size = new Size(324, 38);
             RoleBox.TabIndex = 17;
             // 
             // RoleLabel
             // 
             RoleLabel.AutoSize = true;
             RoleLabel.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            RoleLabel.Location = new Point(604, 20);
+            RoleLabel.Location = new Point(629, 20);
             RoleLabel.Name = "RoleLabel";
             RoleLabel.Size = new Size(57, 30);
             RoleLabel.TabIndex = 16;
@@ -110,21 +111,13 @@
             CheckButton.BackColor = Color.RoyalBlue;
             CheckButton.FlatAppearance.BorderColor = Color.White;
             CheckButton.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CheckButton.Location = new Point(468, 11);
+            CheckButton.Location = new Point(499, 11);
             CheckButton.Name = "CheckButton";
             CheckButton.Size = new Size(124, 40);
             CheckButton.TabIndex = 14;
             CheckButton.Text = "Kiểm tra";
             CheckButton.UseVisualStyleBackColor = false;
             CheckButton.Click += CheckButton_Click;
-            // 
-            // UserRoleBox
-            // 
-            UserRoleBox.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            UserRoleBox.Location = new Point(201, 13);
-            UserRoleBox.Name = "UserRoleBox";
-            UserRoleBox.Size = new Size(248, 37);
-            UserRoleBox.TabIndex = 13;
             // 
             // UserRoleLabel
             // 
@@ -150,18 +143,39 @@
             RevokeButton.UseVisualStyleBackColor = false;
             RevokeButton.Click += RevokeButton_Click;
             // 
+            // UserRoleBox
+            // 
+            UserRoleBox.Font = new Font("Segoe UI", 13.2000008F);
+            UserRoleBox.FormattingEnabled = true;
+            UserRoleBox.Location = new Point(201, 13);
+            UserRoleBox.Name = "UserRoleBox";
+            UserRoleBox.Size = new Size(292, 38);
+            UserRoleBox.TabIndex = 20;
+            // 
+            // changeObj
+            // 
+            changeObj.AutoSize = true;
+            changeObj.Location = new Point(18, 58);
+            changeObj.Name = "changeObj";
+            changeObj.Size = new Size(144, 24);
+            changeObj.TabIndex = 21;
+            changeObj.Text = "Chuyển sang role";
+            changeObj.UseVisualStyleBackColor = true;
+            changeObj.CheckedChanged += changeObj_CheckedChanged;
+            // 
             // GrantRoleForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1313, 555);
+            Controls.Add(changeObj);
+            Controls.Add(UserRoleBox);
             Controls.Add(RevokeButton);
             Controls.Add(RoleTable);
             Controls.Add(RoleBox);
             Controls.Add(RoleLabel);
             Controls.Add(GrantButton);
             Controls.Add(CheckButton);
-            Controls.Add(UserRoleBox);
             Controls.Add(UserRoleLabel);
             FormBorderStyle = FormBorderStyle.None;
             Name = "GrantRoleForm";
@@ -178,10 +192,11 @@
         private Label RoleLabel;
         private Button GrantButton;
         private Button CheckButton;
-        private TextBox UserRoleBox;
         private Label UserRoleLabel;
         private DataGridViewTextBoxColumn GRANTEE;
         private DataGridViewTextBoxColumn GRANTED_ROLE;
         private Button RevokeButton;
+        private ComboBox UserRoleBox;
+        private CheckBox changeObj;
     }
 }

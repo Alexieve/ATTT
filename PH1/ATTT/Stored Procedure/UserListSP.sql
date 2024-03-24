@@ -17,7 +17,8 @@ BEGIN
     OPEN v_cursor FOR
         SELECT USERNAME, ACCOUNT_STATUS, DEFAULT_TABLESPACE, CREATED, AUTHENTICATION_TYPE
         FROM DBA_USERS
-        WHERE USERNAME LIKE '%' || UPPER(p_user) || '%';
+        WHERE USERNAME LIKE '%' || UPPER(p_user) || '%'
+        ORDER BY USERNAME;
 
     RETURN v_cursor;
 END;

@@ -30,6 +30,40 @@ namespace ATTT
                 RoleBox.Items.Add(roleName);
             }
             dr.Close();
+
+            changeObj_CheckedChanged(null, null);
+        }
+
+        private void changeObj_CheckedChanged(object sender, EventArgs e)
+        {
+            UserRoleBox.Items.Clear();
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = Connection.con;
+            cmd.CommandType = CommandType.StoredProcedure;
+            if (changeObj.Checked)
+            {
+                cmd.CommandText = "USP_GET_ROLE_NAME";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add(new("P_ROLE_NAMES", OracleDbType.RefCursor)).Direction = ParameterDirection.ReturnValue;
+                OracleDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    UserRoleBox.Items.Add(dr["GRANTED_ROLE"].ToString());
+                }
+                dr.Close();
+            }
+            else
+            {
+                cmd.CommandText = "USP_GET_USER";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add(new("CUR_USER", OracleDbType.RefCursor, ParameterDirection.Output));
+                OracleDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    UserRoleBox.Items.Add(new string(dr["USERNAME"].ToString()));
+                }
+                dr.Close();
+            }
         }
 
         private void CheckButton_Click(object sender, EventArgs e)
@@ -146,7 +180,7 @@ namespace ATTT
                 {
                     MessageBox.Show(ex.Message);
                 }
-                
+
             }
         }
     }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             UserRoleLabel = new Label();
-            UserRoleBox = new TextBox();
             CheckButton = new Button();
             GrantPrivTable = new DataGridView();
             TableNameCol = new DataGridViewTextBoxColumn();
@@ -38,6 +37,8 @@
             UCol = new DataGridViewCheckBoxColumn();
             DCol = new DataGridViewCheckBoxColumn();
             GrantButton = new Button();
+            changeObj = new CheckBox();
+            UserRoleBox = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)GrantPrivTable).BeginInit();
             SuspendLayout();
             // 
@@ -45,19 +46,11 @@
             // 
             UserRoleLabel.AutoSize = true;
             UserRoleLabel.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            UserRoleLabel.Location = new Point(12, 20);
+            UserRoleLabel.Location = new Point(162, 19);
             UserRoleLabel.Name = "UserRoleLabel";
             UserRoleLabel.Size = new Size(183, 30);
             UserRoleLabel.TabIndex = 0;
             UserRoleLabel.Text = "Username/Role: ";
-            // 
-            // UserRoleBox
-            // 
-            UserRoleBox.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            UserRoleBox.Location = new Point(201, 13);
-            UserRoleBox.Name = "UserRoleBox";
-            UserRoleBox.Size = new Size(825, 37);
-            UserRoleBox.TabIndex = 1;
             // 
             // CheckButton
             // 
@@ -141,15 +134,36 @@
             GrantButton.UseVisualStyleBackColor = false;
             GrantButton.Click += GrantButton_Click;
             // 
+            // changeObj
+            // 
+            changeObj.AutoSize = true;
+            changeObj.Location = new Point(12, 25);
+            changeObj.Name = "changeObj";
+            changeObj.Size = new Size(144, 24);
+            changeObj.TabIndex = 5;
+            changeObj.Text = "Chuyển sang role";
+            changeObj.UseVisualStyleBackColor = true;
+            changeObj.CheckedChanged += changeObj_CheckedChanged;
+            // 
+            // UserRoleBox
+            // 
+            UserRoleBox.Font = new Font("Segoe UI", 13.2000008F);
+            UserRoleBox.FormattingEnabled = true;
+            UserRoleBox.Location = new Point(351, 13);
+            UserRoleBox.Name = "UserRoleBox";
+            UserRoleBox.Size = new Size(675, 38);
+            UserRoleBox.TabIndex = 6;
+            // 
             // GrantPrivForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1313, 555);
+            Controls.Add(UserRoleBox);
+            Controls.Add(changeObj);
             Controls.Add(GrantButton);
             Controls.Add(GrantPrivTable);
             Controls.Add(CheckButton);
-            Controls.Add(UserRoleBox);
             Controls.Add(UserRoleLabel);
             FormBorderStyle = FormBorderStyle.None;
             Name = "GrantPrivForm";
@@ -162,7 +176,6 @@
         #endregion
 
         private Label UserRoleLabel;
-        private TextBox UserRoleBox;
         private Button CheckButton;
         private DataGridView GrantPrivTable;
         private Button GrantButton;
@@ -171,5 +184,7 @@
         private DataGridViewCheckBoxColumn ICol;
         private DataGridViewCheckBoxColumn UCol;
         private DataGridViewCheckBoxColumn DCol;
+        private CheckBox changeObj;
+        private ComboBox UserRoleBox;
     }
 }

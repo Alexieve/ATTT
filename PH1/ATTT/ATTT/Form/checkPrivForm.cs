@@ -21,12 +21,16 @@ namespace ATTT
 
         private void CreateCbbRoleData()
         {
-            cbbRoleData.Add(new string("RL_NVCOBAN"));
-            cbbRoleData.Add(new string("RL_GIANGVIEN"));
-            cbbRoleData.Add(new string("RL_GIAOVU"));
-            cbbRoleData.Add(new string("RL_TRUONGDV"));
-            cbbRoleData.Add(new string("RL_TRUONGKHOA"));
-            cbbRoleData.Add(new string("RL_SINHVIEN"));
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = Connection.con;
+            cmd.CommandText = "USP_GET_ROLE_NAME";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new("P_ROLE_NAMES", OracleDbType.RefCursor)).Direction = ParameterDirection.ReturnValue;
+            OracleDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                cbbRoleData.Add(new string(dr["GRANTED_ROLE"].ToString()));
+            }
         }
         private void CreateCbbUserData()
         {

@@ -19,10 +19,6 @@ namespace ATTT
         {
             InitializeComponent();
             Connection.Connect("C##ADMIN", "123");
-            //Connection.Connect("C##ADMIN", "123");
-            // Open list user form first and active button
-            //openChildForm(new privManageForm());
-            //ActiveButton(privManagePanel);
         }
 
         private void HomeForm_Load(object sender, EventArgs e)
