@@ -55,15 +55,6 @@ BEGIN
 END;
 /
 
--- Tạo bảng chứa các cột mà user/role được cấp
-DROP TABLE USER_ROLE_ACCESS_CONDITIONS PURGE;
-CREATE TABLE USER_ROLE_ACCESS_CONDITIONS (
-    USER_ROLE VARCHAR2(128),
-    TABLE_NAME VARCHAR2(128),
-    COLUMN_NAME VARCHAR2(128),
-    CONSTRAINT PK_USER_ROLE_ACCESS_CONDITIONS PRIMARY KEY (USER_ROLE, TABLE_NAME, COLUMN_NAME)
-)
-
 
 -- Thu hồi tất cả các quyền SELECT trên bảng
 CREATE OR REPLACE PROCEDURE USP_REVOKE_SELECT_PRIV(
@@ -237,47 +228,3 @@ BEGIN
     
 END;
 /
-
-
-
---DROP FUNCTION vpd_TEST;
---CREATE OR REPLACE FUNCTION vpd_TEST (
---    p_schema_name VARCHAR2,
---    p_table_name VARCHAR2
---) 
---RETURN VARCHAR2 
---AS
---    v_condition VARCHAR2(4000);
---BEGIN
---    RETURN '1 = 2';
---
---END;
---/
---
---
---
---
---
---BEGIN
---    DBMS_RLS.DROP_POLICY(
---        OBJECT_SCHEMA => 'C##ADMIN',
---        OBJECT_NAME => 'NHANSU',
---        POLICY_NAME => 'POL_TEST'
---    );
---END;
---/
---BEGIN
---    DBMS_RLS.ADD_POLICY(
---        OBJECT_SCHEMA => 'C##ADMIN',
---        OBJECT_NAME => 'NHANSU',
---        POLICY_NAME => 'POL_TEST',
---        POLICY_FUNCTION => 'vpd_TEST',
---        sec_relevant_cols=> 'VAITRO',
---        sec_relevant_cols_opt=> DBMS_RLS.ALL_ROWS,
---        STATEMENT_TYPES => 'SELECT'
---    );
---END;
---/
---
---SELECT * FROM C##ADMIN.NHANSU 
-

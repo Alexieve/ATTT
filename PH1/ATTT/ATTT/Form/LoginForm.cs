@@ -27,7 +27,6 @@
             if (Connection.role == "DBA")
             {
                 // announce login success
-                MessageBox.Show("Đăng nhập thành công", "Thông báo");
                 this.Hide();
                 // change to HomeForm
                 HomeForm homeForm = new HomeForm();
