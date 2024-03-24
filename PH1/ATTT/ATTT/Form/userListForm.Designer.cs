@@ -71,6 +71,7 @@ namespace ATTT
             SCol.HeaderText = "ACCOUNT_STATUS";
             SCol.MinimumWidth = 6;
             SCol.Name = "SCol";
+            SCol.ReadOnly = true;
             // 
             // ICol
             // 
@@ -78,6 +79,7 @@ namespace ATTT
             ICol.HeaderText = "DEFAULT_TABLESPACE";
             ICol.MinimumWidth = 6;
             ICol.Name = "ICol";
+            ICol.ReadOnly = true;
             // 
             // UCol
             // 
@@ -85,6 +87,7 @@ namespace ATTT
             UCol.HeaderText = "CREATED";
             UCol.MinimumWidth = 6;
             UCol.Name = "UCol";
+            UCol.ReadOnly = true;
             // 
             // DCol
             // 
@@ -93,6 +96,7 @@ namespace ATTT
             DCol.MinimumWidth = 6;
             DCol.Name = "DCol";
             DCol.Resizable = DataGridViewTriState.True;
+            DCol.ReadOnly = true;
             // 
             // label3
             // 

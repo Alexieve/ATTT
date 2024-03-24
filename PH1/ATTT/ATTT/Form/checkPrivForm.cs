@@ -52,7 +52,17 @@ namespace ATTT
 
         private void btnTabRole_Click(object sender, EventArgs e)
         {
-            string role_user_input = tbInputTab.SelectedItem.ToString().Trim();
+            string role_user_input;
+
+            if (tbInputTab.SelectedItem != null)
+            {
+                role_user_input = tbInputTab.SelectedItem.ToString().Trim();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn Role hoặc User phù hợp!");
+                return;
+            }
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = Connection.con;
             cmd.CommandText = "USP_GET_PRIVS_USER_ROLE_TAB";
@@ -102,7 +112,18 @@ namespace ATTT
 
         private void btnCol_Click(object sender, EventArgs e)
         {
-            string role_user_input = comboBox1.SelectedItem.ToString().Trim();
+            string role_user_input;
+
+            if (comboBox1.SelectedItem != null)
+            {
+                role_user_input = comboBox1.SelectedItem.ToString().Trim();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn Role hoặc User phù hợp");
+                return;
+            }
+
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = Connection.con;
             cmd.CommandText = "USP_GET_PRIVS_USER_ROLE_COL";
