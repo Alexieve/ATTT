@@ -42,6 +42,7 @@
             listView1 = new ListView();
             columnHeader1 = new ColumnHeader();
             label3 = new Label();
+            DeletePassword = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -59,6 +60,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(DeletePassword);
             groupBox1.Controls.Add(Modify);
             groupBox1.Controls.Add(Role);
             groupBox1.Controls.Add(Delete);
@@ -77,7 +79,7 @@
             // Modify
             // 
             Modify.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            Modify.Location = new Point(561, 117);
+            Modify.Location = new Point(402, 117);
             Modify.Name = "Modify";
             Modify.Size = new Size(128, 29);
             Modify.TabIndex = 8;
@@ -95,7 +97,7 @@
             // Delete
             // 
             Delete.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            Delete.Location = new Point(341, 117);
+            Delete.Location = new Point(264, 117);
             Delete.Name = "Delete";
             Delete.Size = new Size(94, 29);
             Delete.TabIndex = 7;
@@ -191,6 +193,17 @@
             label3.Text = "Quản lý Role";
             label3.Click += label3_Click;
             // 
+            // DeletePassword
+            // 
+            DeletePassword.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            DeletePassword.Location = new Point(571, 117);
+            DeletePassword.Name = "DeletePassword";
+            DeletePassword.Size = new Size(128, 29);
+            DeletePassword.TabIndex = 9;
+            DeletePassword.Text = "Xóa mật khẩu";
+            DeletePassword.UseVisualStyleBackColor = true;
+            DeletePassword.Click += DeletePassword_Click;
+            // 
             // roleManageForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -227,5 +240,6 @@
         private ListView listView1;
         private ColumnHeader columnHeader1;
         private Label label3;
+        private Button DeletePassword;
     }
 }
