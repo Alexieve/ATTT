@@ -14,8 +14,6 @@ namespace ATTT
 {
     public partial class GrantRoleForm : Form
     {
-        private Form activeForm = null;
-        private Button currentButton;
         public GrantRoleForm()
         {
             InitializeComponent();

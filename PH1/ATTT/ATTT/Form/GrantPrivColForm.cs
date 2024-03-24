@@ -62,7 +62,7 @@ namespace ATTT
                 while (dr.Read())
                 {
                     string colName = dr["COLUMN_NAME"].ToString();
-                    GrantPrivTable.Rows.Add(colName, CheckState.Unchecked, CheckState.Unchecked);
+                    GrantPrivTable.Rows.Add(colName, false, CheckState.Unchecked);
                 }
                 dr.Close();
 
@@ -161,6 +161,16 @@ namespace ATTT
                     cmd.Parameters.Add("P_UPDATE", OracleDbType.Varchar2, ParameterDirection.Input).Value = update;
                     cmd.ExecuteNonQuery();
                 }
+
+                cmd = new OracleCommand();
+                cmd.Connection = Connection.con;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "USP_APPLY_VPD_FOR_COL_PRIV";
+                cmd.Parameters.Add("P_ROLE_USER_NAME", OracleDbType.Varchar2, ParameterDirection.Input).Value = UserRoleValue;
+                cmd.Parameters.Add("P_TABLE_NAME", OracleDbType.Varchar2, ParameterDirection.Input).Value = TableName;
+                cmd.ExecuteNonQuery();
+                cmd.Dispose();
+
                 MessageBox.Show("Cấp quyền thành công!");
             }
             catch (Exception ex)

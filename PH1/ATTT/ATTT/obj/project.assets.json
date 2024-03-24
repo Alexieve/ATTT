@@ -583,19 +583,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\vumin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Kì 2 năm 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\ATTT.csproj",
+      "projectUniqueName": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\ATTT.csproj",
       "projectName": "ATTT",
-      "projectPath": "E:\\Kì 2 năm 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\ATTT.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "E:\\Kì 2 năm 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\obj\\",
+      "projectPath": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\ATTT.csproj",
+      "packagesPath": "C:\\Users\\vumin\\.nuget\\packages\\",
+      "outputPath": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\PH1\\ATTT\\ATTT\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vumin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

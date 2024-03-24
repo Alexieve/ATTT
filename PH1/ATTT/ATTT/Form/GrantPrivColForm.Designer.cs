@@ -134,7 +134,6 @@
             SCol.HeaderText = "SELECT";
             SCol.MinimumWidth = 6;
             SCol.Name = "SCol";
-            SCol.ThreeState = true;
             // 
             // UCol
             // 

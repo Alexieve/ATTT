@@ -117,12 +117,35 @@ namespace ATTT
                 for (int i = 0; i < GrantPrivTable.Rows.Count; i++)
                 {
                     string tableName = GrantPrivTable.Rows[i].Cells[0].Value.ToString().ToUpper();
+
+                    // Reset Column Privileges
+                    cmd = new OracleCommand();
+                    cmd.Connection = Connection.con;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandText = "USP_REVOKE_SELECT_PRIV";
+                    cmd.Parameters.Add("P_ROLE_USER_NAME", OracleDbType.Varchar2, ParameterDirection.Input).Value = userRoleValue;
+                    cmd.Parameters.Add("P_TABLE_NAME", OracleDbType.Varchar2, ParameterDirection.Input).Value = tableName;
+                    cmd.ExecuteNonQuery();
+                    cmd.Dispose();
+
+                    // Reset VPD for Column Privileges
+                    cmd = new OracleCommand();
+                    cmd.Connection = Connection.con;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandText = "USP_APPLY_VPD_FOR_COL_PRIV";
+                    cmd.Parameters.Add("P_ROLE_USER_NAME", OracleDbType.Varchar2, ParameterDirection.Input).Value = userRoleValue;
+                    cmd.Parameters.Add("P_TABLE_NAME", OracleDbType.Varchar2, ParameterDirection.Input).Value = tableName;
+                    cmd.ExecuteNonQuery();
+                    cmd.Dispose();
+
                     for (int j = 1; j < 5; j++)
                     {
                         string privilege = GrantPrivTable.Columns[j].HeaderText.ToUpper();
                         string grantable = " ";
+
                         if (GrantPrivTable.Rows[i].Cells[j].Value is CheckState.Unchecked)
                         {
+
                             continue;
                         }
                         else if (GrantPrivTable.Rows[i].Cells[j].Value is CheckState.Checked)
