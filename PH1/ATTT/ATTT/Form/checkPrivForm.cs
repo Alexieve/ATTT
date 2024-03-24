@@ -60,7 +60,7 @@ namespace ATTT
             }
             else
             {
-                MessageBox.Show("Vui lòng nhập Role/User!");
+                MessageBox.Show("Vui lòng chọn Role hoặc User phù hợp!");
                 return;
             }
             OracleCommand cmd = new OracleCommand();
@@ -120,7 +120,7 @@ namespace ATTT
             }
             else
             {
-                MessageBox.Show("Vui lòng nhập Role/User!");
+                MessageBox.Show("Vui lòng chọn Role hoặc User phù hợp");
                 return;
             }
 
