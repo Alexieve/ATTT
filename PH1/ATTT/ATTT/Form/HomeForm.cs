@@ -18,7 +18,7 @@ namespace ATTT
         public HomeForm()
         {
             InitializeComponent();
-            Connection.Connect("C##ADMIN", "123");
+            //Connection.Connect("C##ADMIN", "123");
         }
 
         private void HomeForm_Load(object sender, EventArgs e)

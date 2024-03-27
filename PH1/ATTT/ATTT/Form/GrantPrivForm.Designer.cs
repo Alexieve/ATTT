@@ -147,8 +147,10 @@
             // 
             // UserRoleBox
             // 
+            UserRoleBox.DropDownHeight = 300;
             UserRoleBox.Font = new Font("Segoe UI", 13.2000008F);
             UserRoleBox.FormattingEnabled = true;
+            UserRoleBox.IntegralHeight = false;
             UserRoleBox.Location = new Point(351, 13);
             UserRoleBox.Name = "UserRoleBox";
             UserRoleBox.Size = new Size(675, 38);
