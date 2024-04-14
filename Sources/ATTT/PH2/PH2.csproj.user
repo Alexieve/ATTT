@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="GUI\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\SV_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\SV_DangKyHP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\SV_DSHocPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\SV_KHMO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\SV_KetQuaHP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\SV_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
