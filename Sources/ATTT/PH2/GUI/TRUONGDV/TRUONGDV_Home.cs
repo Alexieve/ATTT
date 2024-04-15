@@ -2,11 +2,11 @@
 
 namespace PH2.GUI
 {
-    public partial class SV_Home : Form
+    public partial class TRUONGDV_Home : Form
     {
         private Button currentButton;
         private Form activeForm = null;
-        public SV_Home(string username)
+        public TRUONGDV_Home(string username)
         {
             InitializeComponent();
             nameLabel.Text = username;
@@ -14,42 +14,36 @@ namespace PH2.GUI
 
         private void nameLabel_Click(object sender, EventArgs e)
         {
-            openChildForm(new SV_Profile());
+
         }
-        private void HOCPHANPanel_Click(object? sender, EventArgs e)
+        private void DSSinhVienBtn_Click(object? sender, EventArgs e)
         {
-            openChildForm(new SV_DSHocPhan());
             ActiveButton(sender);
         }
 
-        private void KHMOPanel_Click(object? sender, EventArgs e)
+        private void DSDonViBtn_Click(object? sender, EventArgs e)
         {
-            openChildForm(new SV_KHMO());
             ActiveButton(sender);
         }
 
-        private void DKHPPanel_Click(object? sender, EventArgs e)
+        private void DSHocPhanBtn_Click(object? sender, EventArgs e)
         {
-            openChildForm(new SV_DangKyHP());
             ActiveButton(sender);
-
         }
 
-        private void roleManagePanel_Click(object? sender, EventArgs e)
+        private void KHMOBtn_Click(object? sender, EventArgs e)
         {
-            //openChildForm(new roleManage());
             ActiveButton(sender);
-
+        }
+        private void PhanCongBtn_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender);
         }
 
-        private void KQHPPanel_Click(object? sender, EventArgs e)
+        private void DangKyBtn_Click(object sender, EventArgs e)
         {
-            openChildForm(new SV_KetQuaHP());
             ActiveButton(sender);
-
         }
-
-        
 
         private void logoutBtn_Click(object sender, EventArgs e)
         {
@@ -59,6 +53,11 @@ namespace PH2.GUI
             Login loginForm = new Login();
             loginForm.ShowDialog();
             this.Close();
+        }
+
+        private void NotifyBtn_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ThongBao());
         }
 
         private void openChildForm(Form childForm)
@@ -95,12 +94,5 @@ namespace PH2.GUI
                 currentButton.BackColor = Color.FromArgb(64, 64, 64);
             }
         }
-
-        private void childFormPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        
     }
 }

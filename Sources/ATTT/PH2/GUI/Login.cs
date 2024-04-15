@@ -20,18 +20,37 @@ namespace PH2.GUI
             string password = passwordBox.Text.Trim();
 
             //TEST with username and password defautl SV00000102
-            username = password = "SV00000102";
+            //username = password = "SV00000102";
 
             DbConnection conn = loginBLL.Connect(username, password);
-            if (conn.role == null) { return; }
+            if (conn == null || conn.role == null) { return; }
 
-            if (conn.role == "RL_SINHVIEN")
+            this.Hide();
+            Form homeForm = null;
+            switch (conn.role)
             {
-                this.Hide();
-                SV_Home svHome = new SV_Home(conn.username);
-                svHome.ShowDialog();
-                this.Close();
+                case "RL_SINHVIEN":
+                    homeForm = new SV_Home(conn.username);
+                    break;
+                case "RL_NVCOBAN":
+                    homeForm = new NV_Home(conn.username);
+                    break;
+                case "RL_GIANGVIEN":
+                    homeForm = new GIANGVIEN_Home(conn.username);
+                    break;
+                case "RL_GIAOVU":
+                    homeForm = new GIAOVU_Home(conn.username);
+                    break;
+                case "RL_TRUONGDV":
+                    homeForm = new TRUONGDV_Home(conn.username);
+                    break;
+                case "RL_TRUONGKHOA":
+                    homeForm = new TRUONGKHOA_Home(conn.username);
+                    break;
             }
+
+            homeForm.ShowDialog();
+            this.Close();
 
         }
 

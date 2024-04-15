@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|d:\\study\\year3\\hk2\\attt\\project\\sources\\attt\\ph2\\dal\\sinhviendal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\dal\\sinhviendal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|d:\\study\\year3\\hk2\\attt\\project\\sources\\attt\\ph2\\gui\\sv_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\sv_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\ph2\\gui\\sv_dangkyhp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\sv_dangkyhp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\ph2\\bll\\dangkyhpbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\bll\\dangkyhpbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\ph2\\gui\\sv_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\sv_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\ph2\\dal\\dangkyhpdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\dal\\dangkyhpdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|d:\\study\\year3\\hk2\\attt\\project\\sources\\attt\\ph2\\gui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,14 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SinhVienDAL.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH2\\DAL\\SinhVienDAL.cs",
-              "RelativeDocumentMoniker": "PH2\\DAL\\SinhVienDAL.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH2\\DAL\\SinhVienDAL.cs",
-              "RelativeToolTip": "PH2\\DAL\\SinhVienDAL.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAA2wBQAAAAgAAAA",
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH2\\GUI\\Login.cs",
+              "RelativeDocumentMoniker": "PH2\\GUI\\Login.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH2\\GUI\\Login.cs",
+              "RelativeToolTip": "PH2\\GUI\\Login.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAiwBoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T15:25:44.456Z",
+              "WhenOpened": "2024-04-15T18:37:04.558Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -64,67 +45,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SV_Home.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH2\\GUI\\SV_Home.cs",
-              "RelativeDocumentMoniker": "PH2\\GUI\\SV_Home.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH2\\GUI\\SV_Home.cs",
-              "RelativeToolTip": "PH2\\GUI\\SV_Home.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAADgv0wAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T15:16:22.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SV_Home.cs [Design]",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH2\\GUI\\SV_Home.cs",
-              "RelativeDocumentMoniker": "PH2\\GUI\\SV_Home.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH2\\GUI\\SV_Home.cs [Design]",
-              "RelativeToolTip": "PH2\\GUI\\SV_Home.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T15:21:05.836Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SV_DangKyHP.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH2\\GUI\\SV_DangKyHP.cs",
-              "RelativeDocumentMoniker": "PH2\\GUI\\SV_DangKyHP.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH2\\GUI\\SV_DangKyHP.cs",
-              "RelativeToolTip": "PH2\\GUI\\SV_DangKyHP.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T08:22:35.783Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DangKyHPBLL.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH2\\BLL\\DangKyHPBLL.cs",
-              "RelativeDocumentMoniker": "PH2\\BLL\\DangKyHPBLL.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH2\\BLL\\DangKyHPBLL.cs",
-              "RelativeToolTip": "PH2\\BLL\\DangKyHPBLL.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAwBYAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T07:58:33.914Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DangKyHPDAL.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH2\\DAL\\DangKyHPDAL.cs",
-              "RelativeDocumentMoniker": "PH2\\DAL\\DangKyHPDAL.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH2\\DAL\\DangKyHPDAL.cs",
-              "RelativeToolTip": "PH2\\DAL\\DangKyHPDAL.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAAADEAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T07:58:08.633Z"
             }
           ]
         }
