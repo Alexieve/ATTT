@@ -1,25 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="GUI\GIANGVIEN\GIANGVIEN_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\GIAOVU\GIAOVU_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GUI\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GUI\SV_Home.cs">
+    <Compile Update="GUI\NV\NV_Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GUI\SV_DangKyHP.cs">
+    <Compile Update="GUI\SV\SV_DangKyHP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GUI\SV_DSHocPhan.cs">
+    <Compile Update="GUI\SV\SV_DSHocPhan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GUI\SV_KHMO.cs">
+    <Compile Update="GUI\SV\SV_Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GUI\SV_KetQuaHP.cs">
+    <Compile Update="GUI\SV\SV_KetQuaHP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GUI\SV_Profile.cs">
+    <Compile Update="GUI\SV\SV_KHMO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\SV\SV_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\ThongBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\TRUONGDV\TRUONGDV_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\TRUONGKHOA\TRUONGKHOA_Home.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

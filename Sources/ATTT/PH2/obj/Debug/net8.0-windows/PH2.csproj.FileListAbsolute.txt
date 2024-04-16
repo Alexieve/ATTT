@@ -29,3 +29,9 @@ D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GU
 D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.SV_KHMO.resources
 D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.SV_KetQuaHP.resources
 D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.Properties.Resources.resources
+D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.ThongBao.resources
+D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIANGVIEN_Home.resources
+D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAOVU_Home.resources
+D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.NV_Home.resources
+D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.TRUONGDV_Home.resources
+D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.TRUONGKHOA_Home.resources

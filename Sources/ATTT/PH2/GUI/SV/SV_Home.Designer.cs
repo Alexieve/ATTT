@@ -28,16 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SV_Home));
             sidePanel = new FlowLayoutPanel();
             tableSidePanel = new TableLayoutPanel();
             panel1 = new Panel();
+            NotifyBtn = new Button();
             nameLabel = new Label();
             SVLabel = new Label();
             logoutBtn = new Button();
-            KQHPPanel = new Button();
             HOCPHANPanel = new Button();
             KHMOPanel = new Button();
             DKHPPanel = new Button();
+            KQHPPanel = new Button();
             childFormPanel = new Panel();
             sidePanel.SuspendLayout();
             tableSidePanel.SuspendLayout();
@@ -78,6 +80,7 @@
             // panel1
             // 
             panel1.BackColor = Color.Gray;
+            panel1.Controls.Add(NotifyBtn);
             panel1.Controls.Add(nameLabel);
             panel1.Controls.Add(SVLabel);
             panel1.Controls.Add(logoutBtn);
@@ -87,6 +90,16 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(269, 130);
             panel1.TabIndex = 1;
+            // 
+            // NotifyBtn
+            // 
+            NotifyBtn.Image = (Image)resources.GetObject("NotifyBtn.Image");
+            NotifyBtn.Location = new Point(12, 9);
+            NotifyBtn.Name = "NotifyBtn";
+            NotifyBtn.Size = new Size(60, 60);
+            NotifyBtn.TabIndex = 3;
+            NotifyBtn.UseVisualStyleBackColor = true;
+            NotifyBtn.Click += NotifyBtn_Click;
             // 
             // nameLabel
             // 
@@ -131,21 +144,6 @@
             logoutBtn.Text = "Đăng xuất";
             logoutBtn.UseVisualStyleBackColor = false;
             logoutBtn.Click += logoutBtn_Click;
-            // 
-            // KQHPPanel
-            // 
-            KQHPPanel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            KQHPPanel.FlatAppearance.BorderSize = 0;
-            KQHPPanel.FlatStyle = FlatStyle.Flat;
-            KQHPPanel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            KQHPPanel.ForeColor = Color.White;
-            KQHPPanel.Location = new Point(3, 523);
-            KQHPPanel.Name = "KQHPPanel";
-            KQHPPanel.Size = new Size(263, 126);
-            KQHPPanel.TabIndex = 0;
-            KQHPPanel.Text = "Kết Quả Học Phần";
-            KQHPPanel.UseVisualStyleBackColor = true;
-            KQHPPanel.Click += KQHPPanel_Click;
             // 
             // HOCPHANPanel
             // 
@@ -192,6 +190,21 @@
             DKHPPanel.UseVisualStyleBackColor = true;
             DKHPPanel.Click += DKHPPanel_Click;
             // 
+            // KQHPPanel
+            // 
+            KQHPPanel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            KQHPPanel.FlatAppearance.BorderSize = 0;
+            KQHPPanel.FlatStyle = FlatStyle.Flat;
+            KQHPPanel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            KQHPPanel.ForeColor = Color.White;
+            KQHPPanel.Location = new Point(3, 523);
+            KQHPPanel.Name = "KQHPPanel";
+            KQHPPanel.Size = new Size(263, 126);
+            KQHPPanel.TabIndex = 0;
+            KQHPPanel.Text = "Kết Quả Học Phần";
+            KQHPPanel.UseVisualStyleBackColor = true;
+            KQHPPanel.Click += KQHPPanel_Click;
+            // 
             // childFormPanel
             // 
             childFormPanel.Location = new Point(269, 0);
@@ -230,5 +243,6 @@
         private Label SVLabel;
         private Label nameLabel;
         private TableLayoutPanel tableSidePanel;
+        private Button NotifyBtn;
     }
 }

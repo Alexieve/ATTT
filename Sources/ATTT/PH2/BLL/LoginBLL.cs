@@ -20,10 +20,12 @@ namespace PH2.BLL
             if (username == "")
             {
                 MessageBox.Show("Vui lòng nhập tên tài khoản!", "Thông báo");
+                return null;
             }
             else if (password == "")
             {
                 MessageBox.Show("Vui lòng nhập mật khẩu!", "Thông báo");
+                return null;
             }
             return loginDal.Connect(username, password);
         }

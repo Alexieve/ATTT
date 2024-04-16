@@ -21,10 +21,10 @@ namespace PH2.BLL
         public bool checkTimeDangKyHP()
         {
             int month = DateTime.Now.Month;
-            if (month != 1 && month != 5 && month != 9) return false;
+            if (month != 1 && month != 4 && month != 9) return false;
 
             int day = DateTime.Now.Day;
-            if (day > 14) return false;
+            if (day > 15) return false;
 
             return true;
         }

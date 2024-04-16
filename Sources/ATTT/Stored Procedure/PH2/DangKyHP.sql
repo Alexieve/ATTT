@@ -31,12 +31,12 @@ AS
     P_NAM NUMBER := EXTRACT(YEAR FROM SYSDATE);
     P_HK NUMBER := 0;
 BEGIN
-    IF P_DAY > 14 THEN
+    IF P_DAY > 15 THEN
         OPEN P_RES FOR SELECT * FROM DUAL WHERE 1 = 0;
     ELSE
         IF P_MONTH = 1 THEN
             P_HK := 1;
-        ELSIF P_MONTH = 5 THEN
+        ELSIF P_MONTH = 4 THEN
             P_HK := 2;
         ELSIF P_MONTH = 9 THEN
             P_HK := 3;
@@ -87,12 +87,12 @@ AS
     P_NAM NUMBER := EXTRACT(YEAR FROM SYSDATE);
     P_HK NUMBER := 0;
 BEGIN
-    IF P_DAY > 14 THEN
+    IF P_DAY > 15 THEN
         OPEN P_RES FOR SELECT * FROM DUAL WHERE 1 = 0;
     ELSE
         IF P_MONTH = 1 THEN
             P_HK := 1;
-        ELSIF P_MONTH = 5 THEN
+        ELSIF P_MONTH = 4 THEN
             P_HK := 2;
         ELSIF P_MONTH = 9 THEN
             P_HK := 3;
@@ -158,7 +158,7 @@ BEGIN
     
     IF P_MONTH = 1 THEN
         P_HK := 1;
-    ELSIF P_MONTH = 5 THEN
+    ELSIF P_MONTH = 4 THEN
         P_HK := 2;
     ELSIF P_MONTH = 9 THEN
         P_HK := 3;
@@ -190,7 +190,7 @@ BEGIN
     
     IF P_MONTH = 1 THEN
         P_HK := 1;
-    ELSIF P_MONTH = 5 THEN
+    ELSIF P_MONTH = 4 THEN
         P_HK := 2;
     ELSIF P_MONTH = 9 THEN
         P_HK := 3;
