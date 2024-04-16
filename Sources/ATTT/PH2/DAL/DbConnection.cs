@@ -94,7 +94,6 @@ namespace PH2.DAL
                 adapter.SelectCommand = cmd;
                 adapter.Fill(ds);
                 dt = ds.Tables[0];
-                cmd.ExecuteNonQuery();
             }
             catch (OracleException ex)
             {

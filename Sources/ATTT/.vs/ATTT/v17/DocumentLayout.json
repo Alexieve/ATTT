@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|d:\\study\\year3\\hk2\\attt\\project\\sources\\attt\\ph2\\gui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,22 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 59,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH2\\GUI\\Login.cs",
-              "RelativeDocumentMoniker": "PH2\\GUI\\Login.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH2\\GUI\\Login.cs",
-              "RelativeToolTip": "PH2\\GUI\\Login.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAiwBoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T18:37:04.558Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
