@@ -1,4 +1,5 @@
 ﻿using Oracle.ManagedDataAccess.Client;
+using System.Data;
 using System.Net;
 
 namespace ATTT
@@ -9,6 +10,7 @@ namespace ATTT
         public static string role = "";
         public static OracleConnection con = null;
         private static string host = "localhost";
+        private static OracleDataAdapter adapter;
         public static void Connect(string username, string password)
         {
             string connectionString = "User ID=" + username + "; Password=" + password + "; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = " + host + ")(PORT = 1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = ATTT)));";
@@ -28,6 +30,7 @@ namespace ATTT
 
                 Connection.username = username;
                 Connection.role = GetRole();
+                adapter = new OracleDataAdapter();
 
             }
             catch (OracleException err)
@@ -35,16 +38,14 @@ namespace ATTT
                 Connection.username = "";
                 Connection.role = "";
                 con = null;
+                adapter = null;
             }
         }
         public static void Close()
         {
             if (con != null)
             {
-                Connection.username = "";
                 con.Close();
-                con.Dispose();
-                con = null;
             }
         }
 
@@ -72,6 +73,56 @@ namespace ATTT
             }
             dr.Close();
             return role;
+        }
+
+        public static DataTable ExecuteQuery(string sql, CommandType cmdType, OracleParameter[]? parameters)
+        {
+            DataTable dt;
+            DataSet ds = new DataSet();
+            try
+            {
+                // Open conn if it is closed
+                if (con.State == ConnectionState.Closed || con.State == ConnectionState.Broken)
+                    con.Open();
+                OracleCommand cmd = new OracleCommand(sql, con);
+                cmd.CommandType = cmdType;
+                if (parameters != null)
+                    cmd.Parameters.AddRange(parameters);
+                adapter.SelectCommand = cmd;
+                adapter.Fill(ds);
+                dt = ds.Tables[0];
+            }
+            catch (OracleException ex)
+            {
+                throw new Exception("Error executing: " + ex.Message);
+            }
+            finally
+            {
+                Close();
+            }
+            return dt;
+        }
+
+        public static void ExecuteNonQuery(string sql, CommandType cmdType, OracleParameter[]? parameters)
+        {
+            try
+            {
+                if (con.State == ConnectionState.Closed || con.State == ConnectionState.Broken)
+                    con.Open();
+                OracleCommand cmd = new OracleCommand(sql, con);
+                cmd.CommandType = cmdType;
+                if (parameters != null)
+                    cmd.Parameters.AddRange(parameters);
+                cmd.ExecuteNonQuery();
+            }
+            catch (OracleException ex)
+            {
+                throw new Exception("Error executing: " + ex.Message);
+            }
+            finally
+            {
+                Close();
+            }
         }
     }
 }

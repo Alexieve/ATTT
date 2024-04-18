@@ -68,3 +68,8 @@ D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH1\obj\Debug\net8.0-windows\refint
 D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH1\obj\Debug\net8.0-windows\PH1.pdb
 D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH1\obj\Debug\net8.0-windows\PH1.genruntimeconfig.cache
 D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH1\obj\Debug\net8.0-windows\ref\PH1.dll
+D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH1\obj\Debug\net8.0-windows\PH1.Audit.resources
+D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH1\obj\Debug\net8.0-windows\PH1.Audit_Object.resources
+D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH1\obj\Debug\net8.0-windows\PH1.Audit_Statement.resources
+D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH1\obj\Debug\net8.0-windows\PH1.Audit_View.resources
+D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH1\obj\Debug\net8.0-windows\PH1.Audit_ViewFGA.resources
