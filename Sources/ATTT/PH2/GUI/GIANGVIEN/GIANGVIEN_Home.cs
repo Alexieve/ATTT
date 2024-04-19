@@ -1,4 +1,5 @@
 ﻿using PH2.DAL;
+using PH2.GUI.GIANGVIEN;
 
 namespace PH2.GUI
 {
@@ -37,11 +38,13 @@ namespace PH2.GUI
         }
         private void PhanCongBtn_Click(object sender, EventArgs e)
         {
+            openChildForm(new XemPhanCong());
             ActiveButton(sender);
         }
 
         private void DangKyBtn_Click(object sender, EventArgs e)
         {
+            openChildForm(new GV_XemDangKy());
             ActiveButton(sender);
         }
 
