@@ -36,5 +36,15 @@ namespace PH2.DAL
             conn.ExecuteNonQuery(ProcName, CommandType.StoredProcedure, Parameters);
             return true;
         }
+
+        public DataTable getAll()
+        {
+            string ProcName = "USP_SINHVIEN_GET_ALL";
+            OracleParameter[] Parameters =
+            {
+                new("P_RES", OracleDbType.RefCursor, ParameterDirection.Output)
+            };
+            return conn.ExecuteQuery(ProcName, CommandType.StoredProcedure, Parameters);
+        }
     }
 }

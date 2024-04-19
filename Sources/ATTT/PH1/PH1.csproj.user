@@ -1,49 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="Form\Audit.cs">
+    <Compile Update="Audit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form\Audit_Object.cs">
+    <Compile Update="Audit_Object.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form\Audit_Statement.cs">
+    <Compile Update="Audit_Statement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form\Audit_View.cs">
+    <Compile Update="Audit_View.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form\Audit_ViewFGA.cs">
+    <Compile Update="Audit_ViewFGA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form\CheckPrivForm.cs">
+    <Compile Update="CheckPrivForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form\GrantPrivColForm.cs">
+    <Compile Update="GrantPrivColForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form\GrantPrivForm.cs">
+    <Compile Update="GrantPrivForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form\GrantRoleForm.cs">
+    <Compile Update="GrantRoleForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form\HomeForm.cs">
+    <Compile Update="HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form\LoginForm.cs">
+    <Compile Update="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form\PrivManageForm.cs">
+    <Compile Update="PrivManageForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form\RoleManageForm.cs">
+    <Compile Update="roleManageForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form\UserListForm.cs">
+    <Compile Update="UserListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form\UserManageForm.cs">
+    <Compile Update="UserManageForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

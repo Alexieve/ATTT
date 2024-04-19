@@ -1,4 +1,5 @@
 ﻿using PH2.DAL;
+using PH2.GUI.NV;
 
 namespace PH2.GUI
 {
@@ -19,22 +20,25 @@ namespace PH2.GUI
         private void DSSinhVienBtn_Click(object? sender, EventArgs e)
         {
             ActiveButton(sender);
+            openChildForm(new NV_DanhSachSinhVien());
         }
 
         private void DSDonViBtn_Click(object? sender, EventArgs e)
         {
             ActiveButton(sender);
+            openChildForm(new NV_DanhSachDonVi());
         }
 
         private void DSHocPhanBtn_Click(object? sender, EventArgs e)
         {
             ActiveButton(sender);
+            openChildForm(new NV_DanhSachHocPhan());
         }
 
         private void KHMOBtn_Click(object? sender, EventArgs e)
         {
             ActiveButton(sender);
-
+            openChildForm(new NV_DanhSachKHMO());
         }
 
         private void logoutBtn_Click(object sender, EventArgs e)

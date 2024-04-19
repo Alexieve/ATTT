@@ -1,7 +1,36 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\",
-  "Documents": [],
+  "WorkspaceRootPath": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|e:\\k\u00EC 2 n\u0103m 3\\atbm\\attt\\sources\\attt\\ph2\\gui\\truongkhoa\\pop_up_controls\\truongkhoa_them_sua_nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\truongkhoa\\pop_up_controls\\truongkhoa_them_sua_nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|e:\\k\u00EC 2 n\u0103m 3\\atbm\\attt\\sources\\attt\\ph2\\dal\\nhansudal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\dal\\nhansudal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|e:\\k\u00EC 2 n\u0103m 3\\atbm\\attt\\sources\\attt\\ph2\\gui\\truongkhoa\\truongkhoa_danhsachnhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\truongkhoa\\truongkhoa_danhsachnhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|e:\\k\u00EC 2 n\u0103m 3\\atbm\\attt\\sources\\attt\\ph2\\gui\\truongkhoa\\truongkhoa_danhsachnhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\truongkhoa\\truongkhoa_danhsachnhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|e:\\k\u00EC 2 n\u0103m 3\\atbm\\attt\\sources\\attt\\ph2\\gui\\truongkhoa\\pop_up_controls\\truongkhoa_them_sua_nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\truongkhoa\\pop_up_controls\\truongkhoa_them_sua_nhansu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|e:\\k\u00EC 2 n\u0103m 3\\atbm\\attt\\sources\\attt\\ph2\\bll\\nhansubll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\bll\\nhansubll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|e:\\k\u00EC 2 n\u0103m 3\\atbm\\attt\\sources\\attt\\ph2\\dto\\nhansudto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\dto\\nhansudto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 59,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +55,95 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TRUONGKHOA_DanhSachNhanSu.cs [Design]",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\GUI\\TRUONGKHOA\\TRUONGKHOA_DanhSachNhanSu.cs",
+              "RelativeDocumentMoniker": "PH2\\GUI\\TRUONGKHOA\\TRUONGKHOA_DanhSachNhanSu.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\GUI\\TRUONGKHOA\\TRUONGKHOA_DanhSachNhanSu.cs [Design]",
+              "RelativeToolTip": "PH2\\GUI\\TRUONGKHOA\\TRUONGKHOA_DanhSachNhanSu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T00:33:54.142Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TRUONGKHOA_DanhSachNhanSu.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\GUI\\TRUONGKHOA\\TRUONGKHOA_DanhSachNhanSu.cs",
+              "RelativeDocumentMoniker": "PH2\\GUI\\TRUONGKHOA\\TRUONGKHOA_DanhSachNhanSu.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\GUI\\TRUONGKHOA\\TRUONGKHOA_DanhSachNhanSu.cs",
+              "RelativeToolTip": "PH2\\GUI\\TRUONGKHOA\\TRUONGKHOA_DanhSachNhanSu.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAAAFQAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T00:01:57.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TRUONGKHOA_Them_Sua_NhanSu.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\GUI\\TRUONGKHOA\\POP_UP_CONTROLS\\TRUONGKHOA_Them_Sua_NhanSu.cs",
+              "RelativeDocumentMoniker": "PH2\\GUI\\TRUONGKHOA\\POP_UP_CONTROLS\\TRUONGKHOA_Them_Sua_NhanSu.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\GUI\\TRUONGKHOA\\POP_UP_CONTROLS\\TRUONGKHOA_Them_Sua_NhanSu.cs",
+              "RelativeToolTip": "PH2\\GUI\\TRUONGKHOA\\POP_UP_CONTROLS\\TRUONGKHOA_Them_Sua_NhanSu.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAAAFQAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T23:35:18.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NhanSuBLL.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\BLL\\NhanSuBLL.cs",
+              "RelativeDocumentMoniker": "PH2\\BLL\\NhanSuBLL.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\BLL\\NhanSuBLL.cs",
+              "RelativeToolTip": "PH2\\BLL\\NhanSuBLL.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAgwCwAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T23:42:57.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NhanSuDAL.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\DAL\\NhanSuDAL.cs",
+              "RelativeDocumentMoniker": "PH2\\DAL\\NhanSuDAL.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\DAL\\NhanSuDAL.cs",
+              "RelativeToolTip": "PH2\\DAL\\NhanSuDAL.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAuwGIAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T23:42:56.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NhanSuDTO.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\DTO\\NhanSuDTO.cs",
+              "RelativeDocumentMoniker": "PH2\\DTO\\NhanSuDTO.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\DTO\\NhanSuDTO.cs",
+              "RelativeToolTip": "PH2\\DTO\\NhanSuDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T00:10:01.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TRUONGKHOA_Them_Sua_NhanSu.cs [Design]",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\GUI\\TRUONGKHOA\\POP_UP_CONTROLS\\TRUONGKHOA_Them_Sua_NhanSu.cs",
+              "RelativeDocumentMoniker": "PH2\\GUI\\TRUONGKHOA\\POP_UP_CONTROLS\\TRUONGKHOA_Them_Sua_NhanSu.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\GUI\\TRUONGKHOA\\POP_UP_CONTROLS\\TRUONGKHOA_Them_Sua_NhanSu.cs [Design]",
+              "RelativeToolTip": "PH2\\GUI\\TRUONGKHOA\\POP_UP_CONTROLS\\TRUONGKHOA_Them_Sua_NhanSu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T22:46:54.34Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

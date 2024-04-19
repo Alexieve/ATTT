@@ -10,7 +10,22 @@
     <Compile Update="GUI\Login.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GUI\NV\NV_DanhSachDonVi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\NV\NV_DanhSachHocPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\NV\NV_DanhSachKHMO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\NV\NV_DanhSachSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GUI\NV\NV_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\NV\NV_ThongTinCaNhan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\SV\SV_DangKyHP.cs">
@@ -35,6 +50,18 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\TRUONGDV\TRUONGDV_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\TRUONGKHOA\POP_UP_CONTROLS\TRUONGKHOA_ThemPhanCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\TRUONGKHOA\POP_UP_CONTROLS\TRUONGKHOA_Them_Sua_NhanSu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\TRUONGKHOA\TRUONGKHOA_BangPhanCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\TRUONGKHOA\TRUONGKHOA_DanhSachNhanSu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\TRUONGKHOA\TRUONGKHOA_Home.cs">

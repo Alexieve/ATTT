@@ -43,5 +43,12 @@ namespace PH2.BLL
             }
             return svDAL.updateSDTProfile(SDT);
         }
+
+        public List<SinhVienDTO> getAll()
+        {
+            DataTable dt = svDAL.getAll();
+            List<SinhVienDTO> list = Utility.ToList<SinhVienDTO>(dt);
+            return list;
+        }
     }
 }
