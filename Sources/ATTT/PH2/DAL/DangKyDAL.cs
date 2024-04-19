@@ -42,5 +42,15 @@ namespace PH2.DAL
             };
             conn.ExecuteNonQuery(procName, CommandType.StoredProcedure, Parameters);
         }
+
+        public DataTable getAll()
+        {
+            string ProcName = "USP_DANGKY_GET_ALL";
+            OracleParameter[] Parameters =
+            {
+                new("P_RES", OracleDbType.RefCursor, ParameterDirection.Output)
+            };
+            return conn.ExecuteQuery(ProcName, CommandType.StoredProcedure, Parameters);
+        }
     }
 }

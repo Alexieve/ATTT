@@ -1,53 +1,61 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\",
+  "WorkspaceRootPath": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|c:\\users\\admin\\desktop\\csdl\\attt\\attt\\sources\\attt\\ph2\\gui\\truongdv\\truongdv_xempc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\truongdv\\truongdv_xempc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|e:\\k\u00EC 2 n\u0103m 3\\atbm\\attt\\sources\\attt\\ph2\\gui\\truongkhoa\\truongkhoa_danhsachdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\truongkhoa\\truongkhoa_danhsachdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\ph2\\bll\\xemphancongbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\bll\\xemphancongbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|e:\\k\u00EC 2 n\u0103m 3\\atbm\\attt\\sources\\attt\\ph2\\dto\\dangkytkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\dto\\dangkytkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\ph2\\bll\\xemdangkybll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\bll\\xemdangkybll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\ph2\\dal\\xemphancongdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\dal\\xemphancongdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\ph2\\dal\\dangkydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\dal\\dangkydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\ph2\\gui\\giangvien\\gv_xemdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\giangvien\\gv_xemdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\ph2\\gui\\giangvien\\gv_xemdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\giangvien\\gv_xemdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\ph2\\dto\\phancongdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\dto\\phancongdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\ph2\\dto\\dangkydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\ph2\\dto\\dangkydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\dto\\dangkydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\ph2\\gui\\giangvien\\xemphancong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\ph2\\dal\\dangkydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\dal\\dangkydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|e:\\k\u00EC 2 n\u0103m 3\\atbm\\attt\\sources\\attt\\ph2\\gui\\truongdv\\truongdv_xempc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\truongdv\\truongdv_xempc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\ph2\\bll\\xemphancongbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\bll\\xemphancongbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\ph2\\bll\\xemdangkybll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\bll\\xemdangkybll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\ph2\\dal\\xemphancongdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\dal\\xemphancongdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\ph2\\gui\\giangvien\\gv_xemdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\giangvien\\gv_xemdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\ph2\\gui\\giangvien\\gv_xemdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\giangvien\\gv_xemdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\ph2\\dto\\phancongdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\dto\\phancongdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\ph2\\gui\\giangvien\\xemphancong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\giangvien\\xemphancong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\ph2\\gui\\giangvien\\xemphancong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\ph2\\gui\\giangvien\\xemphancong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\giangvien\\xemphancong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\ph2\\gui\\truongdv\\truongdv_xempc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\ph2\\gui\\truongdv\\truongdv_xempc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\truongdv\\truongdv_xempc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -58,11 +66,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 59,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Bookmark",
@@ -73,75 +85,51 @@
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TRUONGKHOA_DanhSachDangKy.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\GUI\\TRUONGKHOA\\TRUONGKHOA_DanhSachDangKy.cs",
+              "RelativeDocumentMoniker": "PH2\\GUI\\TRUONGKHOA\\TRUONGKHOA_DanhSachDangKy.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\GUI\\TRUONGKHOA\\TRUONGKHOA_DanhSachDangKy.cs",
+              "RelativeToolTip": "PH2\\GUI\\TRUONGKHOA\\TRUONGKHOA_DanhSachDangKy.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFkAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T16:46:56.892Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "XemPhanCongBLL.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\BLL\\XemPhanCongBLL.cs",
-              "RelativeDocumentMoniker": "PH2\\BLL\\XemPhanCongBLL.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\BLL\\XemPhanCongBLL.cs",
-              "RelativeToolTip": "PH2\\BLL\\XemPhanCongBLL.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAqwB8AAAAJAAAA",
+              "Title": "DangKyTKDTO.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\DTO\\DangKyTKDTO.cs",
+              "RelativeDocumentMoniker": "PH2\\DTO\\DangKyTKDTO.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\DTO\\DangKyTKDTO.cs",
+              "RelativeToolTip": "PH2\\DTO\\DangKyTKDTO.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAmwD0AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T12:14:23.71Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GV_XemDangKy.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs",
-              "RelativeDocumentMoniker": "PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs",
-              "RelativeToolTip": "PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwBQAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T10:47:23.892Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GV_XemDangKy.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs",
-              "RelativeDocumentMoniker": "PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\AI\\ATTT\\Sources\\ATTT\\PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\AI\\ATTT\\Sources\\ATTT\\PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T10:47:21.968Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DangKyDAL.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\DAL\\DangKyDAL.cs",
-              "RelativeDocumentMoniker": "PH2\\DAL\\DangKyDAL.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\DAL\\DangKyDAL.cs",
-              "RelativeToolTip": "PH2\\DAL\\DangKyDAL.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAawBkAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T10:38:36.99Z"
+              "WhenOpened": "2024-04-19T16:46:31.832Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "XemPhanCongDAL.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\DAL\\XemPhanCongDAL.cs",
-              "RelativeDocumentMoniker": "PH2\\DAL\\XemPhanCongDAL.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\DAL\\XemPhanCongDAL.cs",
-              "RelativeToolTip": "PH2\\DAL\\XemPhanCongDAL.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAmAAAA",
+              "Title": "DangKyDAL.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\DAL\\DangKyDAL.cs",
+              "RelativeDocumentMoniker": "PH2\\DAL\\DangKyDAL.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\DAL\\DangKyDAL.cs",
+              "RelativeToolTip": "PH2\\DAL\\DangKyDAL.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAmwCsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T10:34:28.319Z"
+              "WhenOpened": "2024-04-19T10:38:36.99Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "XemPhanCong.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\GUI\\GIANGVIEN\\XemPhanCong.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\GUI\\GIANGVIEN\\XemPhanCong.cs",
               "RelativeDocumentMoniker": "PH2\\GUI\\GIANGVIEN\\XemPhanCong.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\GUI\\GIANGVIEN\\XemPhanCong.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\GUI\\GIANGVIEN\\XemPhanCong.cs",
               "RelativeToolTip": "PH2\\GUI\\GIANGVIEN\\XemPhanCong.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -149,22 +137,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "XemPhanCong.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\GUI\\GIANGVIEN\\XemPhanCong.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\GUI\\GIANGVIEN\\XemPhanCong.cs",
               "RelativeDocumentMoniker": "PH2\\GUI\\GIANGVIEN\\XemPhanCong.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\AI\\ATTT\\Sources\\ATTT\\PH2\\GUI\\GIANGVIEN\\XemPhanCong.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\AI\\ATTT\\Sources\\ATTT\\PH2\\GUI\\GIANGVIEN\\XemPhanCong.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T10:20:52.89Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "PhanCongDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\DTO\\PhanCongDTO.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\DTO\\PhanCongDTO.cs",
               "RelativeDocumentMoniker": "PH2\\DTO\\PhanCongDTO.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\DTO\\PhanCongDTO.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\DTO\\PhanCongDTO.cs",
               "RelativeToolTip": "PH2\\DTO\\PhanCongDTO.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAAwBIAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -172,35 +159,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "XemDangKyBLL.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\BLL\\XemDangKyBLL.cs",
-              "RelativeDocumentMoniker": "PH2\\BLL\\XemDangKyBLL.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\BLL\\XemDangKyBLL.cs",
-              "RelativeToolTip": "PH2\\BLL\\XemDangKyBLL.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAkwBUAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T10:01:21.51Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DangKyDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\DTO\\DangKyDTO.cs",
-              "RelativeDocumentMoniker": "PH2\\DTO\\DangKyDTO.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\DTO\\DangKyDTO.cs",
-              "RelativeToolTip": "PH2\\DTO\\DangKyDTO.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T10:00:42.373Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "TruongDV_XemPC.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\GUI\\TRUONGDV\\TruongDV_XemPC.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\GUI\\TRUONGDV\\TruongDV_XemPC.cs",
               "RelativeDocumentMoniker": "PH2\\GUI\\TRUONGDV\\TruongDV_XemPC.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\GUI\\TRUONGDV\\TruongDV_XemPC.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\GUI\\TRUONGDV\\TruongDV_XemPC.cs",
               "RelativeToolTip": "PH2\\GUI\\TRUONGDV\\TruongDV_XemPC.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -209,12 +172,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
+              "Title": "DangKyDTO.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\DTO\\DangKyDTO.cs",
+              "RelativeDocumentMoniker": "PH2\\DTO\\DangKyDTO.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\DTO\\DangKyDTO.cs",
+              "RelativeToolTip": "PH2\\DTO\\DangKyDTO.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T10:00:42.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "XemPhanCongDAL.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\DAL\\XemPhanCongDAL.cs",
+              "RelativeDocumentMoniker": "PH2\\DAL\\XemPhanCongDAL.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\DAL\\XemPhanCongDAL.cs",
+              "RelativeToolTip": "PH2\\DAL\\XemPhanCongDAL.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T10:34:28.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GV_XemDangKy.cs [Design]",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs",
+              "RelativeDocumentMoniker": "PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs [Design]",
+              "RelativeToolTip": "PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T10:47:21.968Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GV_XemDangKy.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs",
+              "RelativeDocumentMoniker": "PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs",
+              "RelativeToolTip": "PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwBQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T10:47:23.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "XemPhanCongBLL.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\BLL\\XemPhanCongBLL.cs",
+              "RelativeDocumentMoniker": "PH2\\BLL\\XemPhanCongBLL.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\BLL\\XemPhanCongBLL.cs",
+              "RelativeToolTip": "PH2\\BLL\\XemPhanCongBLL.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAqwB8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T12:14:23.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "XemDangKyBLL.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\BLL\\XemDangKyBLL.cs",
+              "RelativeDocumentMoniker": "PH2\\BLL\\XemDangKyBLL.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\BLL\\XemDangKyBLL.cs",
+              "RelativeToolTip": "PH2\\BLL\\XemDangKyBLL.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAkwBUAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T10:01:21.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "TruongDV_XemPC.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\GUI\\TRUONGDV\\TruongDV_XemPC.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\GUI\\TRUONGDV\\TruongDV_XemPC.cs",
               "RelativeDocumentMoniker": "PH2\\GUI\\TRUONGDV\\TruongDV_XemPC.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\AI\\ATTT\\Sources\\ATTT\\PH2\\GUI\\TRUONGDV\\TruongDV_XemPC.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\AI\\ATTT\\Sources\\ATTT\\PH2\\GUI\\TRUONGDV\\TruongDV_XemPC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T07:25:18.17Z"
             }

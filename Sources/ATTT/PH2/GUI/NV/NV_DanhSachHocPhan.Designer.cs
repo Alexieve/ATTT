@@ -65,7 +65,7 @@
             // 
             panel1.BackColor = SystemColors.Info;
             panel1.Controls.Add(label6);
-            panel1.Location = new Point(12, -1);
+            panel1.Location = new Point(12, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(1291, 99);
             panel1.TabIndex = 8;
@@ -105,9 +105,9 @@
             gboxTimkiem.Controls.Add(tbTenHP);
             gboxTimkiem.Controls.Add(tbMaHP);
             gboxTimkiem.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            gboxTimkiem.Location = new Point(12, 98);
+            gboxTimkiem.Location = new Point(12, 105);
             gboxTimkiem.Name = "gboxTimkiem";
-            gboxTimkiem.Size = new Size(1291, 173);
+            gboxTimkiem.Size = new Size(1291, 166);
             gboxTimkiem.TabIndex = 7;
             gboxTimkiem.TabStop = false;
             gboxTimkiem.Text = "Tìm kiếm";
@@ -233,10 +233,10 @@
             dtgviewHocPhan.Location = new Point(12, 277);
             dtgviewHocPhan.Name = "dtgviewHocPhan";
             dtgviewHocPhan.RowHeadersWidth = 51;
-            dtgviewHocPhan.Size = new Size(1291, 369);
+            dtgviewHocPhan.Size = new Size(1291, 363);
             dtgviewHocPhan.TabIndex = 6;
             // 
-            // NV_DanhSachHocPhan
+            // TRUONGKHOA_DanhSachDangKy
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -245,7 +245,7 @@
             Controls.Add(gboxTimkiem);
             Controls.Add(dtgviewHocPhan);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "NV_DanhSachHocPhan";
+            Name = "TRUONGKHOA_DanhSachDangKy";
             Text = "NV_DanhSachHocPhan";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

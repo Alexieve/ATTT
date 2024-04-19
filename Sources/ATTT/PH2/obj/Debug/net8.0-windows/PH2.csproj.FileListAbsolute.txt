@@ -179,3 +179,7 @@ C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\
 C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.pdb
 C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.genruntimeconfig.cache
 C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\ref\PH2.dll
+E:\Kì 2 năm 3\ATBM\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIANGVIEN.GV_XemDangKy.resources
+E:\Kì 2 năm 3\ATBM\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIANGVIEN.XemPhanCong.resources
+E:\Kì 2 năm 3\ATBM\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.TRUONGDV.TruongDV_XemPC.resources
+E:\Kì 2 năm 3\ATBM\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.TRUONGKHOA.TRUONGKHOA_DanhSachDangKy.resources

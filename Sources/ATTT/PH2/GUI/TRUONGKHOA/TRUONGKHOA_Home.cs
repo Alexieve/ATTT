@@ -21,22 +21,25 @@ namespace PH2.GUI
         private void DSSinhVienBtn_Click(object? sender, EventArgs e)
         {
             ActiveButton(sender);
+            openChildForm(new NV_DanhSachSinhVien());
         }
 
         private void DSDonViBtn_Click(object? sender, EventArgs e)
         {
             ActiveButton(sender);
+            openChildForm(new NV_DanhSachDonVi());
         }
 
         private void DSHocPhanBtn_Click(object? sender, EventArgs e)
         {
             ActiveButton(sender);
-
+            openChildForm(new NV_DanhSachHocPhan());
         }
 
         private void KHMOBtn_Click(object? sender, EventArgs e)
         {
             ActiveButton(sender);
+            openChildForm(new NV_DanhSachKHMO());
         }
         private void PhanCongBtn_Click(object sender, EventArgs e)
         {
@@ -52,6 +55,7 @@ namespace PH2.GUI
         private void DangKyBtn_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
+            openChildForm(new TRUONGKHOA_DanhSachDangKy());
         }
 
         private void logoutBtn_Click(object sender, EventArgs e)
