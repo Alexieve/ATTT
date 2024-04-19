@@ -4,6 +4,12 @@
     <Compile Update="GUI\GIANGVIEN\GIANGVIEN_Home.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GUI\GIANGVIEN\GV_XemDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\GIANGVIEN\XemPhanCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GUI\GIAOVU\GIAOVU_Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -50,6 +56,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\TRUONGDV\TRUONGDV_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\TRUONGDV\TruongDV_XemPC.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\TRUONGKHOA\POP_UP_CONTROLS\TRUONGKHOA_ThemPhanCong.cs">

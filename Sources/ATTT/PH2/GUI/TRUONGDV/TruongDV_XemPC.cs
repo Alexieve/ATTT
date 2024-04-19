@@ -15,7 +15,7 @@ namespace PH2.GUI.TRUONGDV
 {
     public partial class TruongDV_XemPC : Form
     {
-        private TruongDV_XemPCBLL XemPCBLL;
+        private XemPhanCongBLL XemPCBLL;
         public TruongDV_XemPC()
         {
             InitializeComponent();
@@ -27,9 +27,9 @@ namespace PH2.GUI.TRUONGDV
             ComboMACT.Items.Add("CQ");
             ComboMACT.Items.Add("CTTT");
             ComboNam.Items.Add(DateTime.Now.Year);
-            XemPCBLL = new TruongDV_XemPCBLL();
-            List<NSComboBoxDTO> listGV = XemPCBLL.GetMAGV();
-            List<HPComboBox> listHP = XemPCBLL.GetMAHP();
+            XemPCBLL = new XemPhanCongBLL();
+            List<string> listGV = XemPCBLL.GetMAGV();
+            List<string> listHP = XemPCBLL.GetMAHP();
             ComboMAGV.DataSource = listGV;
             ComboMAGV.DisplayMember = "MANV";
             ComboMAHP.DataSource = listHP;
@@ -40,7 +40,7 @@ namespace PH2.GUI.TRUONGDV
         {
 
             dataGridView1.Columns.Clear();
-            List<TruongDV_XemPCDTO> danhSachPC = XemPCBLL.GetPC();
+            List<PhanCongDTO> danhSachPC = XemPCBLL.GetPC();
 
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = danhSachPC;
@@ -77,7 +77,15 @@ namespace PH2.GUI.TRUONGDV
             tmp = dataGridView1.Rows[rowIndex].Cells[5].Value.ToString();
             int NAM = Int32.Parse(tmp);
             string MACT = dataGridView1.Rows[rowIndex].Cells[6].Value.ToString();
-            XemPCBLL.DeleteRow(MAGV, MAHP, HK, NAM, MACT);
+            try
+            {
+                XemPCBLL.DeleteRow(MAGV, MAHP, HK, NAM, MACT);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi xóa khóa ngoại!");
+                return;
+            }
             Load();
             MessageBox.Show("Xóa phân công thành công!");
         }
@@ -94,8 +102,8 @@ namespace PH2.GUI.TRUONGDV
                 MessageBox.Show("Vui lòng chọn đầy đủ thông tin!");
                 return;
             }
-            string MAGV = ((NSComboBoxDTO)ComboMAGV.SelectedItem).MANV.ToString();
-            string MAHP = ((HPComboBox)ComboMAHP.SelectedItem).MAHP.ToString();
+            string MAGV = ComboMAGV.SelectedItem.ToString();
+            string MAHP = ComboMAHP.SelectedItem.ToString();
             string tmp = ComboHK.SelectedItem.ToString();
             int HK = Int32.Parse(tmp);
             tmp = ComboNam.SelectedItem.ToString();

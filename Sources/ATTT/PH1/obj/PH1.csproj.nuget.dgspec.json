@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Kì 2 năm 3\\ATBM\\ATTT\\Sources\\ATTT\\PH1\\PH1.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\AI\\ATTT\\Sources\\ATTT\\PH1\\PH1.csproj": {}
   },
   "projects": {
-    "E:\\Kì 2 năm 3\\ATBM\\ATTT\\Sources\\ATTT\\PH1\\PH1.csproj": {
+    "C:\\Users\\Admin\\Desktop\\AI\\ATTT\\Sources\\ATTT\\PH1\\PH1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Kì 2 năm 3\\ATBM\\ATTT\\Sources\\ATTT\\PH1\\PH1.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\AI\\ATTT\\Sources\\ATTT\\PH1\\PH1.csproj",
         "projectName": "PH1",
-        "projectPath": "E:\\Kì 2 năm 3\\ATBM\\ATTT\\Sources\\ATTT\\PH1\\PH1.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\AI\\ATTT\\Sources\\ATTT\\PH1\\PH1.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "E:\\Kì 2 năm 3\\ATBM\\ATTT\\Sources\\ATTT\\PH1\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\AI\\ATTT\\Sources\\ATTT\\PH1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

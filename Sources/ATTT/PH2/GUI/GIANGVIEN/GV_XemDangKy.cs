@@ -8,17 +8,17 @@ namespace PH2.GUI.GIANGVIEN
     public partial class GV_XemDangKy : Form
     {
         string prevValue;
-        private GV_XemDangKyBLL XemDangKyBLL;
+        private XemDangKyBLL XemDangKyBLL;
         public GV_XemDangKy()
         {
             InitializeComponent();
-            XemDangKyBLL = new GV_XemDangKyBLL();
+            XemDangKyBLL = new XemDangKyBLL();
             Load();
         }
         private void Load()
         {
             dataGridView1.Columns.Clear();
-            List<GV_XemDangKyDTO> danhSachDK = XemDangKyBLL.GetDangKyGV();
+            List<DangKyDTO> danhSachDK = XemDangKyBLL.GetDangKyGV();
             //foreach (var array in danhSachDK)
             //{
             //    dataGridView1.Rows.Add(array.MASV, array.MAGV, array.HOTEN, array.MAHP, array.TENHP, array.HK, array.NAM, array.MACT, array.DIEMTH, array.DIEMQT, array.DIEMCK, array.DIEMTK);

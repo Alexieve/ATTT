@@ -26,11 +26,12 @@ namespace PH2.GUI.GIANGVIEN
         private void Load()
         {
             //DanhSachPC.Columns.Clear();
-            List<XemPhanCongDTO> danhSachPC = XemPhanCongBLL.getPhanCong();
+            List<PhanCongDTO> danhSachPC = XemPhanCongBLL.getPhanCong();
             foreach (var array in danhSachPC)
             {
                 DanhSachPC.Rows.Add(array.TENHP, array.NAM, array.MACT, array.HK);
             }
         }
+
     }
 }
