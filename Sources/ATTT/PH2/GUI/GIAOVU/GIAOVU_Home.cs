@@ -1,4 +1,5 @@
-﻿using PH2.DAL;
+using PH2.DAL;
+using PH2.GUI;
 
 namespace PH2.GUI
 {
@@ -6,6 +7,7 @@ namespace PH2.GUI
     {
         private Button currentButton;
         private Form activeForm = null;
+        
         public GIAOVU_Home(string username)
         {
             InitializeComponent();
@@ -14,34 +16,40 @@ namespace PH2.GUI
 
         private void nameLabel_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new GIAOVU_NV_ThongTinCaNhan());
         }
         private void DSSinhVienBtn_Click(object? sender, EventArgs e)
         {
+            openChildForm(new GIAOVU_SV());
             ActiveButton(sender);
         }
 
         private void DSDonViBtn_Click(object? sender, EventArgs e)
         {
+            openChildForm(new GIAOVU_DV());
             ActiveButton(sender);
         }
 
         private void DSHocPhanBtn_Click(object? sender, EventArgs e)
         {
+            openChildForm(new GIAOVU_HP());
             ActiveButton(sender);
         }
 
         private void KHMOBtn_Click(object? sender, EventArgs e)
         {
+            openChildForm(new GIAOVU_KHMO());
             ActiveButton(sender);
         }
         private void PhanCongBtn_Click(object sender, EventArgs e)
         {
+            openChildForm(new GIAOVU_PC());
             ActiveButton(sender);
         }
 
         private void DangKyBtn_Click(object sender, EventArgs e)
         {
+            openChildForm(new GIAOVU_DK());
             ActiveButton(sender);
         }
 
