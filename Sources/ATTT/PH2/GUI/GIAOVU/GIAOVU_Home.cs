@@ -16,7 +16,7 @@ namespace PH2.GUI
 
         private void nameLabel_Click(object sender, EventArgs e)
         {
-            openChildForm(new NV_ThongTinCaNhan());
+            openChildForm(new GIAOVU_NV_ThongTinCaNhan());
         }
         private void DSSinhVienBtn_Click(object? sender, EventArgs e)
         {
