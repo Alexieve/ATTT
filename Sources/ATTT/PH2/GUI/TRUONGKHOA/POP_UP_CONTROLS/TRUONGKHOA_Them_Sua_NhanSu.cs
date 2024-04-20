@@ -84,6 +84,8 @@ namespace PH2.GUI.TRUONGKHOA.POP_UP_CONTROLS
                 MessageBox.Show("Cơ sở không hợp lệ");
             if (status.Contains("unique"))
                 MessageBox.Show("Nhân viên đã tồn tại");
+            if (status.Contains("role"))
+                MessageBox.Show("Mã nhân viên không hợp lệ");
         }
     }
 }
