@@ -1,6 +1,6 @@
 ﻿using PH2.DAL;
 using PH2.GUI.GIANGVIEN;
-
+using PH2.GUI.NV;
 namespace PH2.GUI
 {
     public partial class GIANGVIEN_Home : Form
@@ -15,25 +15,29 @@ namespace PH2.GUI
 
         private void nameLabel_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new NV_ThongTinCaNhan());
         }
         private void DSSinhVienBtn_Click(object? sender, EventArgs e)
         {
+            openChildForm(new NV_DanhSachSinhVien());
             ActiveButton(sender);
         }
 
         private void DSDonViBtn_Click(object? sender, EventArgs e)
         {
+            openChildForm(new NV_DanhSachDonVi());
             ActiveButton(sender);
         }
 
         private void DSHocPhanBtn_Click(object? sender, EventArgs e)
         {
+            openChildForm(new NV_DanhSachHocPhan());
             ActiveButton(sender);
         }
 
         private void KHMOBtn_Click(object? sender, EventArgs e)
         {
+            openChildForm(new NV_DanhSachKHMO());
             ActiveButton(sender);
         }
         private void PhanCongBtn_Click(object sender, EventArgs e)

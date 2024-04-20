@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sNOmBB/bpjpGyYM4cxgjzfHsiy21NkhGIaZJ3bSAAVkQv6x8XQ425Av986Ekq7aYsbk2rUwQ5qJqtykNXzs+xg==",
+  "dgSpecHash": "1E5EtE9tQBcYWk+c3o/KsJx9C1KVVYBCYbfnppIUsMxNyWPajOujBa+y6bWqpXOlDsDClm1N6D56NyYHN5YQEw==",
   "success": true,
-  "projectFilePath": "E:\\Kì 2 năm 3\\ATBM\\ATTT\\Sources\\ATTT\\PH2\\PH2.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\PH2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\oracle.manageddataaccess.core\\3.21.130\\oracle.manageddataaccess.core.3.21.130.nupkg.sha512",

@@ -183,3 +183,20 @@ E:\Kì 2 năm 3\ATBM\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAN
 E:\Kì 2 năm 3\ATBM\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIANGVIEN.XemPhanCong.resources
 E:\Kì 2 năm 3\ATBM\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.TRUONGDV.TruongDV_XemPC.resources
 E:\Kì 2 năm 3\ATBM\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.TRUONGKHOA.TRUONGKHOA_DanhSachDangKy.resources
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAOVU_DK.resources
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAOVU_DK_SV.resources
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAOVU_DV.resources
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAOVU_DV_CapNhat.resources
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAOVU_DV_Them.resources
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAOVU_HP.resources
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAOVU_HP_CapNhat.resources
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAOVU_HP_Them.resources
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAOVU_KHMO.resources
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAOVU_KHMO_CapNhat.resources
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAOVU_KHMO_Them.resources
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAOVU_PC.resources
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAOVU_PC_CapNhat.resources
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAOVU_SV.resources
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAOVU_SV_CapNhat.resources
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAOVU_SV_Them.resources
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.TRUONGKHOA.TRUONGKHOA_DanhSachDangKy.resources
