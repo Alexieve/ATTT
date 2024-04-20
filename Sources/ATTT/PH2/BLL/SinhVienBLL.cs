@@ -50,5 +50,76 @@ namespace PH2.BLL
             List<SinhVienDTO> list = Utility.ToList<SinhVienDTO>(dt);
             return list;
         }
+                
+        public SinhVienDTO getProfile2(string masv)
+        {
+            DataTable dt = svDAL.getProfile2(masv);
+            DataRow dr = dt.Rows[0];
+            SinhVienDTO svDTO = new SinhVienDTO(
+                dr["MASV"].ToString(),
+                dr["HOTEN"].ToString(),
+                dr["PHAI"].ToString(),
+                DateTime.Parse(dr["NGSINH"].ToString()).ToString("dd/MM/yyyy"), dr["DCHI"].ToString(),
+                dr["SDT"].ToString(),
+                dr["MACT"].ToString(),
+                dr["MANGANH"].ToString(),
+                int.Parse(dr["SOTCTL"].ToString()),
+                float.Parse(dr["DTBTL"].ToString()));
+            return svDTO;
+        }
+                
+        public int AddSinhVien(SinhVienDTO a)
+        {
+            if (a.SDT.Length != 10 || a.SDT[0] != '0')
+            {
+                MessageBox.Show("Số điện thoại không hợp lệ", "Thông báo");
+                return 2;
+            }
+            if (a.SOTCTL == -1 || a.DTBTL == -1)
+            {
+                MessageBox.Show("Giá trị điểm hoặc tín chỉ không hợp lệ", "Thông báo");
+                return 3;
+            }
+
+            return svDAL.AddSinhVien(a);
+        }
+        public int UpdateSinhVien(SinhVienDTO a)
+        {
+            if (a.SDT.Length != 10 || a.SDT[0] != '0')
+            {
+                MessageBox.Show("Số điện thoại không hợp lệ", "Thông báo");
+                return 2;
+            }
+            if (a.SOTCTL == -1 || a.DTBTL == -1)
+            {
+                MessageBox.Show("Giá trị điểm hoặc tín chỉ không hợp lệ", "Thông báo");
+                return 3;
+            }
+
+            return svDAL.UpdateSinhVien(a);
+        }
+                
+        public List<SinhVienDTO> search(string keyword)
+        {
+            DataTable dt = svDAL.search(keyword.ToUpper());
+            List<SinhVienDTO> listSV = new List<SinhVienDTO>();
+            foreach (DataRow dr in dt.Rows)
+            {
+                SinhVienDTO svDTO = new SinhVienDTO(
+                dr["MASV"].ToString(),
+                dr["HOTEN"].ToString(),
+                dr["PHAI"].ToString(),
+                DateTime.Parse(dr["NGSINH"].ToString()).ToString("dd/MM/yyyy"), dr["DCHI"].ToString(),
+                dr["SDT"].ToString(),
+                dr["MACT"].ToString(),
+                dr["MANGANH"].ToString(),
+                int.Parse(dr["SOTCTL"].ToString()),
+                float.Parse(dr["DTBTL"].ToString()));
+
+                //SinhVienDTO sv = Utility.ToObject<SinhVienDTO>(dr);
+                listSV.Add(svDTO);
+            }
+            return listSV;
+        }
     }
 }
