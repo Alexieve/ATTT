@@ -1,0 +1,103 @@
+CREATE OR REPLACE PROCEDURE USP_SINHVIEN_GETALL(P_RES OUT SYS_REFCURSOR)
+AS
+BEGIN
+    OPEN P_RES FOR
+        SELECT *
+        FROM SINHVIEN;
+END;
+/
+GRANT EXECUTE ON USP_SINHVIEN_GETALL TO PUBLIC;
+/
+CREATE OR REPLACE PROCEDURE USP_SINHVIEN_SEARCH(P_KEYWORD IN VARCHAR2, P_RES OUT SYS_REFCURSOR)
+AS
+    V_KEYWORD VARCHAR2(100);
+BEGIN
+    V_KEYWORD := P_KEYWORD || '%';
+    OPEN P_RES FOR
+        SELECT *
+        FROM SINHVIEN
+        WHERE MASV LIKE V_KEYWORD;
+END;
+/
+GRANT EXECUTE ON USP_SINHVIEN_SEARCH TO PUBLIC;
+/
+
+CREATE OR REPLACE PROCEDURE USP_SINHVIEN_ADD (
+  P_MaSinhVien IN VARCHAR2,
+  P_HoTen IN VARCHAR2,
+  P_Phai IN VARCHAR2,
+  P_NgaySinh IN VARCHAR2,
+  P_DiaChi IN VARCHAR2,
+  P_SDT IN VARCHAR2,
+  P_MaChuongTrinh IN VARCHAR2,
+  P_MaNganh IN VARCHAR2,
+  P_TCTichLuy IN INT,
+  P_DiemTB IN FLOAT,
+  P_ErrCode OUT NUMBER
+)
+AS
+BEGIN
+  -- Insert with error handling
+  INSERT INTO SINHVIEN
+  VALUES (P_MaSinhVien, P_HoTen, P_Phai, TO_DATE(P_NgaySinh, 'DD-MM-YYYY'), P_DiaChi, P_SDT, P_MaChuongTrinh, P_MaNganh, P_TCTichLuy, P_DiemTB);
+  
+  -- Handle potential errors during insert
+   P_ErrCode := 0;
+  EXCEPTION
+    WHEN OTHERS THEN
+      P_ErrCode := 1; -- Set error code to 1
+      RETURN; -- Terminate procedure
+END;
+/
+GRANT EXECUTE ON USP_SINHVIEN_ADD TO RL_GIAOVU;
+/
+CREATE OR REPLACE PROCEDURE USP_SINHVIEN_GET_PROFILE_MASV (P_MaSinhVien IN VARCHAR2,P_RES OUT SYS_REFCURSOR)
+AS
+BEGIN
+    OPEN P_RES FOR
+        SELECT *
+        FROM SINHVIEN
+        WHERE MASV = P_MaSinhVien;
+END;
+/
+GRANT EXECUTE ON USP_SINHVIEN_GET_PROFILE_MASV TO RL_GIAOVU;
+/
+CREATE OR REPLACE PROCEDURE USP_SINHVIEN_UPDATE (
+  P_MaSinhVien IN VARCHAR2,
+  P_HoTen IN VARCHAR2,
+  P_Phai IN VARCHAR2,
+  P_NgaySinh IN VARCHAR2,
+  P_DiaChi IN VARCHAR2,
+  P_SDT IN VARCHAR2,
+  P_MaChuongTrinh IN VARCHAR2,
+  P_MaNganh IN VARCHAR2,
+  P_TCTichLuy IN INT,
+  P_DiemTB IN FLOAT,
+  P_ErrCode OUT NUMBER
+)
+AS
+BEGIN
+  -- Insert with error handling
+UPDATE SINHVIEN
+SET 
+    HOTEN = P_HoTen,
+    PHAI = P_Phai,
+    NGSINH = TO_DATE(P_NgaySinh, 'DD-MM-YYYY'),
+    DCHI = P_DiaChi,
+    SDT = P_SDT,
+    MACT = P_MaChuongTrinh,
+    MANGANH = P_MaNganh,
+    SOTCTL = P_TCTichLuy,
+    DTBTL = P_DiemTB
+WHERE
+    MASV = P_MaSinhVien;
+  
+  -- Handle potential errors during insert
+   P_ErrCode := 0;
+  EXCEPTION
+    WHEN OTHERS THEN
+      P_ErrCode := 1; -- Set error code to 1
+      RETURN; -- Terminate procedure
+END;
+/
+GRANT EXECUTE ON USP_SINHVIEN_UPDATE TO RL_GIAOVU;
