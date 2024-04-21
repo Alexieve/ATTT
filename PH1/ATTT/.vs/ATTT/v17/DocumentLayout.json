@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\PH1\\ATTT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|e:\\k\u00EC 2 n\u0103m 3\\atbm\\attt\\ph1\\attt\\attt\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|e:\\k\u00EC 2 n\u0103m 3\\atbm\\attt\\ph1\\attt\\attt\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|e:\\k\u00EC 2 n\u0103m 3\\atbm\\attt\\ph1\\attt\\attt\\form\\checkprivform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\form\\checkprivform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|e:\\k\u00EC 2 n\u0103m 3\\atbm\\attt\\ph1\\attt\\attt\\form\\checkprivform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\form\\checkprivform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|e:\\k\u00EC 2 n\u0103m 3\\atbm\\attt\\ph1\\attt\\attt\\form\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\form\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|e:\\k\u00EC 2 n\u0103m 3\\atbm\\attt\\ph1\\attt\\attt\\form\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\form\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|e:\\k\u00EC 2 n\u0103m 3\\atbm\\attt\\ph1\\attt\\attt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|ATTT\\ATTT.csproj|solutionrelative:attt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 59,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.config",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\App.config",
+              "RelativeDocumentMoniker": "ATTT\\App.config",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\App.config",
+              "RelativeToolTip": "ATTT\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-13T17:53:51.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\Form\\LoginForm.cs",
+              "RelativeDocumentMoniker": "ATTT\\Form\\LoginForm.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\Form\\LoginForm.cs",
+              "RelativeToolTip": "ATTT\\Form\\LoginForm.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwBYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T16:55:14.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\Form\\LoginForm.cs",
+              "RelativeDocumentMoniker": "ATTT\\Form\\LoginForm.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\Form\\LoginForm.cs [Design]",
+              "RelativeToolTip": "ATTT\\Form\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T16:55:12.315Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "checkPrivForm.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\Form\\checkPrivForm.cs",
+              "RelativeDocumentMoniker": "ATTT\\Form\\checkPrivForm.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\Form\\checkPrivForm.cs",
+              "RelativeToolTip": "ATTT\\Form\\checkPrivForm.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T16:53:51.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "checkPrivForm.cs [Design]",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\Form\\checkPrivForm.cs",
+              "RelativeDocumentMoniker": "ATTT\\Form\\checkPrivForm.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\Form\\checkPrivForm.cs [Design]",
+              "RelativeToolTip": "ATTT\\Form\\checkPrivForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T16:53:48.5Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Connection.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\Connection.cs",
+              "RelativeDocumentMoniker": "ATTT\\Connection.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\Connection.cs",
+              "RelativeToolTip": "ATTT\\Connection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T16:49:16.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\Program.cs",
+              "RelativeDocumentMoniker": "ATTT\\Program.cs",
+              "ToolTip": "E:\\K\u00EC 2 n\u0103m 3\\ATBM\\ATTT\\PH1\\ATTT\\ATTT\\Program.cs",
+              "RelativeToolTip": "ATTT\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T16:49:01.758Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

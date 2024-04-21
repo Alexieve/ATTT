@@ -47,5 +47,15 @@ namespace PH2.DAL
             };
             return conn.ExecuteQuery(procName, CommandType.StoredProcedure, Parameters);
         }
+
+        public DataTable getAll_TRUONGKHOA()
+        {
+            string procName = "USP_KHMO_GETALL_TRUONGKHOA";
+            OracleParameter[] Parameters =
+            {
+                new("P_RES", OracleDbType.RefCursor, ParameterDirection.Output)
+            };
+            return conn.ExecuteQuery(procName, CommandType.StoredProcedure, Parameters);
+        }
     }
 }

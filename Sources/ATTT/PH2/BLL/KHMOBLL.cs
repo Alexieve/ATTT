@@ -41,5 +41,12 @@ namespace PH2.BLL
             }
             return listNamHK;
         }
+
+        public List<KHMODTO_TRUONGKHOA> getAll_TRUONGKHOA()
+        {
+            DataTable dt = khmoDAL.getAll_TRUONGKHOA();
+            List<KHMODTO_TRUONGKHOA> listKHMO = dt.ToList<KHMODTO_TRUONGKHOA>();
+            return listKHMO;
+        }
     }
 }

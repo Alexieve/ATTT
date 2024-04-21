@@ -11,7 +11,7 @@ namespace PH2.DTO
         private int _HK;
         private int _NAM;
         private string _MADV;
-        private string _TENHP;
+        private string _TENHP;  
         private string _MAHP;
         private int _SOTC;
 

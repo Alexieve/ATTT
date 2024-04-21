@@ -4,13 +4,85 @@
     <Compile Update="GUI\GIANGVIEN\GIANGVIEN_Home.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GUI\GIANGVIEN\GV_XemDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\GIANGVIEN\XemPhanCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\GIAOVU\GIAOVU_DK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\GIAOVU\GIAOVU_DK_SV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\GIAOVU\GIAOVU_DV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\GIAOVU\GIAOVU_DV_CapNhat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\GIAOVU\GIAOVU_DV_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GUI\GIAOVU\GIAOVU_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\GIAOVU\GIAOVU_HP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\GIAOVU\GIAOVU_HP_CapNhat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\GIAOVU\GIAOVU_HP_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\GIAOVU\GIAOVU_KHMO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\GIAOVU\GIAOVU_KHMO_CapNhat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\GIAOVU\GIAOVU_KHMO_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\GIAOVU\GIAOVU_NV_ThongTinCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\GIAOVU\GIAOVU_PC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\GIAOVU\GIAOVU_PC_CapNhat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\GIAOVU\GIAOVU_SV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\GIAOVU\GIAOVU_SV_CapNhat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\GIAOVU\GIAOVU_SV_Them.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\Login.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GUI\NV\NV_DanhSachDonVi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\NV\NV_DanhSachHocPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\NV\NV_DanhSachKHMO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\NV\NV_DanhSachSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GUI\NV\NV_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\NV\NV_ThongTinCaNhan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\SV\SV_DangKyHP.cs">
@@ -35,6 +107,24 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\TRUONGDV\TRUONGDV_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\TRUONGDV\TruongDV_XemPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\TRUONGKHOA\POP_UP_CONTROLS\TRUONGKHOA_ThemPhanCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\TRUONGKHOA\POP_UP_CONTROLS\TRUONGKHOA_Them_Sua_NhanSu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\TRUONGKHOA\TRUONGKHOA_BangPhanCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\TRUONGKHOA\TRUONGKHOA_DanhSachDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\TRUONGKHOA\TRUONGKHOA_DanhSachNhanSu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\TRUONGKHOA\TRUONGKHOA_Home.cs">

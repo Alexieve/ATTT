@@ -31,19 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TRUONGKHOA_Home));
             sidePanel = new FlowLayoutPanel();
             tableSidePanel = new TableLayoutPanel();
-            DangKyBtn = new Button();
-            PhanCongBtn = new Button();
+            NhanSuBtn = new Button();
             panel1 = new Panel();
             NotifyBtn = new Button();
             nameLabel = new Label();
             TRUONGKHOALabel = new Label();
             logoutBtn = new Button();
-            DSSinhVienBtn = new Button();
-            DSDonViBtn = new Button();
-            DSHocPhanBtn = new Button();
+            DangKyBtn = new Button();
+            PhanCongBtn = new Button();
             KHMOBtn = new Button();
+            DSHocPhanBtn = new Button();
+            DSDonViBtn = new Button();
+            DSSinhVienBtn = new Button();
             childFormPanel = new Panel();
-            NhanSuBtn = new Button();
             sidePanel.SuspendLayout();
             tableSidePanel.SuspendLayout();
             panel1.SuspendLayout();
@@ -86,35 +86,20 @@
             tableSidePanel.Size = new Size(269, 652);
             tableSidePanel.TabIndex = 0;
             // 
-            // DangKyBtn
+            // NhanSuBtn
             // 
-            DangKyBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            DangKyBtn.FlatAppearance.BorderSize = 0;
-            DangKyBtn.FlatStyle = FlatStyle.Flat;
-            DangKyBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            DangKyBtn.ForeColor = Color.White;
-            DangKyBtn.Location = new Point(3, 575);
-            DangKyBtn.Name = "DangKyBtn";
-            DangKyBtn.Size = new Size(263, 74);
-            DangKyBtn.TabIndex = 1;
-            DangKyBtn.Text = "Lớp Giảng Dạy";
-            DangKyBtn.UseVisualStyleBackColor = true;
-            DangKyBtn.Click += DangKyBtn_Click;
-            // 
-            // PhanCongBtn
-            // 
-            PhanCongBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            PhanCongBtn.FlatAppearance.BorderSize = 0;
-            PhanCongBtn.FlatStyle = FlatStyle.Flat;
-            PhanCongBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            PhanCongBtn.ForeColor = Color.White;
-            PhanCongBtn.Location = new Point(3, 497);
-            PhanCongBtn.Name = "PhanCongBtn";
-            PhanCongBtn.Size = new Size(263, 72);
-            PhanCongBtn.TabIndex = 1;
-            PhanCongBtn.Text = "Bảng Phân Công";
-            PhanCongBtn.UseVisualStyleBackColor = true;
-            PhanCongBtn.Click += PhanCongBtn_Click;
+            NhanSuBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            NhanSuBtn.FlatAppearance.BorderSize = 0;
+            NhanSuBtn.FlatStyle = FlatStyle.Flat;
+            NhanSuBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            NhanSuBtn.ForeColor = Color.White;
+            NhanSuBtn.Location = new Point(3, 185);
+            NhanSuBtn.Name = "NhanSuBtn";
+            NhanSuBtn.Size = new Size(263, 72);
+            NhanSuBtn.TabIndex = 1;
+            NhanSuBtn.Text = "Danh Sách Nhân Sự";
+            NhanSuBtn.UseVisualStyleBackColor = true;
+            NhanSuBtn.Click += NhanSuBtn_Click;
             // 
             // panel1
             // 
@@ -184,50 +169,35 @@
             logoutBtn.UseVisualStyleBackColor = false;
             logoutBtn.Click += logoutBtn_Click;
             // 
-            // DSSinhVienBtn
+            // DangKyBtn
             // 
-            DSSinhVienBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            DSSinhVienBtn.FlatAppearance.BorderSize = 0;
-            DSSinhVienBtn.FlatStyle = FlatStyle.Flat;
-            DSSinhVienBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            DSSinhVienBtn.ForeColor = Color.White;
-            DSSinhVienBtn.Location = new Point(3, 107);
-            DSSinhVienBtn.Name = "DSSinhVienBtn";
-            DSSinhVienBtn.Size = new Size(263, 72);
-            DSSinhVienBtn.TabIndex = 0;
-            DSSinhVienBtn.Text = "Danh Sách Sinh Viên";
-            DSSinhVienBtn.UseVisualStyleBackColor = true;
-            DSSinhVienBtn.Click += DSSinhVienBtn_Click;
+            DangKyBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            DangKyBtn.FlatAppearance.BorderSize = 0;
+            DangKyBtn.FlatStyle = FlatStyle.Flat;
+            DangKyBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            DangKyBtn.ForeColor = Color.White;
+            DangKyBtn.Location = new Point(3, 575);
+            DangKyBtn.Name = "DangKyBtn";
+            DangKyBtn.Size = new Size(263, 74);
+            DangKyBtn.TabIndex = 1;
+            DangKyBtn.Text = "Lớp Giảng Dạy";
+            DangKyBtn.UseVisualStyleBackColor = true;
+            DangKyBtn.Click += DangKyBtn_Click;
             // 
-            // DSDonViBtn
+            // PhanCongBtn
             // 
-            DSDonViBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            DSDonViBtn.FlatAppearance.BorderSize = 0;
-            DSDonViBtn.FlatStyle = FlatStyle.Flat;
-            DSDonViBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            DSDonViBtn.ForeColor = Color.White;
-            DSDonViBtn.Location = new Point(3, 263);
-            DSDonViBtn.Name = "DSDonViBtn";
-            DSDonViBtn.Size = new Size(263, 72);
-            DSDonViBtn.TabIndex = 0;
-            DSDonViBtn.Text = "Danh Sách Đơn Vị";
-            DSDonViBtn.UseVisualStyleBackColor = true;
-            DSDonViBtn.Click += DSDonViBtn_Click;
-            // 
-            // DSHocPhanBtn
-            // 
-            DSHocPhanBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            DSHocPhanBtn.FlatAppearance.BorderSize = 0;
-            DSHocPhanBtn.FlatStyle = FlatStyle.Flat;
-            DSHocPhanBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            DSHocPhanBtn.ForeColor = Color.White;
-            DSHocPhanBtn.Location = new Point(3, 341);
-            DSHocPhanBtn.Name = "DSHocPhanBtn";
-            DSHocPhanBtn.Size = new Size(263, 72);
-            DSHocPhanBtn.TabIndex = 0;
-            DSHocPhanBtn.Text = "Danh Sách Học Phần";
-            DSHocPhanBtn.UseVisualStyleBackColor = true;
-            DSHocPhanBtn.Click += DSHocPhanBtn_Click;
+            PhanCongBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            PhanCongBtn.FlatAppearance.BorderSize = 0;
+            PhanCongBtn.FlatStyle = FlatStyle.Flat;
+            PhanCongBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            PhanCongBtn.ForeColor = Color.White;
+            PhanCongBtn.Location = new Point(3, 497);
+            PhanCongBtn.Name = "PhanCongBtn";
+            PhanCongBtn.Size = new Size(263, 72);
+            PhanCongBtn.TabIndex = 1;
+            PhanCongBtn.Text = "Bảng Phân Công";
+            PhanCongBtn.UseVisualStyleBackColor = true;
+            PhanCongBtn.Click += PhanCongBtn_Click;
             // 
             // KHMOBtn
             // 
@@ -244,26 +214,57 @@
             KHMOBtn.UseVisualStyleBackColor = true;
             KHMOBtn.Click += KHMOBtn_Click;
             // 
+            // DSHocPhanBtn
+            // 
+            DSHocPhanBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            DSHocPhanBtn.FlatAppearance.BorderSize = 0;
+            DSHocPhanBtn.FlatStyle = FlatStyle.Flat;
+            DSHocPhanBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            DSHocPhanBtn.ForeColor = Color.White;
+            DSHocPhanBtn.Location = new Point(3, 341);
+            DSHocPhanBtn.Name = "DSHocPhanBtn";
+            DSHocPhanBtn.Size = new Size(263, 72);
+            DSHocPhanBtn.TabIndex = 0;
+            DSHocPhanBtn.Text = "Danh Sách Học Phần";
+            DSHocPhanBtn.UseVisualStyleBackColor = true;
+            DSHocPhanBtn.Click += DSHocPhanBtn_Click;
+            // 
+            // DSDonViBtn
+            // 
+            DSDonViBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            DSDonViBtn.FlatAppearance.BorderSize = 0;
+            DSDonViBtn.FlatStyle = FlatStyle.Flat;
+            DSDonViBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            DSDonViBtn.ForeColor = Color.White;
+            DSDonViBtn.Location = new Point(3, 263);
+            DSDonViBtn.Name = "DSDonViBtn";
+            DSDonViBtn.Size = new Size(263, 72);
+            DSDonViBtn.TabIndex = 0;
+            DSDonViBtn.Text = "Danh Sách Đơn Vị";
+            DSDonViBtn.UseVisualStyleBackColor = true;
+            DSDonViBtn.Click += DSDonViBtn_Click;
+            // 
+            // DSSinhVienBtn
+            // 
+            DSSinhVienBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            DSSinhVienBtn.FlatAppearance.BorderSize = 0;
+            DSSinhVienBtn.FlatStyle = FlatStyle.Flat;
+            DSSinhVienBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            DSSinhVienBtn.ForeColor = Color.White;
+            DSSinhVienBtn.Location = new Point(3, 107);
+            DSSinhVienBtn.Name = "DSSinhVienBtn";
+            DSSinhVienBtn.Size = new Size(263, 72);
+            DSSinhVienBtn.TabIndex = 0;
+            DSSinhVienBtn.Text = "Danh Sách Sinh Viên";
+            DSSinhVienBtn.UseVisualStyleBackColor = true;
+            DSSinhVienBtn.Click += DSSinhVienBtn_Click;
+            // 
             // childFormPanel
             // 
             childFormPanel.Location = new Point(269, 0);
             childFormPanel.Name = "childFormPanel";
             childFormPanel.Size = new Size(1315, 652);
             childFormPanel.TabIndex = 2;
-            // 
-            // NhanSuBtn
-            // 
-            NhanSuBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            NhanSuBtn.FlatAppearance.BorderSize = 0;
-            NhanSuBtn.FlatStyle = FlatStyle.Flat;
-            NhanSuBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            NhanSuBtn.ForeColor = Color.White;
-            NhanSuBtn.Location = new Point(3, 185);
-            NhanSuBtn.Name = "NhanSuBtn";
-            NhanSuBtn.Size = new Size(263, 72);
-            NhanSuBtn.TabIndex = 1;
-            NhanSuBtn.Text = "Danh Sách Nhân Sự";
-            NhanSuBtn.UseVisualStyleBackColor = true;
             // 
             // TRUONGKHOA_Home
             // 

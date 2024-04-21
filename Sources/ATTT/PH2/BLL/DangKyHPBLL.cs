@@ -52,5 +52,29 @@ namespace PH2.BLL
         {
             dangKyHPDAL.DangKyHP(MAGV, MAHP);
         }
+                
+        public List<DangKyHPDTO> getChuaDK(string a)
+        {
+            DataTable dt = dangKyHPDAL.getChuaDK(a);
+            List<DangKyHPDTO> listHPChuaDK = Utility.ToList<DangKyHPDTO>(dt);
+            return listHPChuaDK;
+        }
+                
+        public List<DangKyHPDTO> getDaDK2(string a)
+        {
+            DataTable dt = dangKyHPDAL.getDaDK2(a);
+            List<DangKyHPDTO> listHPDaDK = Utility.ToList<DangKyHPDTO>(dt);
+            return listHPDaDK;
+        }
+                
+        public void HuyHP(string MAGV, string MAHP, string a)
+        {
+            dangKyHPDAL.HuyHP(MAGV, MAHP, a);
+        }
+                
+        public void DangKyHP(string MAGV, string MAHP, string a)
+        {
+            dangKyHPDAL.DangKyHP(MAGV, MAHP, a);
+        }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using PH2.DAL;
+using PH2.GUI.NV;
+using PH2.GUI.TRUONGKHOA;
 
 namespace PH2.GUI
 {
@@ -14,35 +16,46 @@ namespace PH2.GUI
 
         private void nameLabel_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new NV_ThongTinCaNhan());
         }
         private void DSSinhVienBtn_Click(object? sender, EventArgs e)
         {
             ActiveButton(sender);
+            openChildForm(new NV_DanhSachSinhVien());
         }
 
         private void DSDonViBtn_Click(object? sender, EventArgs e)
         {
             ActiveButton(sender);
+            openChildForm(new NV_DanhSachDonVi());
         }
 
         private void DSHocPhanBtn_Click(object? sender, EventArgs e)
         {
             ActiveButton(sender);
+            openChildForm(new NV_DanhSachHocPhan());
         }
 
         private void KHMOBtn_Click(object? sender, EventArgs e)
         {
             ActiveButton(sender);
+            openChildForm(new NV_DanhSachKHMO());
         }
         private void PhanCongBtn_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
+            openChildForm(new TRUONGKHOA_BangPhanCong());
+        }
+        private void NhanSuBtn_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender);
+            openChildForm(new TRUONGKHOA_DanhSachNhanSu());
         }
 
         private void DangKyBtn_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
+            openChildForm(new TRUONGKHOA_DanhSachDangKy());
         }
 
         private void logoutBtn_Click(object sender, EventArgs e)
@@ -94,5 +107,6 @@ namespace PH2.GUI
                 currentButton.BackColor = Color.FromArgb(64, 64, 64);
             }
         }
+
     }
 }
