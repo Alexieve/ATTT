@@ -1,5 +1,6 @@
 ﻿using PH2.BLL;
 using PH2.DTO;
+using PH2.GUI.GIANGVIEN;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -97,6 +98,14 @@ namespace PH2.GUI.TRUONGKHOA
                 ).ToList();
             dtgviewDangKy.DataSource = null;
             dtgviewDangKy.DataSource = filteredList;
+        }
+
+        private void btnChinhSua_Click(object sender, EventArgs e)
+        {
+            GV_XemDangKy _GV_XemDangKy = new GV_XemDangKy();
+            _GV_XemDangKy.FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            _GV_XemDangKy.ShowDialog();
+            load();
         }
     }
 }

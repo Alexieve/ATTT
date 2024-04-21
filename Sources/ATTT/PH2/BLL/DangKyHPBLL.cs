@@ -23,8 +23,8 @@ namespace PH2.BLL
             int month = DateTime.Now.Month;
             if (month != 1 && month != 4 && month != 9) return false;
 
-            int day = DateTime.Now.Day;
-            if (day > 15) return false;
+            //int day = DateTime.Now.Day;
+            //if (day > 25) return false;
 
             return true;
         }

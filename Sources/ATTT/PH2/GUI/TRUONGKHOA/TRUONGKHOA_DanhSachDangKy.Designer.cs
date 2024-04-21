@@ -52,6 +52,7 @@
             tbHK = new TextBox();
             label9 = new Label();
             tbDIEMQT = new TextBox();
+            btnChinhSua = new Button();
             ((System.ComponentModel.ISupportInitialize)dtgviewDangKy).BeginInit();
             panel1.SuspendLayout();
             gboxTimkiem.SuspendLayout();
@@ -305,14 +306,28 @@
             tbDIEMQT.Size = new Size(218, 27);
             tbDIEMQT.TabIndex = 36;
             // 
+            // btnChinhSua
+            // 
+            btnChinhSua.BackColor = Color.Cyan;
+            btnChinhSua.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnChinhSua.ForeColor = Color.Black;
+            btnChinhSua.Location = new Point(1226, 73);
+            btnChinhSua.Name = "btnChinhSua";
+            btnChinhSua.Size = new Size(70, 70);
+            btnChinhSua.TabIndex = 42;
+            btnChinhSua.Text = "Chỉnh sửa";
+            btnChinhSua.UseVisualStyleBackColor = false;
+            btnChinhSua.Click += btnChinhSua_Click;
+            // 
             // TRUONGKHOA_DanhSachDangKy
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1315, 652);
+            Controls.Add(btnChinhSua);
             Controls.Add(dtgviewDangKy);
-            Controls.Add(panel1);
             Controls.Add(gboxTimkiem);
+            Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "TRUONGKHOA_DanhSachDangKy";
             Text = "TRUONGKHOA_DanhSachDangKy";
@@ -350,5 +365,6 @@
         private TextBox tbHK;
         private Label label9;
         private TextBox tbDIEMQT;
+        private Button btnChinhSua;
     }
 }

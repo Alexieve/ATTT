@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,7 +29,7 @@ namespace PH2.GUI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SinhVienDTO sv  = new SinhVienDTO();
+            GVU_SinhVienDTO sv  = new GVU_SinhVienDTO();
             sv.MASV = textBox1.Text;
             sv.HOTEN = textBox2.Text;
             sv.PHAI = textBox3.Text;
@@ -40,8 +40,9 @@ namespace PH2.GUI
             sv.MANGANH = textBox8.Text;
             //sv.SOTCTL = int.Parse(textBox9.Text); 
             //sv.DTBTL = float.Parse(textBox10.Text);
-            int sotctl;
-            float dtbtl;
+            sv.COSO = textBox11.Text;
+            int sotctl = -1;
+            float dtbtl = -1;
             if (string.IsNullOrWhiteSpace(textBox9.Text) || string.IsNullOrWhiteSpace(textBox10.Text))
             {
                 sv.SOTCTL = -1;
@@ -51,6 +52,11 @@ namespace PH2.GUI
             {
                 sv.SOTCTL = sotctl;
                 sv.DTBTL = dtbtl;
+            }
+            else
+            {
+                sv.SOTCTL = -1;
+                sv.DTBTL = -1;
             }
             int tmp = svBLL.AddSinhVien(sv);
             if (tmp == 1)
