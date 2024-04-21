@@ -1,4 +1,4 @@
-﻿using PH2.BLL;
+using PH2.BLL;
 using PH2.DTO;
 using PH2.DAL;
 using System;
@@ -32,7 +32,7 @@ namespace PH2.GUI
         }
         public void Loadd(string MyString)
         {
-            SinhVienDTO svDTO = svBLL.getProfile2(MyString);
+            GVU_SinhVienDTO svDTO = svBLL.getProfile2(MyString);
             //SinhVienDTO svDTO = svBLL.getProfile2("a");
 
             textBox1.Text = svDTO.MASV;
@@ -45,6 +45,7 @@ namespace PH2.GUI
             textBox8.Text = svDTO.MANGANH;
             textBox9.Text = svDTO.SOTCTL.ToString();
             textBox10.Text = svDTO.DTBTL.ToString();
+            textBox11.Text = svDTO.COSO;
 
         }
         private void button3_Click(object sender, EventArgs e)
@@ -56,7 +57,7 @@ namespace PH2.GUI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SinhVienDTO sv = new SinhVienDTO();
+            GVU_SinhVienDTO sv = new GVU_SinhVienDTO();
             sv.MASV = textBox1.Text;
             sv.HOTEN = textBox2.Text;
             sv.PHAI = textBox3.Text;
@@ -67,8 +68,9 @@ namespace PH2.GUI
             sv.MANGANH = textBox8.Text;
             //sv.SOTCTL = int.Parse(textBox9.Text); 
             //sv.DTBTL = float.Parse(textBox10.Text);
-            int sotctl;
-            float dtbtl;
+            sv.COSO = textBox11.Text;
+            int sotctl = -1;
+            float dtbtl = -1;
             if (string.IsNullOrWhiteSpace(textBox9.Text) || string.IsNullOrWhiteSpace(textBox10.Text))
             {
                 sv.SOTCTL = -1;
@@ -78,6 +80,11 @@ namespace PH2.GUI
             {
                 sv.SOTCTL = sotctl;
                 sv.DTBTL = dtbtl;
+            }
+            else
+            {
+                sv.SOTCTL = -1;
+                sv.DTBTL = -1;
             }
             int tmp = svBLL.UpdateSinhVien(sv);
             if (tmp == 1)
