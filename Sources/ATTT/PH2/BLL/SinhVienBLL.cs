@@ -68,7 +68,15 @@ namespace PH2.BLL
             return svDTO;
         }
                 
-        public int AddSinhVien(SinhVienDTO a)
+                
+        public List<GVU_SinhVienDTO> getAll2()
+        {
+            DataTable dt = svDAL.getAll();
+            List<GVU_SinhVienDTO> list = Utility.ToList<GVU_SinhVienDTO>(dt);
+            return list;
+        }
+                
+        public int AddSinhVien(GVU_SinhVienDTO a)
         {
             if (a.SDT.Length != 10 || a.SDT[0] != '0')
             {
@@ -83,7 +91,7 @@ namespace PH2.BLL
 
             return svDAL.AddSinhVien(a);
         }
-        public int UpdateSinhVien(SinhVienDTO a)
+        public int UpdateSinhVien(GVU_SinhVienDTO a)
         {
             if (a.SDT.Length != 10 || a.SDT[0] != '0')
             {
@@ -99,13 +107,13 @@ namespace PH2.BLL
             return svDAL.UpdateSinhVien(a);
         }
                 
-        public List<SinhVienDTO> search(string keyword)
+        public List<GVU_SinhVienDTO> search(string keyword)
         {
             DataTable dt = svDAL.search(keyword.ToUpper());
-            List<SinhVienDTO> listSV = new List<SinhVienDTO>();
+            List<GVU_SinhVienDTO> listSV = new List<GVU_SinhVienDTO>();
             foreach (DataRow dr in dt.Rows)
             {
-                SinhVienDTO svDTO = new SinhVienDTO(
+                GVU_SinhVienDTO svDTO = new GVU_SinhVienDTO(
                 dr["MASV"].ToString(),
                 dr["HOTEN"].ToString(),
                 dr["PHAI"].ToString(),
@@ -114,7 +122,7 @@ namespace PH2.BLL
                 dr["MACT"].ToString(),
                 dr["MANGANH"].ToString(),
                 int.Parse(dr["SOTCTL"].ToString()),
-                float.Parse(dr["DTBTL"].ToString()));
+                float.Parse(dr["DTBTL"].ToString()), dr["COSO"].ToString());
 
                 //SinhVienDTO sv = Utility.ToObject<SinhVienDTO>(dr);
                 listSV.Add(svDTO);
