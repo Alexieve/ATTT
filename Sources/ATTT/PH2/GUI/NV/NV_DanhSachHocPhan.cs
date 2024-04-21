@@ -40,8 +40,19 @@ namespace PH2.GUI.NV
             tbSTTH.KeyPress += CheckNumeric;
             tbSSVTD.KeyPress += CheckNumeric;
             tbMaDV.TextChanged += TextChanged;
+            setColumnName();
         }
 
+        private void setColumnName()
+        {
+            dtgviewHocPhan.Columns[0].HeaderText = "Mã Học Phần";
+            dtgviewHocPhan.Columns[1].HeaderText = "Tên Học Phần";
+            dtgviewHocPhan.Columns[2].HeaderText = "Số Tín Chỉ";
+            dtgviewHocPhan.Columns[3].HeaderText = "Số Tiết Lý Thuyết";
+            dtgviewHocPhan.Columns[4].HeaderText = "Số Tiết Thực Hành";
+            dtgviewHocPhan.Columns[5].HeaderText = "Số Sinh Viên Tối Đa";
+            dtgviewHocPhan.Columns[5].HeaderText = "Mã Đơn Vị";
+        }
         private void CheckNumeric(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);

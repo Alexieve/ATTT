@@ -28,6 +28,7 @@ namespace PH2.GUI.TRUONGKHOA
         private void Load()
         {
             listNhanSuDTO = _NhanSuBLL.getAll();
+            dtgvNhanSu.DataSource = null;
             dtgvNhanSu.DataSource = listNhanSuDTO;
             dtgvNhanSu.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dtgvNhanSu.SelectionMode = DataGridViewSelectionMode.FullRowSelect;

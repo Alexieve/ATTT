@@ -44,7 +44,7 @@ namespace PH2.GUI.NV
             tbVAITRO.Text = dr["VAITRO"].ToString().Trim();
             tbMADONVI.Text = dr["MADV"].ToString().Trim();
             tbCOSO.Text = dr["COSO"].ToString().Trim();
-            
+
 
             tbMANV.KeyPress += prevent_KeyPress;
             tbHOTEN.KeyPress += prevent_KeyPress;
@@ -75,7 +75,7 @@ namespace PH2.GUI.NV
             }
             else
             {
-                MessageBox.Show("Cập nhật số điện thoại không thành công");
+                MessageBox.Show("Cập nhật số điện thoại không thành công, vui lòng nhập ít hơn hoặc bằng 10 số.");
                 tbSDT.Text = old_SDT;
             }
         }

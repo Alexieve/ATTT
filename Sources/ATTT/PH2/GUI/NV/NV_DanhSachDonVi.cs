@@ -32,8 +32,14 @@ namespace PH2.GUI.NV
             tbMaDV.TextChanged += TextChanged;
             tbTen.TextChanged += TextChanged;
             tbTruongDV.TextChanged += TextChanged;
+            setColumnName();
         }
-
+        private void setColumnName()
+        {
+            dtgviewDonVi.Columns[0].HeaderText = "Mã Đơn Vị";
+            dtgviewDonVi.Columns[1].HeaderText = "Tên Đơn Vị";
+            dtgviewDonVi.Columns[2].HeaderText = "Trưởng Đơn Vị";
+        }
         private void TextChanged(object sender, EventArgs e)
         {
             string Ten = tbTen.Text.ToLower();

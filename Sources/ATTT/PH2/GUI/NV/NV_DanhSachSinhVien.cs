@@ -51,6 +51,22 @@ namespace PH2.GUI.NV
             cbboxCT.TextChanged += TextChanged;
             dtpkDOBFrom.TextChanged += TextChanged;
             dtpkDOBTo.TextChanged += TextChanged;
+
+            setColumnName();
+        }
+
+        private void setColumnName()
+        {
+            dtgviewSinhVien.Columns[0].HeaderText = "Mã Sinh Viên";
+            dtgviewSinhVien.Columns[1].HeaderText = "Họ Tên";
+            dtgviewSinhVien.Columns[2].HeaderText = "Phái";
+            dtgviewSinhVien.Columns[3].HeaderText = "Ngày Sinh";
+            dtgviewSinhVien.Columns[4].HeaderText = "Địa Chỉ";
+            dtgviewSinhVien.Columns[5].HeaderText = "SĐT";
+            dtgviewSinhVien.Columns[6].HeaderText = "Mã Chương Trình";
+            dtgviewSinhVien.Columns[7].HeaderText = "Mã Ngành";
+            dtgviewSinhVien.Columns[8].HeaderText = "Số Tín Chỉ Tích Lũy";
+            dtgviewSinhVien.Columns[9].HeaderText = "Điểm Trung Bình Tích Lũy";
         }
 
         private void TextChanged(object sender, EventArgs e)
