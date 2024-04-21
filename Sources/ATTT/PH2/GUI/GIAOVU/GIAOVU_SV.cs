@@ -1,4 +1,4 @@
-﻿using System.Data;
+using System.Data;
 using PH2.BLL;
 using PH2.DAL;
 using PH2.DTO;
@@ -25,7 +25,7 @@ namespace PH2.GUI
 
         private void LoadData()
         {
-            List<SinhVienDTO> listSV = svBLL.getAll();
+            List<GVU_SinhVienDTO> listSV = svBLL.getAll2();
             HocPhanTable.DataSource = listSV;
             HocPhanTable.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             //HocPhanTable.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -34,7 +34,7 @@ namespace PH2.GUI
         }
         private void LoadData(string keyword)
         {
-            List<SinhVienDTO> listSV = svBLL.search(keyword);
+            List<GVU_SinhVienDTO> listSV = svBLL.search(keyword);
             HocPhanTable.DataSource = listSV;
             HocPhanTable.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             //HocPhanTable.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -60,9 +60,10 @@ namespace PH2.GUI
             HocPhanTable.Columns[4].HeaderText = "Địa Chỉ";
             HocPhanTable.Columns[5].HeaderText = "SĐT";
             HocPhanTable.Columns[6].HeaderText = "Mã CT";
-            HocPhanTable.Columns[6].HeaderText = "Mã Ngành";
-            HocPhanTable.Columns[7].HeaderText = "TC Tích Lũy";
-            HocPhanTable.Columns[8].HeaderText = "Điểm TB";
+            HocPhanTable.Columns[7].HeaderText = "Mã Ngành";
+            HocPhanTable.Columns[8].HeaderText = "TC Tích Lũy";
+            HocPhanTable.Columns[9].HeaderText = "Điểm TB";
+            HocPhanTable.Columns[10].HeaderText = "Cơ Sở";
         }
         private void searchBtn_Click(object sender, EventArgs e)
         {
