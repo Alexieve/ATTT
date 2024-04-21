@@ -31,7 +31,7 @@ namespace PH2.GUI.GIANGVIEN
         {
             dataGridView1.Columns[0].HeaderText = "Mã Sinh Viên";
             dataGridView1.Columns[1].HeaderText = "Mã Giáo Viên";
-            dataGridView1.Columns[0].Visible = false;
+            //dataGridView1.Columns[0].Visible = false;
             dataGridView1.Columns[1].Visible = false;
             dataGridView1.Columns[2].HeaderText = "Tên Sinh Viên";
             dataGridView1.Columns[3].HeaderText = "Mã Học Phần";
@@ -84,11 +84,17 @@ namespace PH2.GUI.GIANGVIEN
             temp = float.TryParse(DIEMQT, out float f);
             temp = float.TryParse(DIEMCK, out float g);
             temp = float.TryParse(DIEMTK, out float h);
-            XemDangKyBLL.UpdateDiem(MASV, MAGV, MAHP, HK, NAM, MACT, d, f, g, h);
+            int check = XemDangKyBLL.UpdateDiem(MASV, MAGV, MAHP, HK, NAM, MACT, d, f, g, h);
+            if (check == 0)
+            {
+                MessageBox.Show("Không được cập nhật điểm trên dòng này!", "Thông báo");
+                dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = prevValue;
+            }
         }
         private void dataGridView1_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
             prevValue = dataGridView1[e.ColumnIndex, e.RowIndex].Value.ToString();
+
         }
     }
 }

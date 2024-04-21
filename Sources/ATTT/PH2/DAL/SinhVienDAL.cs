@@ -58,7 +58,8 @@ namespace PH2.DAL
            };
            return conn.ExecuteQuery(ProcName, CommandType.StoredProcedure, Parameters);
        }
-       public int AddSinhVien(SinhVienDTO sinhVien)
+              
+        public int AddSinhVien(GVU_SinhVienDTO sinhVien)
        {
                string ProcName = "USP_SINHVIEN_ADD";
                OracleParameter[] Parameters =
@@ -73,6 +74,7 @@ namespace PH2.DAL
                    new OracleParameter("P_MaNganh", OracleDbType.Varchar2, sinhVien.MANGANH, ParameterDirection.Input ),
                    new OracleParameter("P_TCTichLuy", OracleDbType.Int32, sinhVien.SOTCTL, ParameterDirection.Input ),
                    new OracleParameter("P_DiemTB", OracleDbType.Decimal, sinhVien.DTBTL, ParameterDirection.Input),
+                    new OracleParameter("P_COSO", OracleDbType.Varchar2, sinhVien.COSO, ParameterDirection.Input),
                    new OracleParameter("P_RES", OracleDbType.Decimal, ParameterDirection.Output)
            };
                conn.ExecuteNonQuery(ProcName, CommandType.StoredProcedure, Parameters);
@@ -81,7 +83,7 @@ namespace PH2.DAL
                return 0;
            return 1;
        }
-       public int UpdateSinhVien(SinhVienDTO sinhVien)
+       public int UpdateSinhVien(GVU_SinhVienDTO sinhVien)
        {
            string ProcName = "USP_SINHVIEN_UPDATE";
            OracleParameter[] Parameters =
@@ -96,6 +98,7 @@ namespace PH2.DAL
                    new OracleParameter("P_MaNganh", OracleDbType.Varchar2, sinhVien.MANGANH, ParameterDirection.Input ),
                    new OracleParameter("P_TCTichLuy", OracleDbType.Int32, sinhVien.SOTCTL, ParameterDirection.Input ),
                    new OracleParameter("P_DiemTB", OracleDbType.Decimal, sinhVien.DTBTL, ParameterDirection.Input),
+                   new OracleParameter("P_COSO", OracleDbType.Varchar2, sinhVien.COSO, ParameterDirection.Input),
                    new OracleParameter("P_RES", OracleDbType.Decimal, ParameterDirection.Output)
            };
            conn.ExecuteNonQuery(ProcName, CommandType.StoredProcedure, Parameters);

@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE USP_SINHVIEN_GETALL(P_RES OUT SYS_REFCURSOR)
+CREATE OR REPLACE PROCEDURE USP_SINHVIEN_GETALL2(P_RES OUT SYS_REFCURSOR)
 AS
 BEGIN
     OPEN P_RES FOR
@@ -33,13 +33,14 @@ CREATE OR REPLACE PROCEDURE USP_SINHVIEN_ADD (
   P_MaNganh IN VARCHAR2,
   P_TCTichLuy IN INT,
   P_DiemTB IN FLOAT,
+   P_COSO IN VARCHAR2,
   P_ErrCode OUT NUMBER
 )
 AS
 BEGIN
   -- Insert with error handling
   INSERT INTO SINHVIEN
-  VALUES (P_MaSinhVien, P_HoTen, P_Phai, TO_DATE(P_NgaySinh, 'DD-MM-YYYY'), P_DiaChi, P_SDT, P_MaChuongTrinh, P_MaNganh, P_TCTichLuy, P_DiemTB);
+  VALUES (P_MaSinhVien, P_HoTen, P_Phai, TO_DATE(P_NgaySinh, 'DD-MM-YYYY'), P_DiaChi, P_SDT, P_MaChuongTrinh, P_MaNganh, P_TCTichLuy, P_DiemTB, P_COSO);
   
   -- Handle potential errors during insert
    P_ErrCode := 0;
@@ -73,6 +74,7 @@ CREATE OR REPLACE PROCEDURE USP_SINHVIEN_UPDATE (
   P_MaNganh IN VARCHAR2,
   P_TCTichLuy IN INT,
   P_DiemTB IN FLOAT,
+     P_COSO IN VARCHAR2,
   P_ErrCode OUT NUMBER
 )
 AS
@@ -88,7 +90,8 @@ SET
     MACT = P_MaChuongTrinh,
     MANGANH = P_MaNganh,
     SOTCTL = P_TCTichLuy,
-    DTBTL = P_DiemTB
+    DTBTL = P_DiemTB,
+    COSO = P_COSO
 WHERE
     MASV = P_MaSinhVien;
   

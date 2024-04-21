@@ -39,9 +39,9 @@ namespace PH2.BLL
             }
             return true;
         }
-        public void UpdateDiem(string MASV, string MAGV, string MAHP, int HK, int NAM, string MACT, float DIEMTH, float DIEMQT, float DIEMCK, float DIEMTK)
+        public int UpdateDiem(string MASV, string MAGV, string MAHP, int HK, int NAM, string MACT, float DIEMTH, float DIEMQT, float DIEMCK, float DIEMTK)
         {
-            XemDangKyDAL.UpdateDiem(MASV, MAGV, MAHP, HK, NAM, MACT, DIEMTH, DIEMQT, DIEMCK, DIEMTK);
+            return XemDangKyDAL.UpdateDiem(MASV, MAGV, MAHP, HK, NAM, MACT, DIEMTH, DIEMQT, DIEMCK, DIEMTK);
         }
     }
 }
