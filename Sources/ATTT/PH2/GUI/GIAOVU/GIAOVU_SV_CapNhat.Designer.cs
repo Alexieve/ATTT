@@ -1,4 +1,4 @@
-﻿namespace PH2.GUI
+namespace PH2.GUI
 {
     partial class GIAOVU_SV_CapNhat
     {
@@ -52,6 +52,8 @@
             button2 = new Button();
             button3 = new Button();
             label9 = new Label();
+            textBox11 = new TextBox();
+            label12 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -70,6 +72,8 @@
             // 
             panel1.BackColor = SystemColors.Control;
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(textBox11);
+            panel1.Controls.Add(label12);
             panel1.Controls.Add(textBox3);
             panel1.Controls.Add(textBox10);
             panel1.Controls.Add(label11);
@@ -295,6 +299,24 @@
             label9.TabIndex = 31;
             label9.Text = "Mã Sinh Viên: ";
             // 
+            // textBox11
+            // 
+            textBox11.Location = new Point(782, 466);
+            textBox11.Multiline = true;
+            textBox11.Name = "textBox11";
+            textBox11.PlaceholderText = "VD: CS1";
+            textBox11.Size = new Size(137, 28);
+            textBox11.TabIndex = 58;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(684, 469);
+            label12.Name = "label12";
+            label12.Size = new Size(51, 20);
+            label12.TabIndex = 57;
+            label12.Text = "Cơ Sở:";
+            // 
             // GIAOVU_SV_CapNhat
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -336,5 +358,7 @@
         private TextBox textBox10;
         private Label label11;
         private TextBox textBox3;
+        private TextBox textBox11;
+        private Label label12;
     }
 }
