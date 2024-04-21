@@ -51,11 +51,12 @@ namespace PH2.BLL
             return list;
         }
                 
-        public SinhVienDTO getProfile2(string masv)
+                
+        public GVU_SinhVienDTO getProfile2(string masv)
         {
             DataTable dt = svDAL.getProfile2(masv);
             DataRow dr = dt.Rows[0];
-            SinhVienDTO svDTO = new SinhVienDTO(
+            GVU_SinhVienDTO svDTO = new GVU_SinhVienDTO(
                 dr["MASV"].ToString(),
                 dr["HOTEN"].ToString(),
                 dr["PHAI"].ToString(),
@@ -64,7 +65,7 @@ namespace PH2.BLL
                 dr["MACT"].ToString(),
                 dr["MANGANH"].ToString(),
                 int.Parse(dr["SOTCTL"].ToString()),
-                float.Parse(dr["DTBTL"].ToString()));
+                float.Parse(dr["DTBTL"].ToString()), dr["COSO"].ToString());
             return svDTO;
         }
                 
