@@ -23,6 +23,12 @@ namespace PH2.BLL
             List<DangKyDTO> danhSach = Utility.ToList<DangKyDTO>(dt);
             return danhSach;
         }
+        public List<DangKyDTO> GetDangKyGVSearch(string MASV, string MAHP, string NAM, string HK, string MACT)
+        {
+            DataTable dt = XemDangKyDAL.GetDangKyGVSearch(MASV, MAHP, NAM, HK, MACT);
+            List<DangKyDTO> danhSach = Utility.ToList<DangKyDTO>(dt);
+            return danhSach;
+        }
         public bool CheckConvert(string DIEMTH, string DIEMQT, string DIEMCK, string DIEMTK)
         {
             if (!float.TryParse(DIEMTH, out float d) || d > 10 || d < 0 || !float.TryParse(DIEMQT, out float e) || e < 0 || e > 10 || !float.TryParse(DIEMCK, out float f) || f < 0 || f > 10 || !float.TryParse(DIEMTK, out float g) || f < 0 || f > 10)
