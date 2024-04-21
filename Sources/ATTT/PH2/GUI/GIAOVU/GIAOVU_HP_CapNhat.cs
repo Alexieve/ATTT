@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -52,7 +52,7 @@ namespace PH2.GUI
             //sv.STTH = textBox5.Text;
             //sv.SOSVTD = textBox6.Text;
             sv.MADV = textBox7.Text;
-            int tmp1, tmp2, tmp3, tmp4;
+            int tmp1 = -1, tmp2 = -1, tmp3 = -1, tmp4 = -1;
             if (string.IsNullOrWhiteSpace(textBox3.Text) || string.IsNullOrWhiteSpace(textBox4.Text)
                 || string.IsNullOrWhiteSpace(textBox5.Text) || string.IsNullOrWhiteSpace(textBox6.Text))
             {
@@ -68,6 +68,13 @@ namespace PH2.GUI
                 sv.STLT = tmp2;
                 sv.STTH = tmp3;
                 sv.SOSVTD = tmp4;
+            }
+            else
+            {
+                sv.SOTC = -1;
+                sv.STLT = -1;
+                sv.STTH = -1;
+                sv.SOSVTD = -1;
             }
             int tmp = hpBLL.UpdateHocPhan(sv);
             if (tmp == 1)
