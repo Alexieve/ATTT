@@ -24,7 +24,7 @@ namespace PH2.DAL
             };
             return conn.ExecuteQuery(procName, CommandType.StoredProcedure, Parameters);
         }
-        public void UpdateDiem(string MASV, string MAGV, string MAHP, int HK, int NAM, string MACT, float DIEMTH, float DIEMQT, float DIEMCK, float DIEMTK)
+        public int UpdateDiem(string MASV, string MAGV, string MAHP, int HK, int NAM, string MACT, float DIEMTH, float DIEMQT, float DIEMCK, float DIEMTK)
         {
             string procName = "USP_GV_UPDATE_DIEM";
             OracleParameter[] Parameters =
@@ -38,9 +38,11 @@ namespace PH2.DAL
                 new("P_DIEMTH", OracleDbType.Single, DIEMTH, ParameterDirection.Input),
                 new("P_DIEMQT", OracleDbType.Single, DIEMQT, ParameterDirection.Input),
                 new("P_DIEMCK", OracleDbType.Single, DIEMCK, ParameterDirection.Input),
-                new("P_DIEMTK", OracleDbType.Single, DIEMTK, ParameterDirection.Input)
+                new("P_DIEMTK", OracleDbType.Single, DIEMTK, ParameterDirection.Input),
+                new ("P_CHECK", OracleDbType.Int32, ParameterDirection.Output)
             };
             conn.ExecuteNonQuery(procName, CommandType.StoredProcedure, Parameters);
+            return int.Parse(Parameters[10].Value.ToString());
         }
 
         public DataTable getAll()

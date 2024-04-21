@@ -200,3 +200,4 @@ C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\
 C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAOVU_SV_CapNhat.resources
 C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAOVU_SV_Them.resources
 C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.TRUONGKHOA.TRUONGKHOA_DanhSachDangKy.resources
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIAOVU_NV_ThongTinCaNhan.resources

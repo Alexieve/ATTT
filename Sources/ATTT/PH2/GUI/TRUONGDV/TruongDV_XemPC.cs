@@ -52,7 +52,7 @@ namespace PH2.GUI.TRUONGDV
             dataGridView1.Columns[0].Visible = false;
 
             dataGridView1.Columns[1].HeaderText = "Mã Học Phần";
-            dataGridView1.Columns[1].Visible = false;
+            //dataGridView1.Columns[1].Visible = false;
             dataGridView1.Columns[2].HeaderText = "Tên Giáo Viên";
             dataGridView1.Columns[3].HeaderText = "Tên Học Phần";
 
@@ -115,8 +115,16 @@ namespace PH2.GUI.TRUONGDV
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi thêm vào!");
-                return;
+                if (ex.Message.Contains("policy"))
+                {
+                    MessageBox.Show("Vi phạm chính sách VPD!");
+                    return;
+                }
+                else if (ex.Message.Contains("unique constraint"))
+                {
+                    MessageBox.Show("Kế hoạch mở không có học phần này hoặc đã được đăng ký!");
+                    return;
+                }
             }
             MessageBox.Show("Thêm vào thành công!");
             Load();
