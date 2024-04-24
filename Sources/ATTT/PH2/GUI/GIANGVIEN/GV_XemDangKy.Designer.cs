@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             dataGridView1 = new DataGridView();
             MASV = new TextBox();
             MAHP = new TextBox();
@@ -41,20 +41,22 @@
             label4 = new Label();
             label5 = new Label();
             SearchButton = new Button();
+            label6 = new Label();
+            MAGV = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = SystemColors.Control;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(0, 101);
             dataGridView1.Name = "dataGridView1";
@@ -74,30 +76,30 @@
             // 
             // MAHP
             // 
-            MAHP.Location = new Point(264, 48);
+            MAHP.Location = new Point(359, 48);
             MAHP.Name = "MAHP";
             MAHP.Size = new Size(125, 27);
             MAHP.TabIndex = 2;
             // 
             // HK
             // 
-            HK.Location = new Point(483, 48);
+            HK.Location = new Point(516, 48);
             HK.Name = "HK";
             HK.Size = new Size(125, 27);
             HK.TabIndex = 3;
             // 
             // NAM
             // 
-            NAM.Location = new Point(702, 48);
+            NAM.Location = new Point(673, 48);
             NAM.Name = "NAM";
             NAM.Size = new Size(125, 27);
             NAM.TabIndex = 4;
             // 
             // MACT
             // 
-            MACT.Location = new Point(921, 48);
+            MACT.Location = new Point(830, 48);
             MACT.Name = "MACT";
-            MACT.Size = new Size(125, 27);
+            MACT.Size = new Size(148, 27);
             MACT.TabIndex = 5;
             // 
             // label1
@@ -115,7 +117,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
             label2.ForeColor = SystemColors.ControlText;
-            label2.Location = new Point(264, 22);
+            label2.Location = new Point(359, 22);
             label2.Name = "label2";
             label2.Size = new Size(115, 23);
             label2.TabIndex = 7;
@@ -126,7 +128,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
             label3.ForeColor = SystemColors.ControlText;
-            label3.Location = new Point(483, 22);
+            label3.Location = new Point(516, 22);
             label3.Name = "label3";
             label3.Size = new Size(62, 23);
             label3.TabIndex = 8;
@@ -137,7 +139,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
             label4.ForeColor = SystemColors.ControlText;
-            label4.Location = new Point(702, 22);
+            label4.Location = new Point(670, 22);
             label4.Name = "label4";
             label4.Size = new Size(48, 23);
             label4.TabIndex = 9;
@@ -148,7 +150,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
             label5.ForeColor = SystemColors.ControlText;
-            label5.Location = new Point(921, 22);
+            label5.Location = new Point(828, 22);
             label5.Name = "label5";
             label5.Size = new Size(150, 23);
             label5.TabIndex = 10;
@@ -159,7 +161,7 @@
             SearchButton.BackColor = Color.FromArgb(0, 192, 0);
             SearchButton.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
             SearchButton.ForeColor = SystemColors.ButtonHighlight;
-            SearchButton.Location = new Point(1135, 40);
+            SearchButton.Location = new Point(1057, 40);
             SearchButton.Name = "SearchButton";
             SearchButton.Size = new Size(111, 41);
             SearchButton.TabIndex = 11;
@@ -167,11 +169,30 @@
             SearchButton.UseVisualStyleBackColor = false;
             SearchButton.Click += SearchButton_Click;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            label6.Location = new Point(202, 22);
+            label6.Name = "label6";
+            label6.Size = new Size(116, 23);
+            label6.TabIndex = 13;
+            label6.Text = "Mã Giáo Viên";
+            // 
+            // MAGV
+            // 
+            MAGV.Location = new Point(202, 48);
+            MAGV.Name = "MAGV";
+            MAGV.Size = new Size(125, 27);
+            MAGV.TabIndex = 12;
+            // 
             // GV_XemDangKy
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1315, 652);
+            Controls.Add(label6);
+            Controls.Add(MAGV);
             Controls.Add(SearchButton);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -206,5 +227,7 @@
         private Label label4;
         private Label label5;
         private Button SearchButton;
+        private Label label6;
+        private TextBox MAGV;
     }
 }

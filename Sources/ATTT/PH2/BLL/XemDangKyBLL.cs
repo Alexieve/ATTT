@@ -23,9 +23,9 @@ namespace PH2.BLL
             List<DangKyDTO> danhSach = Utility.ToList<DangKyDTO>(dt);
             return danhSach;
         }
-        public List<DangKyDTO> GetDangKyGVSearch(string MASV, string MAHP, string NAM, string HK, string MACT)
+        public List<DangKyDTO> GetDangKyGVSearch(string MASV, string MAGV, string MAHP, string NAM, string HK, string MACT)
         {
-            DataTable dt = XemDangKyDAL.GetDangKyGVSearch(MASV, MAHP, NAM, HK, MACT);
+            DataTable dt = XemDangKyDAL.GetDangKyGVSearch(MASV, MAGV, MAHP, NAM, HK, MACT);
             List<DangKyDTO> danhSach = Utility.ToList<DangKyDTO>(dt);
             return danhSach;
         }

@@ -24,13 +24,14 @@ namespace PH2.DAL
             };
             return conn.ExecuteQuery(procName, CommandType.StoredProcedure, Parameters);
         }
-        public DataTable GetDangKyGVSearch(string MASV, string MAHP, string NAM, string HK, string MACT)
+        public DataTable GetDangKyGVSearch(string MASV, string MAGV, string MAHP, string NAM, string HK, string MACT)
         {
             string procName = "USP_GET_DANG_KY_GV_SEARCH";
             OracleParameter[] Parameters =
             {
                 new("P_RES", OracleDbType.RefCursor, ParameterDirection.Output),
                 new("P_MASV", OracleDbType.Varchar2, MASV, ParameterDirection.Input),
+                new("P_MAGV", OracleDbType.Varchar2, MAGV, ParameterDirection.Input),
                 new("P_MAHP", OracleDbType.Varchar2, MAHP, ParameterDirection.Input),
                 new("P_NAM", OracleDbType.Varchar2, NAM, ParameterDirection.Input),
                 new("P_HK", OracleDbType.Varchar2, HK, ParameterDirection.Input),

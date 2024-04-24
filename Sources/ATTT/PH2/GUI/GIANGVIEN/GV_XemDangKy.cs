@@ -27,10 +27,10 @@ namespace PH2.GUI.GIANGVIEN
             dataGridView1.DataSource = danhSachDK;
             setColumnName();
         }
-        private void Load(string MASV, string MAHP, string NAM, string HK, string MACT)
+        private void Load(string MASV, string MAGV, string MAHP, string NAM, string HK, string MACT)
         {
             dataGridView1.Columns.Clear();
-            List<DangKyDTO> danhSachDK = XemDangKyBLL.GetDangKyGVSearch(MASV, MAHP, NAM, HK, MACT);
+            List<DangKyDTO> danhSachDK = XemDangKyBLL.GetDangKyGVSearch(MASV, MAGV, MAHP, NAM, HK, MACT);
 
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = danhSachDK;
@@ -41,7 +41,7 @@ namespace PH2.GUI.GIANGVIEN
             dataGridView1.Columns[0].HeaderText = "Mã Sinh Viên";
             dataGridView1.Columns[1].HeaderText = "Mã Giáo Viên";
             //dataGridView1.Columns[0].Visible = false;
-            dataGridView1.Columns[1].Visible = false;
+            //dataGridView1.Columns[1].Visible = false;
             dataGridView1.Columns[2].HeaderText = "Tên Sinh Viên";
             dataGridView1.Columns[3].HeaderText = "Mã Học Phần";
             //dataGridView1.Columns[3].Visible = false;
@@ -111,11 +111,12 @@ namespace PH2.GUI.GIANGVIEN
         private void SearchButton_Click(object sender, EventArgs e)
         {
             string MaSV = MASV.Text;
+            string MaGV = MAGV.Text;
             string MaHP = MAHP.Text;
             string HocKi = HK.Text;
             string Nam = NAM.Text;
             string MaCT = MACT.Text;
-            if (string.IsNullOrEmpty(MaSV) && string.IsNullOrEmpty(MaHP) && string.IsNullOrEmpty(Nam) && string.IsNullOrEmpty(HocKi) && string.IsNullOrEmpty(MaCT))
+            if (string.IsNullOrEmpty(MaSV) && string.IsNullOrEmpty(MaHP) && string.IsNullOrEmpty(Nam) && string.IsNullOrEmpty(HocKi) && string.IsNullOrEmpty(MaCT) && string.IsNullOrEmpty(MaGV))
             {
                 Load();
                 return;
@@ -131,8 +132,7 @@ namespace PH2.GUI.GIANGVIEN
                 MessageBox.Show("Vui lòng nhập học kì đúng định dạng!", "Thông báo");
                 return;
             }
-            Load(MaSV, MaHP, Nam, HocKi, MaCT);
+            Load(MaSV, MaGV, MaHP, Nam, HocKi, MaCT);
         }
-
     }
 }

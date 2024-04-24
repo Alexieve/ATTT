@@ -57,5 +57,9 @@ namespace PH2.BLL
         {
             XemPhanCongDAL.AddRow(MAGV, MAHP, HK, NAM, MACT);
         }
+        public void UpdateRow(string MAGV, string MAHP, int HK, int NAM, string MACT, string Old_MAGV_Value)
+        {
+            XemPhanCongDAL.UpdatePC(MAGV, MAHP, HK, NAM, MACT, Old_MAGV_Value);
+        }
     }
 }
