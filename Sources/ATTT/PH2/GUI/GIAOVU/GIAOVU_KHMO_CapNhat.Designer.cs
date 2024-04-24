@@ -32,16 +32,7 @@ namespace PH2.GUI
         {
             label3 = new Label();
             panel1 = new Panel();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            label4 = new Label();
-            label2 = new Label();
-            textBox2 = new TextBox();
-            label1 = new Label();
-            textBox1 = new TextBox();
-            button2 = new Button();
-            button3 = new Button();
-            label9 = new Label();
+            HKNamCbb = new ComboBox();
             textBox5 = new TextBox();
             textBox6 = new TextBox();
             label5 = new Label();
@@ -50,6 +41,15 @@ namespace PH2.GUI
             label7 = new Label();
             textBox8 = new TextBox();
             label8 = new Label();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
+            label4 = new Label();
+            label2 = new Label();
+            textBox2 = new TextBox();
+            label1 = new Label();
+            button2 = new Button();
+            button3 = new Button();
+            label9 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -68,6 +68,7 @@ namespace PH2.GUI
             // 
             panel1.BackColor = SystemColors.Control;
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(HKNamCbb);
             panel1.Controls.Add(textBox5);
             panel1.Controls.Add(textBox6);
             panel1.Controls.Add(label5);
@@ -82,7 +83,6 @@ namespace PH2.GUI
             panel1.Controls.Add(label2);
             panel1.Controls.Add(textBox2);
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(textBox1);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button3);
             panel1.Controls.Add(label9);
@@ -92,91 +92,17 @@ namespace PH2.GUI
             panel1.Size = new Size(862, 589);
             panel1.TabIndex = 19;
             // 
-            // textBox3
+            // HKNamCbb
             // 
-            textBox3.Location = new Point(254, 400);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(137, 28);
-            textBox3.TabIndex = 54;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(254, 445);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(282, 28);
-            textBox4.TabIndex = 41;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(58, 448);
-            label4.Name = "label4";
-            label4.Size = new Size(125, 20);
-            label4.TabIndex = 40;
-            label4.Text = "Mã Chương Trình:";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(58, 403);
-            label2.Name = "label2";
-            label2.Size = new Size(44, 20);
-            label2.TabIndex = 38;
-            label2.Text = "Năm:";
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(254, 360);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(282, 28);
-            textBox2.TabIndex = 37;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(58, 363);
-            label1.Name = "label1";
-            label1.Size = new Size(54, 20);
-            label1.TabIndex = 36;
-            label1.Text = "Học kì:";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(254, 319);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(282, 28);
-            textBox1.TabIndex = 35;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(613, 527);
-            button2.Name = "button2";
-            button2.Size = new Size(122, 40);
-            button2.TabIndex = 34;
-            button2.Text = "Cập Nhật";
-            button2.Click += button2_Click;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(104, 527);
-            button3.Name = "button3";
-            button3.Size = new Size(122, 40);
-            button3.TabIndex = 33;
-            button3.Text = "Hủy";
-            button3.Click += button3_Click;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(58, 322);
-            label9.Name = "label9";
-            label9.Size = new Size(104, 20);
-            label9.TabIndex = 31;
-            label9.Text = "Mã Học Phần: ";
+            HKNamCbb.DropDownHeight = 160;
+            HKNamCbb.DropDownStyle = ComboBoxStyle.DropDownList;
+            HKNamCbb.Font = new Font("Segoe UI", 9F);
+            HKNamCbb.FormattingEnabled = true;
+            HKNamCbb.IntegralHeight = false;
+            HKNamCbb.Location = new Point(254, 319);
+            HKNamCbb.Name = "HKNamCbb";
+            HKNamCbb.Size = new Size(282, 28);
+            HKNamCbb.TabIndex = 21;
             // 
             // textBox5
             // 
@@ -251,6 +177,84 @@ namespace PH2.GUI
             label8.TabIndex = 55;
             label8.Text = "Mã Học Phần Cũ: ";
             // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(254, 400);
+            textBox3.Multiline = true;
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(137, 28);
+            textBox3.TabIndex = 54;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(254, 445);
+            textBox4.Multiline = true;
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(282, 28);
+            textBox4.TabIndex = 41;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(58, 448);
+            label4.Name = "label4";
+            label4.Size = new Size(125, 20);
+            label4.TabIndex = 40;
+            label4.Text = "Mã Chương Trình:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(58, 403);
+            label2.Name = "label2";
+            label2.Size = new Size(44, 20);
+            label2.TabIndex = 38;
+            label2.Text = "Năm:";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(254, 360);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(282, 28);
+            textBox2.TabIndex = 37;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(58, 363);
+            label1.Name = "label1";
+            label1.Size = new Size(54, 20);
+            label1.TabIndex = 36;
+            label1.Text = "Học kì:";
+            // 
+            // button2
+            // 
+            button2.Location = new Point(602, 527);
+            button2.Name = "button2";
+            button2.Size = new Size(122, 40);
+            button2.TabIndex = 34;
+            button2.Text = "Cập Nhật";
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(121, 527);
+            button3.Name = "button3";
+            button3.Size = new Size(122, 40);
+            button3.TabIndex = 33;
+            button3.Text = "Hủy";
+            button3.Click += button3_Click;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(58, 322);
+            label9.Name = "label9";
+            label9.Size = new Size(104, 20);
+            label9.TabIndex = 31;
+            label9.Text = "Mã Học Phần: ";
+            // 
             // GIAOVU_KHMO_CapNhat
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -273,7 +277,6 @@ namespace PH2.GUI
         private Label label9;
         private Button button2;
         private Button button3;
-        private TextBox textBox1;
         private TextBox textBox4;
         private Label label4;
         private Label label2;
@@ -288,5 +291,6 @@ namespace PH2.GUI
         private Label label7;
         private TextBox textBox8;
         private Label label8;
+        private ComboBox HKNamCbb;
     }
 }
