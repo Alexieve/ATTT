@@ -36,11 +36,11 @@ namespace PH2.GUI
             List<GVU_KHMODTO> listKHMO = khmoBLL.getAll();
             KHMOTable.DataSource = listKHMO;
             KHMOTable.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            foreach (DataGridViewColumn column in KHMOTable.Columns)
-            {
-                column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            }
-            //KHMOTable.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            //foreach (DataGridViewColumn column in KHMOTable.Columns)
+            //{
+            //    column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            //}
+            KHMOTable.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             setColumnName();
         }
         private void Load(int HK, int NAM)
@@ -48,11 +48,11 @@ namespace PH2.GUI
             List<GVU_KHMODTO> listKHMO = khmoBLL.getByNamHK(NAM, HK);
             KHMOTable.DataSource = listKHMO;
             KHMOTable.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            foreach (DataGridViewColumn column in KHMOTable.Columns)
-            {
-                column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            }
-            //KHMOTable.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            //foreach (DataGridViewColumn column in KHMOTable.Columns)
+            //{
+            //    column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            //}
+            KHMOTable.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             setColumnName();
         }
         private void KHMOTable_SelectionChanged(object sender, EventArgs e)
@@ -60,11 +60,11 @@ namespace PH2.GUI
             // Kiểm tra nếu có ít nhất một dòng được chọn
             if (KHMOTable.SelectedRows.Count == 1)
             {
-                // Lấy mã sinh viên từ dòng được chọn và lưu vào biến maSinhVienToShow
+                // Lấy mã sinh viên từ dòng được chọn và lưu vào biến maSinhVienToShow hk0 nam1 mahp2 mact4
                 maSinhVienToShow = KHMOTable.SelectedRows[0].Cells[2].Value.ToString();
                 maSinhVienToShow2 = KHMOTable.SelectedRows[0].Cells[0].Value.ToString();
                 maSinhVienToShow3 = KHMOTable.SelectedRows[0].Cells[1].Value.ToString();
-                maSinhVienToShow4 = KHMOTable.SelectedRows[0].Cells[3].Value.ToString();
+                maSinhVienToShow4 = KHMOTable.SelectedRows[0].Cells[4].Value.ToString();
             }
         }
 
@@ -77,7 +77,8 @@ namespace PH2.GUI
             KHMOTable.Columns[0].HeaderText = "Học Kỳ";
             KHMOTable.Columns[1].HeaderText = "Năm";
             KHMOTable.Columns[2].HeaderText = "Mã Học Phần";
-            KHMOTable.Columns[3].HeaderText = "Mã Chương Trình";
+            KHMOTable.Columns[3].HeaderText = "Tên Học Phần";
+            KHMOTable.Columns[4].HeaderText = "Mã Chương Trình";
 
         }
         private void Cbb_SelectedIndexChanged(object sender, EventArgs e)

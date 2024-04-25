@@ -1,5 +1,9 @@
 {
   "Version": 1,
+<<<<<<< HEAD
+  "WorkspaceRootPath": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\",
+  "Documents": [],
+=======
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\",
   "Documents": [
     {
@@ -75,6 +79,7 @@
       "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\truongdv\\truongdv_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
+>>>>>>> f275c82d09227aca19be7695bcf2705b2576097f
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -115,11 +120,17 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+<<<<<<< HEAD
+=======
             },
             {
               "$type": "Bookmark",
@@ -314,6 +325,7 @@
               "RelativeToolTip": "PH2\\GUI\\GIANGVIEN\\GIANGVIEN_Home.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-20T11:14:46.994Z"
+>>>>>>> f275c82d09227aca19be7695bcf2705b2576097f
             }
           ]
         }

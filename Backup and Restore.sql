@@ -1,0 +1,23 @@
+-- 1. Cấu hình, tạo Table space cho user rco
+CREATE TABLESPACE tools DATAFILE 'tools.dbf' SIZE 15M;
+
+-- 2. Tạo user rco sở hữ recovery catalog
+CREATE USER rco IDENTIFIED BY 123
+TEMPORARY TABLESPACE temp
+DEFAULT TABLESPACE tools
+QUOTA UNLIMITED ON tools;
+
+GRANT CONNECT, RESOURCE, RECOVERY_CATALOG_OWNER TO rco;
+
+-- 3. Tạo recovery catalog
+set ORACLE_SID=XE
+
+rman
+connect target /
+CONNECT CATALOG RCO@ATTT
+PASSWORD 123
+
+CREATE CATALOG;
+REGISTER DATABASE;
+
+REPORT SCHEMA;

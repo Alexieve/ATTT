@@ -43,11 +43,6 @@ namespace PH2.DAL
             OracleParameter[] Parameters =
             {
                     new OracleParameter("P_MAGV", OracleDbType.Varchar2, sinhVien.MAGV, ParameterDirection.Input ),
-                    new OracleParameter("P_MAHP", OracleDbType.Varchar2, sinhVien.MAHP, ParameterDirection.Input ),
-                    new OracleParameter("P_HK", OracleDbType.Int32, sinhVien.HK, ParameterDirection.Input ),
-                    new OracleParameter("P_NAM", OracleDbType.Int32, sinhVien.NAM, ParameterDirection.Input),
-                    new OracleParameter("P_MACT", OracleDbType.Varchar2, sinhVien.MACT, ParameterDirection.Input),
-
                     new OracleParameter("P_MAGV2", OracleDbType.Varchar2, sinhVien2.MAGV, ParameterDirection.Input ),
                     new OracleParameter("P_MAHP2", OracleDbType.Varchar2, sinhVien2.MAHP, ParameterDirection.Input ),
                     new OracleParameter("P_HK2", OracleDbType.Int32, sinhVien2.HK, ParameterDirection.Input ),
@@ -62,6 +57,14 @@ namespace PH2.DAL
             return 1;
         }
 
-
+        public DataTable getAllMAGV()
+        {
+            string procName = "USP_GVU_PHANCONG_GET_ALL_MAGV";
+            OracleParameter[] Parameters =
+            {
+                new("P_RES", OracleDbType.RefCursor, ParameterDirection.Output)
+            };
+            return conn.ExecuteQuery(procName, CommandType.StoredProcedure, Parameters);
+        }
     }
 }

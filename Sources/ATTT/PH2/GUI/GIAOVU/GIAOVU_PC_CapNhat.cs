@@ -19,14 +19,15 @@ namespace PH2.GUI
         public GIAOVU_PC_CapNhat()
         {
             InitializeComponent();
+            LoadNamHKCbb();
         }
     public void Loadd(string MyString, string MyString2, string MyString3, string MyString4, string MyString5)
     {
-        textBox1.Text = MyString;
-        textBox2.Text = MyString2;
-        textBox3.Text = MyString3;
-        textBox4.Text = MyString4;
-        textBox5.Text = MyString5;
+        //textBox1.Text = MyString;
+        //textBox2.Text = MyString2;
+        //textBox3.Text = MyString3;
+        //textBox4.Text = MyString4;
+        //textBox5.Text = MyString5;
 
 
         textBox6.Text = MyString;
@@ -46,26 +47,28 @@ namespace PH2.GUI
     private void button2_Click(object sender, EventArgs e)
     {
         GVU_PhanCongDTO sv = new GVU_PhanCongDTO();
-        sv.MAGV = textBox1.Text;
-        sv.MAHP = textBox2.Text;
+            sv.MAGV = HKNamCbb.SelectedItem.ToString();
+            //sv.MAGV = textBox1.Text;
+        sv.MAHP = textBox7.Text;
         //sv.HK = textBox2.Text;
         //sv.NAM = textBox3.Text;
-        sv.MACT = textBox5.Text;
+        sv.MACT = textBox10.Text;
 
-        //sv.SOTCTL = int.Parse(textBox9.Text); 
-        //sv.DTBTL = float.Parse(textBox10.Text);
-        int sotctl;
-        int dtbtl;
-        if (string.IsNullOrWhiteSpace(textBox3.Text) || string.IsNullOrWhiteSpace(textBox4.Text))
-        {
-            sv.HK = -1;
-            sv.NAM = -1;
-        }
-        else if (int.TryParse(textBox3.Text, out sotctl) && int.TryParse(textBox4.Text, out dtbtl))
-        {
-            sv.HK = sotctl;
-            sv.NAM = dtbtl;
-        }
+            //sv.SOTCTL = int.Parse(textBox9.Text); 
+            //sv.DTBTL = float.Parse(textBox10.Text);
+
+            //int sotctl;
+            //int dtbtl;
+            //if (string.IsNullOrWhiteSpace(textBox3.Text) || string.IsNullOrWhiteSpace(textBox4.Text))
+            //{
+            //    sv.HK = -1;
+            //    sv.NAM = -1;
+            //}
+            //else if (int.TryParse(textBox3.Text, out sotctl) && int.TryParse(textBox4.Text, out dtbtl))
+            //{
+            //    sv.HK = sotctl;
+            //    sv.NAM = dtbtl;
+            //}
         GVU_PhanCongDTO sv2 = new GVU_PhanCongDTO();
         sv2.MAGV = textBox6.Text;
         sv2.MAHP = textBox7.Text;
@@ -79,10 +82,10 @@ namespace PH2.GUI
             sv2.HK = -1;
             sv2.NAM = -1;
         }
-        else if (int.TryParse(textBox8.Text, out sotctl) && int.TryParse(textBox9.Text, out dtbtl))
+        else if (int.TryParse(textBox8.Text, out sotctl2) && int.TryParse(textBox9.Text, out dtbtl2))
         {
-            sv2.HK = sotctl;
-            sv2.NAM = dtbtl;
+            sv2.HK = sotctl2;
+            sv2.NAM = dtbtl2;
         }
         int tmp = svBLL.UpdatePhanCong(sv, sv2);
         if (tmp == 1)
@@ -95,5 +98,15 @@ namespace PH2.GUI
 
 
     }
-}
+        private void LoadNamHKCbb()
+        {
+            //HKNamCbb.Items.Add("Tất cả học kỳ và năm học");
+            List<string> hkNamList = svBLL.getAllMAGV();
+            foreach (string hkNam in hkNamList)
+            {
+                HKNamCbb.Items.Add(hkNam);
+            }
+            HKNamCbb.SelectedIndex = 0;
+        }
+    }
 }

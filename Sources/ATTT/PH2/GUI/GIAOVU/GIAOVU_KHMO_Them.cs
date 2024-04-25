@@ -19,6 +19,7 @@ namespace PH2.GUI
         public GIAOVU_KHMO_Them()
         {
             InitializeComponent();
+            LoadNamHKCbb();
         }
         private void button3_Click(object sender, EventArgs e)
         {
@@ -28,7 +29,8 @@ namespace PH2.GUI
         private void button2_Click(object sender, EventArgs e)
         {
             GVU_KHMODTO sv = new GVU_KHMODTO();
-            sv.MAHP = textBox1.Text;
+            //sv.MAHP = textBox1.Text;
+            sv.MAHP = HKNamCbb.SelectedItem.ToString();
             //sv.HK = textBox2.Text;
             //sv.NAM = textBox3.Text;
             sv.MACT = textBox4.Text;
@@ -47,6 +49,11 @@ namespace PH2.GUI
                 sv.HK = sotctl;
                 sv.NAM = dtbtl;
             }
+            else
+            {
+                sv.HK = -1;
+                sv.NAM = -1;
+            }
             int tmp = svBLL.AddKHMO(sv);
             if (tmp == 1)
             {
@@ -57,6 +64,16 @@ namespace PH2.GUI
             if (tmp == 0) MessageBox.Show("Vui lòng kiểm tra lại hoặc có lỗi xảy ra!");
 
 
+        }
+        private void LoadNamHKCbb()
+        {
+            //HKNamCbb.Items.Add("Tất cả học kỳ và năm học");
+            List<string> hkNamList = svBLL.getAllHP();
+            foreach (string hkNam in hkNamList)
+            {
+                HKNamCbb.Items.Add(hkNam);
+            }
+            HKNamCbb.SelectedIndex = 0;
         }
     }
 }

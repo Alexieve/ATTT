@@ -21,9 +21,9 @@ namespace PH1
         }
         private void Load(string keyword)
         {
-            
+
             string procName = "USP_AUDIT_GET_DBA_FGA_AUDIT_TRAIL";
-            OracleParameter[]  parameters =
+            OracleParameter[] parameters =
             {
                 new("P_RES", OracleDbType.RefCursor, ParameterDirection.Output),
                 new("P_KEYWORD", OracleDbType.Varchar2, ParameterDirection.Input) { Value = keyword }
