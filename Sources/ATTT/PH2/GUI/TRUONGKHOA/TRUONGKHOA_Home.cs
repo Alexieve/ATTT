@@ -1,4 +1,5 @@
 ﻿using PH2.DAL;
+using PH2.GUI.GIANGVIEN;
 using PH2.GUI.NV;
 using PH2.GUI.TRUONGKHOA;
 
@@ -55,7 +56,7 @@ namespace PH2.GUI
         private void DangKyBtn_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
-            openChildForm(new TRUONGKHOA_DanhSachDangKy());
+            openChildForm(new GV_XemDangKy());
         }
 
         private void logoutBtn_Click(object sender, EventArgs e)

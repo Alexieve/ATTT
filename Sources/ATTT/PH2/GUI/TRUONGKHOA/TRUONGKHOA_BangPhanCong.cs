@@ -41,6 +41,17 @@ namespace PH2.GUI.TRUONGKHOA
             tbMADV.TextChanged += TextChanged;
             tbHK.KeyPress += CheckNumeric;
             tbNAM.KeyPress += CheckNumeric;
+            setColumnName();
+        }
+
+        private void setColumnName()
+        {
+            dtgvPhanCong.Columns[0].HeaderText = "Mã Giáo Viên";
+            dtgvPhanCong.Columns[1].HeaderText = "Mã Học Phần";
+            dtgvPhanCong.Columns[2].HeaderText = "Học Kỳ";
+            dtgvPhanCong.Columns[3].HeaderText = "Năm";
+            dtgvPhanCong.Columns[4].HeaderText = "Mã Chương Trình";
+            dtgvPhanCong.Columns[5].HeaderText = "Mã Đơn Vị";
         }
 
         private void CheckNumeric(object sender, KeyPressEventArgs e)

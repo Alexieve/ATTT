@@ -11,13 +11,15 @@ namespace PH2.DTO
     {
         private string _MAGV;
         private string _MAHP;
+        private string _TENHP;
         private string _MAHP2;
         private int _HK;
         private int _NAM;
         private string _MACT;
         public string MAGV { get => _MAGV;  set => _MAGV = value;}
         public string MAHP { get => _MAHP; set => _MAHP = value;}
-       
+        public string TENHP { get => _TENHP; set => _TENHP = value; }
+
         public int HK { get => _HK; set => _HK = value;}
         public int NAM { get =>  _NAM; set => _NAM = value;}
         public string MACT { get => _MACT; set => _MACT = value;}
@@ -26,15 +28,17 @@ namespace PH2.DTO
         {
             this.MAGV = "";
             this.MAHP = "";
+            this.TENHP = "";
             this.MAHP2 = "";
             this.HK = -1;
             this.NAM = -1;
             this.MACT = "";
         }
-        public GVU_PhanCongDTO(string MAGV, string MAHP, int HK, int NAM, string MACT, string MAHP2)
+        public GVU_PhanCongDTO(string MAGV, string MAHP, string TENHP, int HK, int NAM, string MACT, string MAHP2)
         {
             this.MAGV = MAGV;
             this.MAHP = MAHP;
+            this.TENHP = TENHP;
             this.HK = HK;
             this.NAM = NAM;
             this.MACT = MACT;
@@ -45,6 +49,7 @@ namespace PH2.DTO
         {
             this.MAGV = phanCongDTO.MAGV;
             this.MAHP = phanCongDTO.MAHP;
+            this.TENHP = phanCongDTO.TENHP;
             this.HK = phanCongDTO.HK;
             this.NAM = phanCongDTO.NAM;
             this.MACT = phanCongDTO.MACT;

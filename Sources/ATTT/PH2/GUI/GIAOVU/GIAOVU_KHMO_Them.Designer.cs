@@ -32,13 +32,13 @@ namespace PH2.GUI
         {
             label3 = new Label();
             panel1 = new Panel();
+            HKNamCbb = new ComboBox();
             textBox3 = new TextBox();
             textBox4 = new TextBox();
             label4 = new Label();
             label2 = new Label();
             textBox2 = new TextBox();
             label1 = new Label();
-            textBox1 = new TextBox();
             button2 = new Button();
             button3 = new Button();
             label9 = new Label();
@@ -60,13 +60,13 @@ namespace PH2.GUI
             // 
             panel1.BackColor = SystemColors.Control;
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(HKNamCbb);
             panel1.Controls.Add(textBox3);
             panel1.Controls.Add(textBox4);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(textBox2);
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(textBox1);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button3);
             panel1.Controls.Add(label9);
@@ -75,6 +75,18 @@ namespace PH2.GUI
             panel1.Name = "panel1";
             panel1.Size = new Size(862, 589);
             panel1.TabIndex = 19;
+            // 
+            // HKNamCbb
+            // 
+            HKNamCbb.DropDownHeight = 160;
+            HKNamCbb.DropDownStyle = ComboBoxStyle.DropDownList;
+            HKNamCbb.Font = new Font("Segoe UI", 9F);
+            HKNamCbb.FormattingEnabled = true;
+            HKNamCbb.IntegralHeight = false;
+            HKNamCbb.Location = new Point(258, 168);
+            HKNamCbb.Name = "HKNamCbb";
+            HKNamCbb.Size = new Size(282, 28);
+            HKNamCbb.TabIndex = 20;
             // 
             // textBox3
             // 
@@ -127,14 +139,6 @@ namespace PH2.GUI
             label1.TabIndex = 36;
             label1.Text = "Học kì:";
             // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(258, 168);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(282, 28);
-            textBox1.TabIndex = 35;
-            // 
             // button2
             // 
             button2.Location = new Point(615, 512);
@@ -184,12 +188,12 @@ namespace PH2.GUI
         private Label label9;
         private Button button2;
         private Button button3;
-        private TextBox textBox1;
         private TextBox textBox4;
         private Label label4;
         private Label label2;
         private TextBox textBox2;
         private Label label1;
         private TextBox textBox3;
+        private ComboBox HKNamCbb;
     }
 }

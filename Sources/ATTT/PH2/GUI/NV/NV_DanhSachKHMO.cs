@@ -38,8 +38,18 @@ namespace PH2.GUI.NV
             tbHK.KeyPress += CheckNumeric;
             tbSOTC.KeyPress += CheckNumeric;
             tbNAM.KeyPress += CheckNumeric;
+            setColumnName();
         }
 
+        private void setColumnName()
+        {
+            dtgviewKHMO.Columns[0].HeaderText = "Học Kỳ";
+            dtgviewKHMO.Columns[1].HeaderText = "Năm";
+            dtgviewKHMO.Columns[2].HeaderText = "Mã Đơn Vị";
+            dtgviewKHMO.Columns[3].HeaderText = "Tên Học Phần";
+            dtgviewKHMO.Columns[4].HeaderText = "Mã Học Phần";
+            dtgviewKHMO.Columns[5].HeaderText = "Số Tín Chỉ";
+        }
         private void CheckNumeric(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
