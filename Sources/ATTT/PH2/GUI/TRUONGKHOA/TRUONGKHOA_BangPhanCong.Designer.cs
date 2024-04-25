@@ -45,6 +45,7 @@
             tbMAHP = new TextBox();
             tbMAGV = new TextBox();
             groupBox2 = new GroupBox();
+            btnCapNhat = new Button();
             btnXoa = new Button();
             btnThem = new Button();
             panel1.SuspendLayout();
@@ -98,7 +99,7 @@
             groupBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox1.Location = new Point(12, 104);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1045, 167);
+            groupBox1.Size = new Size(936, 167);
             groupBox1.TabIndex = 5;
             groupBox1.TabStop = false;
             groupBox1.Text = "Tìm kiếm";
@@ -107,7 +108,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
-            label5.Location = new Point(764, 102);
+            label5.Location = new Point(653, 102);
             label5.Name = "label5";
             label5.Size = new Size(78, 20);
             label5.TabIndex = 36;
@@ -116,17 +117,17 @@
             // tbMADV
             // 
             tbMADV.Font = new Font("Segoe UI", 9F);
-            tbMADV.Location = new Point(764, 125);
+            tbMADV.Location = new Point(652, 125);
             tbMADV.Name = "tbMADV";
             tbMADV.PlaceholderText = "Nhập mã đơn vị";
-            tbMADV.Size = new Size(275, 27);
+            tbMADV.Size = new Size(274, 27);
             tbMADV.TabIndex = 35;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
-            label4.Location = new Point(764, 32);
+            label4.Location = new Point(653, 32);
             label4.Name = "label4";
             label4.Size = new Size(42, 20);
             label4.TabIndex = 34;
@@ -136,7 +137,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
-            label3.Location = new Point(385, 102);
+            label3.Location = new Point(329, 102);
             label3.Name = "label3";
             label3.Size = new Size(124, 20);
             label3.TabIndex = 33;
@@ -146,7 +147,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
-            label2.Location = new Point(385, 32);
+            label2.Location = new Point(329, 32);
             label2.Name = "label2";
             label2.Size = new Size(56, 20);
             label2.TabIndex = 32;
@@ -175,28 +176,28 @@
             // tbHK
             // 
             tbHK.Font = new Font("Segoe UI", 9F);
-            tbHK.Location = new Point(385, 55);
+            tbHK.Location = new Point(329, 55);
             tbHK.Name = "tbHK";
             tbHK.PlaceholderText = "Nhập học kỳ";
-            tbHK.Size = new Size(275, 27);
+            tbHK.Size = new Size(274, 27);
             tbHK.TabIndex = 4;
             // 
             // tbNAM
             // 
             tbNAM.Font = new Font("Segoe UI", 9F);
-            tbNAM.Location = new Point(764, 54);
+            tbNAM.Location = new Point(652, 54);
             tbNAM.Name = "tbNAM";
             tbNAM.PlaceholderText = "Nhập năm";
-            tbNAM.Size = new Size(275, 27);
+            tbNAM.Size = new Size(274, 27);
             tbNAM.TabIndex = 3;
             // 
             // tbMACT
             // 
             tbMACT.Font = new Font("Segoe UI", 9F);
-            tbMACT.Location = new Point(385, 125);
+            tbMACT.Location = new Point(329, 125);
             tbMACT.Name = "tbMACT";
             tbMACT.PlaceholderText = "Nhập mã chương trình";
-            tbMACT.Size = new Size(275, 27);
+            tbMACT.Size = new Size(274, 27);
             tbMACT.TabIndex = 2;
             // 
             // tbMAHP
@@ -205,7 +206,7 @@
             tbMAHP.Location = new Point(6, 125);
             tbMAHP.Name = "tbMAHP";
             tbMAHP.PlaceholderText = "Nhập mã học phần";
-            tbMAHP.Size = new Size(275, 27);
+            tbMAHP.Size = new Size(274, 27);
             tbMAHP.TabIndex = 1;
             // 
             // tbMAGV
@@ -214,26 +215,39 @@
             tbMAGV.Location = new Point(6, 54);
             tbMAGV.Name = "tbMAGV";
             tbMAGV.PlaceholderText = "Nhập mã giáo viên";
-            tbMAGV.Size = new Size(275, 27);
+            tbMAGV.Size = new Size(274, 27);
             tbMAGV.TabIndex = 0;
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(btnCapNhat);
             groupBox2.Controls.Add(btnXoa);
             groupBox2.Controls.Add(btnThem);
             groupBox2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBox2.Location = new Point(1057, 104);
+            groupBox2.Location = new Point(945, 104);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(246, 167);
+            groupBox2.Size = new Size(358, 167);
             groupBox2.TabIndex = 6;
             groupBox2.TabStop = false;
             groupBox2.Text = "Thao tác";
+            // 
+            // btnCapNhat
+            // 
+            btnCapNhat.BackColor = Color.Cyan;
+            btnCapNhat.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            btnCapNhat.Location = new Point(252, 55);
+            btnCapNhat.Name = "btnCapNhat";
+            btnCapNhat.Size = new Size(80, 80);
+            btnCapNhat.TabIndex = 2;
+            btnCapNhat.Text = "Cập nhật";
+            btnCapNhat.UseVisualStyleBackColor = false;
+            btnCapNhat.Click += btnCapNhat_Click;
             // 
             // btnXoa
             // 
             btnXoa.BackColor = Color.Red;
             btnXoa.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
-            btnXoa.Location = new Point(144, 55);
+            btnXoa.Location = new Point(139, 55);
             btnXoa.Name = "btnXoa";
             btnXoa.Size = new Size(80, 80);
             btnXoa.TabIndex = 1;
@@ -295,5 +309,6 @@
         private Label label1;
         private Label label5;
         private TextBox tbMADV;
+        private Button btnCapNhat;
     }
 }

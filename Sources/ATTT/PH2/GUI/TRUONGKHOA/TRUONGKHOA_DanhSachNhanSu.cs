@@ -23,6 +23,16 @@ namespace PH2.GUI.TRUONGKHOA
             InitializeComponent();
             _NhanSuBLL = new NhanSuBLL();
             Load();
+            tbMANV.TextChanged += TextChanged;
+            tbHOTEN.TextChanged += TextChanged;
+            tbMADV.TextChanged += TextChanged;
+            tbVAITRO.TextChanged += TextChanged;
+            tbPHUCAP.TextChanged += TextChanged;
+            tbMACS.TextChanged += TextChanged;
+            tbSDT.TextChanged += TextChanged;
+            cbboxPHAI.TextChanged += TextChanged;
+            dtpkDOBFrom.TextChanged += TextChanged;
+            dtpkDOBTo.TextChanged += TextChanged;
         }
 
         private void Load()
@@ -36,16 +46,19 @@ namespace PH2.GUI.TRUONGKHOA
             dtgvNhanSu.ReadOnly = true;
             dtgvNhanSu.AllowUserToDeleteRows = true;
 
-            tbMANV.TextChanged += TextChanged;
-            tbHOTEN.TextChanged += TextChanged;
-            tbMADV.TextChanged += TextChanged;
-            tbVAITRO.TextChanged += TextChanged;
-            tbPHUCAP.TextChanged += TextChanged;
-            tbMACS.TextChanged += TextChanged;
-            tbSDT.TextChanged += TextChanged;
-            cbboxPHAI.TextChanged += TextChanged;
-            dtpkDOBFrom.TextChanged += TextChanged;
-            dtpkDOBTo.TextChanged += TextChanged;
+            setColumnName();
+        }
+        private void setColumnName()
+        {
+            dtgvNhanSu.Columns[0].HeaderText = "Mã Nhân Viên";
+            dtgvNhanSu.Columns[1].HeaderText = "Họ Tên";
+            dtgvNhanSu.Columns[2].HeaderText = "Phái";
+            dtgvNhanSu.Columns[3].HeaderText = "Ngày Sinh";
+            dtgvNhanSu.Columns[4].HeaderText = "Phụ Cấp";
+            dtgvNhanSu.Columns[5].HeaderText = "SĐT";
+            dtgvNhanSu.Columns[6].HeaderText = "Vai Trò";
+            dtgvNhanSu.Columns[7].HeaderText = "Mã Đơn Vị";
+            dtgvNhanSu.Columns[8].HeaderText = "Cơ Sở";
         }
 
         private void TextChanged(object sender, EventArgs e)
@@ -79,6 +92,7 @@ namespace PH2.GUI.TRUONGKHOA
         {
             TRUONGKHOA_Them_Sua_NhanSu _ThemNhanSu = new TRUONGKHOA_Them_Sua_NhanSu("insert");
             _ThemNhanSu.StartPosition = FormStartPosition.CenterScreen;
+            _ThemNhanSu.Text = "Thêm Nhân Sự";
             _ThemNhanSu.ShowDialog();
             Load();
         }
@@ -106,6 +120,7 @@ namespace PH2.GUI.TRUONGKHOA
             var nhanSuDTO = (NhanSuDTO)row.DataBoundItem;
             TRUONGKHOA_Them_Sua_NhanSu _SuaNhanSu = new TRUONGKHOA_Them_Sua_NhanSu("update", nhanSuDTO);
             _SuaNhanSu.StartPosition = FormStartPosition.CenterScreen;
+            _SuaNhanSu.Text = "Sửa Nhân Sự";
             _SuaNhanSu.ShowDialog();
             Load();
         }

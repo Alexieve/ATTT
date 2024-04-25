@@ -152,7 +152,6 @@
             label3.Size = new Size(66, 25);
             label3.TabIndex = 7;
             label3.Text = "Học kì";
-            label3.Click += label3_Click;
             // 
             // ComboHK
             // 
