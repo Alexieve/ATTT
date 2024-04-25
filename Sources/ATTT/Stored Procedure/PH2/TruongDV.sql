@@ -65,7 +65,7 @@ BEGIN
     AND MACT = CAST(P_MACT as CHAR(5));
 
     IF Check_Record > 0 THEN
-        RAISE_APPLICATION_ERROR(-20001, 'Trùng khóa chính');
+        RAISE_APPLICATION_ERROR(-20001, 'Trï¿½ng khï¿½a chï¿½nh');
     END IF;
 
     UPDATE PHANCONG
@@ -94,5 +94,5 @@ EXCEPTION
             COMMIT;
         END;
 END;
-
+/
 GRANT EXECUTE ON USP_UPDATE_PHAN_CONG_TRUONGDV TO RL_TRUONGDV;
