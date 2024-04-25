@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH1\\PH1.csproj": {}
+    "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH1\\PH1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH1\\PH1.csproj": {
+    "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH1\\PH1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH1\\PH1.csproj",
+        "projectUniqueName": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH1\\PH1.csproj",
         "projectName": "PH1",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH1\\PH1.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH1\\obj\\",
+        "projectPath": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH1\\PH1.csproj",
+        "packagesPath": "C:\\Users\\vumin\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vumin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

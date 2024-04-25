@@ -36,6 +36,14 @@ END;
 BEGIN
     SA_USER_ADMIN.SET_USER_LABELS(
         policy_name => 'BRANCH_POLICY', 
+        user_name => 'NV00000038', 
+        max_read_label => 'GIANGVIEN:KHMT:CS2'
+    );
+END;
+/
+BEGIN
+    SA_USER_ADMIN.SET_USER_LABELS(
+        policy_name => 'BRANCH_POLICY', 
         user_name => 'SV00000018', 
         max_read_label => 'SINHVIEN:HTTT:CS1'
     );
