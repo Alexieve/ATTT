@@ -27,15 +27,24 @@ namespace PH2.GUI.GIANGVIEN
             dataGridView1.DataSource = danhSachDK;
             setColumnName();
         }
+        private void Load(string MASV, string MAGV, string MAHP, string NAM, string HK, string MACT)
+        {
+            dataGridView1.Columns.Clear();
+            List<DangKyDTO> danhSachDK = XemDangKyBLL.GetDangKyGVSearch(MASV, MAGV, MAHP, NAM, HK, MACT);
+
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = danhSachDK;
+            setColumnName();
+        }
         private void setColumnName()
         {
             dataGridView1.Columns[0].HeaderText = "Mã Sinh Viên";
             dataGridView1.Columns[1].HeaderText = "Mã Giáo Viên";
             //dataGridView1.Columns[0].Visible = false;
-            dataGridView1.Columns[1].Visible = false;
+            //dataGridView1.Columns[1].Visible = false;
             dataGridView1.Columns[2].HeaderText = "Tên Sinh Viên";
             dataGridView1.Columns[3].HeaderText = "Mã Học Phần";
-            dataGridView1.Columns[3].Visible = false;
+            //dataGridView1.Columns[3].Visible = false;
             dataGridView1.Columns[4].HeaderText = "Tên Học Phần";
             dataGridView1.Columns[5].HeaderText = "Học Kì";
             dataGridView1.Columns[6].HeaderText = "Năm";
@@ -85,6 +94,7 @@ namespace PH2.GUI.GIANGVIEN
             temp = float.TryParse(DIEMCK, out float g);
             temp = float.TryParse(DIEMTK, out float h);
             int check = XemDangKyBLL.UpdateDiem(MASV, MAGV, MAHP, HK, NAM, MACT, d, f, g, h);
+
             if (check == 0)
             {
                 MessageBox.Show("Không được cập nhật điểm trên dòng này!", "Thông báo");
@@ -95,6 +105,34 @@ namespace PH2.GUI.GIANGVIEN
         {
             prevValue = dataGridView1[e.ColumnIndex, e.RowIndex].Value.ToString();
 
+        }
+
+
+        private void SearchButton_Click(object sender, EventArgs e)
+        {
+            string MaSV = MASV.Text;
+            string MaGV = MAGV.Text;
+            string MaHP = MAHP.Text;
+            string HocKi = HK.Text;
+            string Nam = NAM.Text;
+            string MaCT = MACT.Text;
+            if (string.IsNullOrEmpty(MaSV) && string.IsNullOrEmpty(MaHP) && string.IsNullOrEmpty(Nam) && string.IsNullOrEmpty(HocKi) && string.IsNullOrEmpty(MaCT) && string.IsNullOrEmpty(MaGV))
+            {
+                Load();
+                return;
+            }
+
+            if (!string.IsNullOrEmpty(Nam) && !int.TryParse(Nam, out int y))
+            {
+                MessageBox.Show("Vui lòng nhập năm đúng định dạng!", "Thông báo");
+                return;
+            }
+            if (!string.IsNullOrEmpty(HocKi) && !int.TryParse(HocKi, out int sem))
+            {
+                MessageBox.Show("Vui lòng nhập học kì đúng định dạng!", "Thông báo");
+                return;
+            }
+            Load(MaSV, MaGV, MaHP, Nam, HocKi, MaCT);
         }
     }
 }

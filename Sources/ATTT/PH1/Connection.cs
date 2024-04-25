@@ -11,6 +11,7 @@ namespace ATTT
         public static OracleConnection con = null;
         private static string host = "localhost";
         private static OracleDataAdapter adapter;
+
         public static void Connect(string username, string password)
         {
             string connectionString = "User ID=" + username + "; Password=" + password + "; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = " + host + ")(PORT = 1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME = ATTT)));";
@@ -49,13 +50,18 @@ namespace ATTT
             }
         }
 
-        public static bool IsConnected()
+        public static bool Disconnect()
         {
-            if (con == null)
+            try
+            {
+                Close();
+                con.Dispose();
+                return true;
+            }
+            catch (OracleException)
             {
                 return false;
             }
-            return con.State == System.Data.ConnectionState.Open;
         }
 
         // get role from a function in the database

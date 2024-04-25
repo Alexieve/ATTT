@@ -27,11 +27,11 @@ namespace PH2.GUI
             List<GVU_PhanCongDTO> listSV = svBLL.getAll();
             HocPhanTable.DataSource = listSV;
             HocPhanTable.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            foreach (DataGridViewColumn column in HocPhanTable.Columns)
-            {
-                column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            }
-            //HocPhanTable.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            //foreach (DataGridViewColumn column in HocPhanTable.Columns)
+            //{
+            //    column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            //}
+            HocPhanTable.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             setColumnName();
 
         }
@@ -40,11 +40,11 @@ namespace PH2.GUI
             List<GVU_PhanCongDTO> listSV = svBLL.search(keyword);
             HocPhanTable.DataSource = listSV;
             HocPhanTable.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            foreach (DataGridViewColumn column in HocPhanTable.Columns)
-            {
-                column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            }
-            //HocPhanTable.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            //foreach (DataGridViewColumn column in HocPhanTable.Columns)
+            //{
+            //    column.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            //}
+            HocPhanTable.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             setColumnName();
             maSinhVienToShow = "";
         }
@@ -53,10 +53,11 @@ namespace PH2.GUI
         {
             HocPhanTable.Columns[0].HeaderText = "Mã Giáo Viên";
             HocPhanTable.Columns[1].HeaderText = "Mã Học Phần";
-            HocPhanTable.Columns[2].HeaderText = "Học Kì";
-            HocPhanTable.Columns[3].HeaderText = "Năm";
-            HocPhanTable.Columns[4].HeaderText = "Mã Chương Trình";
-            HocPhanTable.Columns[5].HeaderText = "Có Thể Cập Nhật";
+            HocPhanTable.Columns[2].HeaderText = "Tên Học Phần";
+            HocPhanTable.Columns[3].HeaderText = "Học Kì";
+            HocPhanTable.Columns[4].HeaderText = "Năm";
+            HocPhanTable.Columns[5].HeaderText = "Mã Chương Trình";
+            HocPhanTable.Columns[6].HeaderText = "Có Thể Cập Nhật";
             //HocPhanTable.Columns[5].Visible = false;
         }
         private void searchBtn_Click(object sender, EventArgs e)
@@ -71,10 +72,10 @@ namespace PH2.GUI
                 // Lấy mã sinh viên từ dòng được chọn và lưu vào biến maSinhVienToShow
                 maSinhVienToShow = HocPhanTable.SelectedRows[0].Cells[0].Value.ToString();
                 maSinhVienToShow2 = HocPhanTable.SelectedRows[0].Cells[1].Value.ToString();
-                maSinhVienToShow3 = HocPhanTable.SelectedRows[0].Cells[2].Value.ToString();
-                maSinhVienToShow4 = HocPhanTable.SelectedRows[0].Cells[3].Value.ToString();
-                maSinhVienToShow5 = HocPhanTable.SelectedRows[0].Cells[4].Value.ToString();
-                maSinhVienToShow6 = HocPhanTable.SelectedRows[0].Cells[5].Value.ToString();
+                maSinhVienToShow3 = HocPhanTable.SelectedRows[0].Cells[3].Value.ToString();
+                maSinhVienToShow4 = HocPhanTable.SelectedRows[0].Cells[4].Value.ToString();
+                maSinhVienToShow5 = HocPhanTable.SelectedRows[0].Cells[5].Value.ToString();
+                maSinhVienToShow6 = HocPhanTable.SelectedRows[0].Cells[6].Value.ToString();
             }
         }
         private void button2_Click(object sender, EventArgs e)

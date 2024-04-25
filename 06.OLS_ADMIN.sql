@@ -41,7 +41,6 @@ EXECUTE SA_LABEL_ADMIN.CREATE_LABEL(policy_name => 'BRANCH_POLICY', label_tag =>
 EXECUTE SA_LABEL_ADMIN.CREATE_LABEL(policy_name => 'BRANCH_POLICY', label_tag => 200, label_value => 'TRUONGDV'); 
 EXECUTE SA_LABEL_ADMIN.CREATE_LABEL(policy_name => 'BRANCH_POLICY', label_tag => 611, label_value => 'SINHVIEN:HTTT:CS1'); 
 EXECUTE SA_LABEL_ADMIN.CREATE_LABEL(policy_name => 'BRANCH_POLICY', label_tag => 231, label_value => 'TRUONGDV:KHMT:CS1');
---EXECUTE SA_LABEL_ADMIN.CREATE_LABEL(policy_name => 'BRANCH_POLICY', label_tag => 230, label_value => 'TRUONGDV:KHMT');
 EXECUTE SA_LABEL_ADMIN.CREATE_LABEL(policy_name => 'BRANCH_POLICY', label_tag => 230, label_value => 'TRUONGDV:KHMT:CS1,CS2');
 
 

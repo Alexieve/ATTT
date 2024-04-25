@@ -16,6 +16,7 @@ namespace PH2.GUI.TRUONGDV
     public partial class TruongDV_XemPC : Form
     {
         private XemPhanCongBLL XemPCBLL;
+        private string Old_MAGV_Value;
         public TruongDV_XemPC()
         {
             InitializeComponent();
@@ -31,6 +32,7 @@ namespace PH2.GUI.TRUONGDV
             List<string> listGV = XemPCBLL.GetMAGV();
             List<string> listHP = XemPCBLL.GetMAHP();
             ComboMAGV.DataSource = listGV;
+            MAGV.DataSource = listGV;
             ComboMAGV.DisplayMember = "MANV";
             ComboMAHP.DataSource = listHP;
             ComboMAHP.DisplayMember = "MAHP";
@@ -49,7 +51,7 @@ namespace PH2.GUI.TRUONGDV
         private void setColumnName()
         {
             dataGridView1.Columns[0].HeaderText = "Mã Giáo Viên";
-            dataGridView1.Columns[0].Visible = false;
+            //dataGridView1.Columns[0].Visible = false;
 
             dataGridView1.Columns[1].HeaderText = "Mã Học Phần";
             //dataGridView1.Columns[1].Visible = false;
@@ -77,22 +79,21 @@ namespace PH2.GUI.TRUONGDV
             tmp = dataGridView1.Rows[rowIndex].Cells[5].Value.ToString();
             int NAM = Int32.Parse(tmp);
             string MACT = dataGridView1.Rows[rowIndex].Cells[6].Value.ToString();
-            try
+            DialogResult dialogResult = MessageBox.Show("Dữ liệu của lớp giảng dạy có thể bị mất!", "Thông báo", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
             {
-                XemPCBLL.DeleteRow(MAGV, MAHP, HK, NAM, MACT);
+                try
+                {
+                    XemPCBLL.DeleteRow(MAGV, MAHP, HK, NAM, MACT);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi xóa khóa ngoại!");
+                    return;
+                }
+                Load();
+                MessageBox.Show("Xóa phân công thành công!");
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi xóa khóa ngoại!");
-                return;
-            }
-            Load();
-            MessageBox.Show("Xóa phân công thành công!");
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void addButton_Click(object sender, EventArgs e)
@@ -118,16 +119,67 @@ namespace PH2.GUI.TRUONGDV
                 if (ex.Message.Contains("policy"))
                 {
                     MessageBox.Show("Vi phạm chính sách VPD!");
-                    return;
                 }
                 else if (ex.Message.Contains("unique constraint"))
                 {
-                    MessageBox.Show("Kế hoạch mở không có học phần này hoặc đã được đăng ký!");
-                    return;
+                    MessageBox.Show("Kế hoạch đã được đăng ký!");
                 }
+                else
+                {
+                    MessageBox.Show("Kế hoạch mở không có học phần này!");
+                }
+                return;
             }
             MessageBox.Show("Thêm vào thành công!");
             Load();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.ColumnIndex < 0)
+            {
+                return;
+            }
+            MAHPBox.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            HKBox.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+            NAMBox.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+            MACTBox.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+            Old_MAGV_Value = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+        }
+
+        private void updateButton_Click(object sender, EventArgs e)
+        {
+            string MaGV = MAGV.SelectedItem.ToString();
+            string MaHP = MAHPBox.Text;
+            int HK = 0;
+            int NAM = 0;
+            try
+            {
+                HK = int.Parse(HKBox.Text);
+                NAM = int.Parse(NAMBox.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Vui lòng chọn dòng cần cập nhật!", "Thông báo");
+                return;
+            }
+            string MACT = MACTBox.Text;
+            DialogResult dialogResult = MessageBox.Show("Dữ liệu của lớp giảng dạy có thể bị mất!", "Thông báo", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                try
+                {
+                    XemPCBLL.UpdateRow(MaGV, MaHP, HK, NAM, MACT, Old_MAGV_Value);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    return;
+                }
+                MessageBox.Show("Cập nhật thành công!");
+                Load();
+            }
+
         }
     }
 }

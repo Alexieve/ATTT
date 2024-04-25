@@ -41,6 +41,16 @@ namespace PH2.BLL
             }
             return listNamHK;
         }
+        public List<string> getAllHP()
+        {
+            DataTable dt = khmoDAL.getAllHP();
+            List<string> listNamHK = new List<string>();
+            foreach (DataRow row in dt.Rows)
+            {
+                listNamHK.Add(row["MAHP"].ToString());
+            }
+            return listNamHK;
+        }
         public int AddKHMO(GVU_KHMODTO a)
         {
             if (a.MAHP.Length > 10 || a.MACT.Length > 5)
@@ -68,8 +78,28 @@ namespace PH2.BLL
                 MessageBox.Show("Số không hợp lệ", "Thông báo");
                 return 3;
             }
+            //if (a.MACT.ToUpper().Replace(" ", "") != "CLC" || a.MACT.ToUpper().Replace(" ", "") != "CQ" || a.MACT.ToUpper().Replace(" ", "") != "CTTT" | a.MACT.ToUpper().Replace(" ", "") != "VP"  )
+            //{
+            //    MessageBox.Show("Mã ct không hợp lệ", "Thông báo");
+            //    return 4;
+            //}
 
             return khmoDAL.UpdateKHMO(a,a2);
+        }
+        public int UpdateKHMO2(GVU_KHMODTO a, GVU_KHMODTO a2)
+        {
+            //if (a.MAHP.Length > 10 || a.MACT.Length > 5)
+            //{
+            //    MessageBox.Show("Mã không hợp lệ", "Thông báo");
+            //    return 2;
+            //}
+            //if (a.HK < 0 || a.NAM < 0)
+            //{
+            //    MessageBox.Show("Số không hợp lệ", "Thông báo");
+            //    return 3;
+            //}
+
+            return khmoDAL.UpdateKHMO2(a, a2);
         }
     }
 }

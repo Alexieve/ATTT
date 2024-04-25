@@ -30,10 +30,11 @@
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DanhSachPC = new DataGridView();
+            MAHP = new DataGridViewTextBoxColumn();
             TenHP = new DataGridViewTextBoxColumn();
             Nam = new DataGridViewTextBoxColumn();
-            MaCT = new DataGridViewTextBoxColumn();
             HK = new DataGridViewTextBoxColumn();
+            MACT = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)DanhSachPC).BeginInit();
             SuspendLayout();
             // 
@@ -50,13 +51,20 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             DanhSachPC.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             DanhSachPC.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DanhSachPC.Columns.AddRange(new DataGridViewColumn[] { TenHP, Nam, MaCT, HK });
+            DanhSachPC.Columns.AddRange(new DataGridViewColumn[] { MAHP, TenHP, Nam, HK, MACT });
             DanhSachPC.Location = new Point(0, 0);
             DanhSachPC.Name = "DanhSachPC";
             DanhSachPC.ReadOnly = true;
             DanhSachPC.RowHeadersWidth = 51;
             DanhSachPC.Size = new Size(1316, 653);
             DanhSachPC.TabIndex = 0;
+            // 
+            // MAHP
+            // 
+            MAHP.HeaderText = "Mã học phần";
+            MAHP.MinimumWidth = 6;
+            MAHP.Name = "MAHP";
+            MAHP.ReadOnly = true;
             // 
             // TenHP
             // 
@@ -72,19 +80,19 @@
             Nam.Name = "Nam";
             Nam.ReadOnly = true;
             // 
-            // MaCT
-            // 
-            MaCT.HeaderText = "Chương trình";
-            MaCT.MinimumWidth = 6;
-            MaCT.Name = "MaCT";
-            MaCT.ReadOnly = true;
-            // 
             // HK
             // 
             HK.HeaderText = "Học kì";
             HK.MinimumWidth = 6;
             HK.Name = "HK";
             HK.ReadOnly = true;
+            // 
+            // MACT
+            // 
+            MACT.HeaderText = "Chương trình";
+            MACT.MinimumWidth = 6;
+            MACT.Name = "MACT";
+            MACT.ReadOnly = true;
             // 
             // XemPhanCong
             // 
@@ -102,9 +110,10 @@
         #endregion
 
         private DataGridView DanhSachPC;
+        private DataGridViewTextBoxColumn MAHP;
         private DataGridViewTextBoxColumn TenHP;
         private DataGridViewTextBoxColumn Nam;
-        private DataGridViewTextBoxColumn MaCT;
         private DataGridViewTextBoxColumn HK;
+        private DataGridViewTextBoxColumn MACT;
     }
 }

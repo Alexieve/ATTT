@@ -29,7 +29,7 @@ namespace PH2.GUI.GIANGVIEN
             List<PhanCongDTO> danhSachPC = XemPhanCongBLL.getPhanCong();
             foreach (var array in danhSachPC)
             {
-                DanhSachPC.Rows.Add(array.TENHP, array.NAM, array.MACT, array.HK);
+                DanhSachPC.Rows.Add(array.MAHP ,array.TENHP, array.NAM, array.HK, array.MACT);
             }
         }
 
