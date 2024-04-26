@@ -44,16 +44,16 @@
             dtgviewKHMO = new DataGridView();
             dtgviewGiangVien = new DataGridView();
             groupBox1 = new GroupBox();
-            label11 = new Label();
             tbCOSO = new TextBox();
-            label9 = new Label();
             tbGVMADV = new TextBox();
-            label10 = new Label();
-            tbHOTEN = new TextBox();
-            label8 = new Label();
             tbSDT = new TextBox();
-            label6 = new Label();
+            tbHOTEN = new TextBox();
             tbMAGV = new TextBox();
+            label11 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            label8 = new Label();
+            label6 = new Label();
             btnThem = new Button();
             gboxTimkiem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtgviewKHMO).BeginInit();
@@ -106,16 +106,16 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
-            label7.Location = new Point(459, 104);
+            label7.Location = new Point(459, 31);
             label7.Name = "label7";
-            label7.Size = new Size(128, 20);
+            label7.Size = new Size(124, 20);
             label7.TabIndex = 19;
-            label7.Text = "Mã chương trinh ";
+            label7.Text = "Mã chương trình";
             // 
             // tbMACT
             // 
             tbMACT.Font = new Font("Segoe UI", 9F);
-            tbMACT.Location = new Point(459, 127);
+            tbMACT.Location = new Point(459, 54);
             tbMACT.Name = "tbMACT";
             tbMACT.PlaceholderText = "Nhập mã chương trình";
             tbMACT.Size = new Size(165, 27);
@@ -125,7 +125,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
-            label4.Location = new Point(457, 31);
+            label4.Location = new Point(457, 104);
             label4.Name = "label4";
             label4.Size = new Size(78, 20);
             label4.TabIndex = 17;
@@ -134,7 +134,7 @@
             // tbMADV
             // 
             tbMADV.Font = new Font("Segoe UI", 9F);
-            tbMADV.Location = new Point(458, 54);
+            tbMADV.Location = new Point(458, 127);
             tbMADV.Name = "tbMADV";
             tbMADV.PlaceholderText = "Nhập mã đơn vị";
             tbMADV.Size = new Size(165, 27);
@@ -217,16 +217,16 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(label11);
             groupBox1.Controls.Add(tbCOSO);
-            groupBox1.Controls.Add(label9);
             groupBox1.Controls.Add(tbGVMADV);
-            groupBox1.Controls.Add(label10);
-            groupBox1.Controls.Add(tbHOTEN);
-            groupBox1.Controls.Add(label8);
             groupBox1.Controls.Add(tbSDT);
-            groupBox1.Controls.Add(label6);
+            groupBox1.Controls.Add(tbHOTEN);
             groupBox1.Controls.Add(tbMAGV);
+            groupBox1.Controls.Add(label11);
+            groupBox1.Controls.Add(label9);
+            groupBox1.Controls.Add(label10);
+            groupBox1.Controls.Add(label8);
+            groupBox1.Controls.Add(label6);
             groupBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox1.Location = new Point(648, 36);
             groupBox1.Name = "groupBox1";
@@ -234,6 +234,51 @@
             groupBox1.TabIndex = 12;
             groupBox1.TabStop = false;
             groupBox1.Text = "Tìm kiếm giảng viên";
+            // 
+            // tbCOSO
+            // 
+            tbCOSO.Font = new Font("Segoe UI", 9F);
+            tbCOSO.Location = new Point(462, 127);
+            tbCOSO.Name = "tbCOSO";
+            tbCOSO.PlaceholderText = "Nhập cơ sở";
+            tbCOSO.Size = new Size(165, 27);
+            tbCOSO.TabIndex = 35;
+            // 
+            // tbGVMADV
+            // 
+            tbGVMADV.Font = new Font("Segoe UI", 9F);
+            tbGVMADV.Location = new Point(234, 127);
+            tbGVMADV.Name = "tbGVMADV";
+            tbGVMADV.PlaceholderText = "Nhập mã đơn vị";
+            tbGVMADV.Size = new Size(165, 27);
+            tbGVMADV.TabIndex = 34;
+            // 
+            // tbSDT
+            // 
+            tbSDT.Font = new Font("Segoe UI", 9F);
+            tbSDT.Location = new Point(6, 127);
+            tbSDT.Name = "tbSDT";
+            tbSDT.PlaceholderText = "Nhập số điện thoại";
+            tbSDT.Size = new Size(165, 27);
+            tbSDT.TabIndex = 33;
+            // 
+            // tbHOTEN
+            // 
+            tbHOTEN.Font = new Font("Segoe UI", 9F);
+            tbHOTEN.Location = new Point(236, 54);
+            tbHOTEN.Name = "tbHOTEN";
+            tbHOTEN.PlaceholderText = "Nhập họ tên giảng viên";
+            tbHOTEN.Size = new Size(165, 27);
+            tbHOTEN.TabIndex = 32;
+            // 
+            // tbMAGV
+            // 
+            tbMAGV.Font = new Font("Segoe UI", 9F);
+            tbMAGV.Location = new Point(6, 54);
+            tbMAGV.Name = "tbMAGV";
+            tbMAGV.PlaceholderText = "Nhập mã giảng viên";
+            tbMAGV.Size = new Size(165, 27);
+            tbMAGV.TabIndex = 22;
             // 
             // label11
             // 
@@ -245,15 +290,6 @@
             label11.TabIndex = 31;
             label11.Text = "Cơ sở";
             // 
-            // tbCOSO
-            // 
-            tbCOSO.Font = new Font("Segoe UI", 9F);
-            tbCOSO.Location = new Point(462, 127);
-            tbCOSO.Name = "tbCOSO";
-            tbCOSO.PlaceholderText = "Nhập cơ sở";
-            tbCOSO.Size = new Size(165, 27);
-            tbCOSO.TabIndex = 30;
-            // 
             // label9
             // 
             label9.AutoSize = true;
@@ -263,15 +299,6 @@
             label9.Size = new Size(78, 20);
             label9.TabIndex = 29;
             label9.Text = "Mã đơn vị";
-            // 
-            // tbGVMADV
-            // 
-            tbGVMADV.Font = new Font("Segoe UI", 9F);
-            tbGVMADV.Location = new Point(234, 127);
-            tbGVMADV.Name = "tbGVMADV";
-            tbGVMADV.PlaceholderText = "Nhập mã đơn vị";
-            tbGVMADV.Size = new Size(165, 27);
-            tbGVMADV.TabIndex = 28;
             // 
             // label10
             // 
@@ -283,15 +310,6 @@
             label10.TabIndex = 27;
             label10.Text = "Họ tên giảng viên";
             // 
-            // tbHOTEN
-            // 
-            tbHOTEN.Font = new Font("Segoe UI", 9F);
-            tbHOTEN.Location = new Point(234, 54);
-            tbHOTEN.Name = "tbHOTEN";
-            tbHOTEN.PlaceholderText = "Nhập họ tên giảng viên";
-            tbHOTEN.Size = new Size(165, 27);
-            tbHOTEN.TabIndex = 26;
-            // 
             // label8
             // 
             label8.AutoSize = true;
@@ -302,15 +320,6 @@
             label8.TabIndex = 25;
             label8.Text = "Số điện thoại";
             // 
-            // tbSDT
-            // 
-            tbSDT.Font = new Font("Segoe UI", 9F);
-            tbSDT.Location = new Point(6, 127);
-            tbSDT.Name = "tbSDT";
-            tbSDT.PlaceholderText = "Nhập số điện thoại";
-            tbSDT.Size = new Size(165, 27);
-            tbSDT.TabIndex = 24;
-            // 
             // label6
             // 
             label6.AutoSize = true;
@@ -320,15 +329,6 @@
             label6.Size = new Size(107, 20);
             label6.TabIndex = 23;
             label6.Text = "Mã giảng viên";
-            // 
-            // tbMAGV
-            // 
-            tbMAGV.Font = new Font("Segoe UI", 9F);
-            tbMAGV.Location = new Point(6, 54);
-            tbMAGV.Name = "tbMAGV";
-            tbMAGV.PlaceholderText = "Nhập mã giảng viên";
-            tbMAGV.Size = new Size(165, 27);
-            tbMAGV.TabIndex = 22;
             // 
             // btnThem
             // 
@@ -384,14 +384,14 @@
         private GroupBox groupBox1;
         private Button btnThem;
         private Label label11;
-        private TextBox tbCOSO;
         private Label label9;
-        private TextBox tbGVMADV;
         private Label label10;
-        private TextBox tbHOTEN;
         private Label label8;
-        private TextBox tbSDT;
         private Label label6;
+        private TextBox tbCOSO;
+        private TextBox tbGVMADV;
+        private TextBox tbSDT;
+        private TextBox tbHOTEN;
         private TextBox tbMAGV;
     }
 }

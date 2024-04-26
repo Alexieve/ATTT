@@ -46,13 +46,13 @@ namespace PH2.GUI.NV
             tbCOSO.Text = dr["COSO"].ToString().Trim();
 
 
-            tbMANV.KeyPress += prevent_KeyPress;
-            tbHOTEN.KeyPress += prevent_KeyPress;
-            dtpkDOB.KeyPress += prevent_KeyPress;
-            tbPHUCAP.KeyPress += prevent_KeyPress;
-            tbVAITRO.KeyPress += prevent_KeyPress;
-            tbMADONVI.KeyPress += prevent_KeyPress;
-            tbCOSO.KeyPress += prevent_KeyPress;
+            tbMANV.ReadOnly = true;
+            tbHOTEN.ReadOnly = true;
+            dtpkDOB.Enabled = false;
+            tbPHUCAP.ReadOnly = true;
+            tbVAITRO.ReadOnly = true;
+            tbMADONVI.ReadOnly = true;
+            tbCOSO.ReadOnly = true; 
             tbSDT.KeyPress += CheckNumeric;
 
         }

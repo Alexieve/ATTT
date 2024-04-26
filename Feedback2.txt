@@ -1,0 +1,32 @@
+CS#1
+	
+
+CS#2
+	- Cập nhật điểm bị crash
+	- Tạo trigger cập nhật số tín chỉ và điểm trung bình cho sinh viên khi thay đổi điểm tổng kết
+
+CS#3
+	- Danh sách Sinh viên
+		+ Quá lag --> Sửa lại sao cho đỡ lag
+		+ Điểm trung bình và số tín chỉ là tự cập nhật khi thêm đăng ký, không phải tự thêm, SOTC ban đầu là 0, DTB là NULL
+		--> Bỏ 2 ô số tín chỉ và điểm trung bình khi thêm và cập nhật
+		+ Drop list Phái, MACT, MANGANH, COSO
+	- Danh sách Đơn vị
+		+ Drop list giáo viên gồm mã giáo viên và tên giáo viên khi thêm và cập nhật
+	- Danh sách học phần
+		+ Drop list Mã đơn vị khi thêm và cập nhật
+	- Bảng KHMO 
+		+ Drop list thiếu TENHP
+		+ Drop list mã chương trình
+	- Bảng Phân công
+		+ Drop list thiếu TENGV
+	- Đăng ký học phần
+		+ 
+	
+CS#4
+	
+
+CS#5
+	- Danh sách Nhân sự:
+		+ Thêm drop list vai trò, mã đơn vị, cơ sở
+	

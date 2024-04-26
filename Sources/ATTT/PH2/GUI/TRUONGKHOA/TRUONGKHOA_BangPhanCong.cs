@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace PH2.GUI.TRUONGKHOA
 {
@@ -81,9 +82,19 @@ namespace PH2.GUI.TRUONGKHOA
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-           
+
             DataGridViewRow row = dtgvPhanCong.SelectedRows[0];
             var phanCongDTO = (PhanCongTKDTO)row.DataBoundItem;
+
+            bool check = _PhanCongBLL.checkDK(phanCongDTO.MAGV, phanCongDTO.MAHP, phanCongDTO.HK, phanCongDTO.NAM, phanCongDTO.MACT);
+            if (!check)
+            {
+                YesNoDialog yesNoDialog = new YesNoDialog();
+                DialogResult result = yesNoDialog.ShowDialog();
+                if (result == DialogResult.No)
+                    return;
+            }
+
             int deleteCount = _PhanCongBLL.delete(phanCongDTO.MAGV, phanCongDTO.MAHP, phanCongDTO.HK, phanCongDTO.NAM, phanCongDTO.MACT);
             if (deleteCount == 1)
             {
@@ -93,7 +104,7 @@ namespace PH2.GUI.TRUONGKHOA
             }
             else
             {
-                MessageBox.Show("Xóa không thành công");
+                MessageBox.Show("Phân công chứa học phần không thuộc quản lý của Văn Phòng Khoa");
             }
         }
 
@@ -101,8 +112,22 @@ namespace PH2.GUI.TRUONGKHOA
         {
             TRUONGKHOA_ThemPhanCong _ThemPhanCong = new TRUONGKHOA_ThemPhanCong();
             _ThemPhanCong.StartPosition = FormStartPosition.CenterScreen;
+            _ThemPhanCong.Text = "Thêm Phân Công";
             _ThemPhanCong.ShowDialog();
             Load();
+            TextChanged(null, EventArgs.Empty);
+        }
+
+        private void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow row = dtgvPhanCong.SelectedRows[0];
+            var phanCongDTO = (PhanCongTKDTO)row.DataBoundItem;
+            TRUONGKHOA_SuaPhanCong _SuaPhanCong = new TRUONGKHOA_SuaPhanCong(phanCongDTO.MAGV, phanCongDTO.HK, phanCongDTO.NAM, phanCongDTO.MAHP, phanCongDTO.MACT);
+            _SuaPhanCong.StartPosition = FormStartPosition.CenterScreen;
+            _SuaPhanCong.Text = "Sửa Phân Công";
+            _SuaPhanCong.ShowDialog();
+            Load();
+            TextChanged(null, EventArgs.Empty);
         }
     }
 }

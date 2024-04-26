@@ -27,7 +27,7 @@ namespace PH2.GUI.TRUONGKHOA.POP_UP_CONTROLS
             _PhanCongBLL = new PhanCongBLL();
             Load();
         }
-
+        
         private void Load()
         {
             listGiangVienDTO = _GiangVienBLL.getAll();
@@ -37,11 +37,11 @@ namespace PH2.GUI.TRUONGKHOA.POP_UP_CONTROLS
             dtgviewGiangVien.MultiSelect = false;
             dtgviewGiangVien.ReadOnly = true;
 
-            tbMAGV.KeyPress += GiangVien_TextChanged;
-            tbHOTEN.KeyPress += GiangVien_TextChanged;
-            tbSDT.KeyPress += GiangVien_TextChanged;
-            tbCOSO.KeyPress += GiangVien_TextChanged;
-            tbMADV.KeyPress += GiangVien_TextChanged;
+            tbMAGV.TextChanged += GiangVien_TextChanged;
+            tbHOTEN.TextChanged += GiangVien_TextChanged;
+            tbSDT.TextChanged += GiangVien_TextChanged;
+            tbCOSO.TextChanged += GiangVien_TextChanged;
+            tbGVMADV.TextChanged += GiangVien_TextChanged;
 
             listKHMODTO_TRUONGKHOA = _KHMOBLL.getAll_TRUONGKHOA();
             dtgviewKHMO.DataSource = listKHMODTO_TRUONGKHOA;
@@ -67,12 +67,14 @@ namespace PH2.GUI.TRUONGKHOA.POP_UP_CONTROLS
 
         private void KHMO_TextChanged(object sender, EventArgs e)
         {
-            string MAHP = tbMAHP.Text.ToLower();
-            string TENHP = tbTENHP.Text.ToLower();
-            string MADV = tbMADV.Text.ToLower();
-            string MACT = tbMACT.Text.ToLower();
-            int HK = tbHK.Text != "" ? int.Parse(tbHK.Text) : -1;
-            int NAM = tbNAM.Text != "" ? int.Parse(tbNAM.Text) : -1;
+            string MAHP = tbMAHP.Text.ToLower().Trim();
+            string TENHP = tbTENHP.Text.ToLower().Trim();
+            string MADV = tbMADV.Text.ToLower().Trim();
+            string MACT = tbMACT.Text.ToLower().Trim();
+            int HK = tbHK.Text != "" ? int.Parse(tbHK.Text.Trim()) : -1;
+            int NAM = tbNAM.Text != "" ? int.Parse(tbNAM.Text.Trim()) : -1;
+
+
             List<KHMODTO_TRUONGKHOA> filteredList = listKHMODTO_TRUONGKHOA.Where(s =>
                 s.MAHP.ToLower().Contains(MAHP) &&
                 s.TENHP.ToLower().Contains(TENHP) &&
@@ -87,20 +89,22 @@ namespace PH2.GUI.TRUONGKHOA.POP_UP_CONTROLS
 
         private void GiangVien_TextChanged(object sender, EventArgs e)
         {
-            string MAGV = tbMAGV.Text.ToLower();
-            string HOTEN = tbHOTEN.Text.ToLower();
-            string COSO = tbCOSO.Text.ToLower();
-            string MADV = tbMADV.Text.ToLower();
-            string SDT = tbSDT.Text.ToLower();
+            string MAGV = tbMAGV.Text.ToLower().Trim();
+            string HOTEN = tbHOTEN.Text.ToLower().Trim();
+            string COSO = tbCOSO.Text.ToLower().Trim();
+            string MADV = tbGVMADV.Text.ToLower().Trim();
+            string SDT = tbSDT.Text.ToLower().Trim();
+
 
             List<GiangVienDTO> filteredList = listGiangVienDTO.Where(s =>
                 s.MAGV.ToLower().Contains(MAGV) &&
                 s.HOTEN.ToLower().Contains(HOTEN) &&
                 s.COSO.ToLower().Contains(COSO) &&
-                s.MADV.ToLower().Contains(MADV)
+                s.MADV.ToLower().Contains(MADV) &&
+                s.SDT.ToLower().Contains(SDT) 
                 ).ToList();
-            dtgviewKHMO.DataSource = null;
-            dtgviewKHMO.DataSource = filteredList;
+            dtgviewGiangVien.DataSource = null;
+            dtgviewGiangVien.DataSource = filteredList;
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -117,7 +121,7 @@ namespace PH2.GUI.TRUONGKHOA.POP_UP_CONTROLS
             else
             {
                 if(status.Contains("policy"))
-                    MessageBox.Show("Phân công chứa học phần không thuộc quản lý của Văn Phòng Khoa");
+                    MessageBox.Show("Kế hoạch mở chứa học phần không thuộc quản lý của Văn Phòng Khoa");
                 if(status.Contains("unique"))
                     MessageBox.Show("Phân công đã tồn tại");
             }
