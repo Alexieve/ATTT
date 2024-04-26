@@ -1,21 +1,17 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "WorkspaceRootPath": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\",
-  "Documents": [],
-=======
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\ph2\\gui\\giangvien\\gv_xemdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|c:\\users\\admin\\desktop\\csdl\\attt\\attt\\sources\\attt\\ph2\\gui\\giangvien\\gv_xemdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\giangvien\\gv_xemdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|c:\\users\\admin\\desktop\\csdl\\attt\\attt\\sources\\attt\\ph2\\gui\\truongdv\\truongdv_xempc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\ph2\\gui\\truongdv\\truongdv_xempc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\truongdv\\truongdv_xempc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|c:\\users\\admin\\desktop\\csdl\\attt\\attt\\sources\\attt\\ph2\\gui\\truongdv\\truongdv_xempc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\ph2\\gui\\truongdv\\truongdv_xempc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\truongdv\\truongdv_xempc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -79,7 +75,6 @@
       "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\truongdv\\truongdv_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
->>>>>>> f275c82d09227aca19be7695bcf2705b2576097f
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -102,6 +97,22 @@
               "IsPinned": true
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "TruongDV_XemPC.Designer.cs",
@@ -111,30 +122,7 @@
               "RelativeToolTip": "PH2\\GUI\\TRUONGDV\\TruongDV_XemPC.Designer.cs",
               "ViewState": "AQIAAIEAAAAAAAAAAAAkwJkAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-25T07:44:04.08Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
-<<<<<<< HEAD
-=======
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "WhenOpened": "2024-04-25T07:44:04.08Z"
             },
             {
               "$type": "Document",
@@ -204,9 +192,8 @@
               "ToolTip": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\GUI\\TRUONGDV\\TruongDV_XemPC.cs",
               "RelativeToolTip": "PH2\\GUI\\TRUONGDV\\TruongDV_XemPC.cs",
               "ViewState": "AQIAAEwAAAAAAAAAAAAkwJ4AAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T07:52:17.578Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-04-21T07:52:17.578Z"
             },
             {
               "$type": "Document",
@@ -251,7 +238,7 @@
               "RelativeDocumentMoniker": "PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs",
               "RelativeToolTip": "PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAkwIcAAAAJAAAA",
+              "ViewState": "AQIAADQAAAAAAAAAAAAkwD0AAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-20T16:09:22.502Z",
               "EditorCaption": ""
@@ -264,9 +251,8 @@
               "RelativeDocumentMoniker": "PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\CSDL\\ATTT\\ATTT\\Sources\\ATTT\\PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs [Design]",
               "RelativeToolTip": "PH2\\GUI\\GIANGVIEN\\GV_XemDangKy.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T16:09:12.364Z",
-              "EditorCaption": " [Design]"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-04-20T16:09:12.364Z"
             },
             {
               "$type": "Document",
@@ -325,7 +311,6 @@
               "RelativeToolTip": "PH2\\GUI\\GIANGVIEN\\GIANGVIEN_Home.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-20T11:14:46.994Z"
->>>>>>> f275c82d09227aca19be7695bcf2705b2576097f
             }
           ]
         }
