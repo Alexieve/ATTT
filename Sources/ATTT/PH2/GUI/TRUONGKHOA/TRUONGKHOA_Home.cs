@@ -59,6 +59,12 @@ namespace PH2.GUI
             openChildForm(new GV_XemDangKy());
         }
 
+        private void DeTaiNCBtn_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender);
+            openChildForm(new DeTaiNC());
+        }
+
         private void logoutBtn_Click(object sender, EventArgs e)
         {
             DbConnection conn = new DbConnection();
@@ -108,6 +114,12 @@ namespace PH2.GUI
                 currentButton.BackColor = Color.FromArgb(64, 64, 64);
             }
         }
+
+        private void tableSidePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
 
     }
 }
