@@ -105,5 +105,11 @@ namespace PH2.GUI
                 currentButton.BackColor = Color.FromArgb(64, 64, 64);
             }
         }
+
+        private void NhanSuBtn_Click(object sender, EventArgs e)
+        {
+            openChildForm(new XemNhanSu());
+            ActiveButton(sender);
+        }
     }
 }

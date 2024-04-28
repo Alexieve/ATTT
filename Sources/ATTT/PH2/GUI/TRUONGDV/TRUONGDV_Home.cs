@@ -109,6 +109,10 @@ namespace PH2.GUI
             }
         }
 
-
+        private void NhanSuBtn_Click(object sender, EventArgs e)
+        {
+            openChildForm(new XemNhanSu());
+            ActiveButton(sender);
+        }
     }
 }

@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TRUONGDV_Home));
             sidePanel = new FlowLayoutPanel();
             tableSidePanel = new TableLayoutPanel();
+            DeTaiNCBtn = new Button();
             DangKyBtn = new Button();
             PhanCongBtn = new Button();
             panel1 = new Panel();
@@ -43,7 +44,7 @@
             DSHocPhanBtn = new Button();
             KHMOBtn = new Button();
             childFormPanel = new Panel();
-            DeTaiNCBtn = new Button();
+            NhanSuBtn = new Button();
             sidePanel.SuspendLayout();
             tableSidePanel.SuspendLayout();
             panel1.SuspendLayout();
@@ -63,6 +64,7 @@
             // 
             tableSidePanel.ColumnCount = 1;
             tableSidePanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableSidePanel.Controls.Add(NhanSuBtn, 0, 8);
             tableSidePanel.Controls.Add(DeTaiNCBtn, 0, 7);
             tableSidePanel.Controls.Add(DangKyBtn, 0, 6);
             tableSidePanel.Controls.Add(PhanCongBtn, 0, 5);
@@ -74,17 +76,33 @@
             tableSidePanel.Location = new Point(0, 0);
             tableSidePanel.Margin = new Padding(0);
             tableSidePanel.Name = "tableSidePanel";
-            tableSidePanel.RowCount = 8;
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 22.2222214F));
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 11.1111107F));
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 11.1111107F));
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 11.1111107F));
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 11.1111107F));
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 11.1111107F));
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 11.1111107F));
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 11.1111107F));
+            tableSidePanel.RowCount = 9;
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 20.0200176F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 10.01001F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 10.01001F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 10.01001F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 10.01001F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 10.01001F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 10.01001F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 10.01001F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 9.90991F));
             tableSidePanel.Size = new Size(269, 652);
             tableSidePanel.TabIndex = 0;
+            // 
+            // DeTaiNCBtn
+            // 
+            DeTaiNCBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            DeTaiNCBtn.FlatAppearance.BorderSize = 0;
+            DeTaiNCBtn.FlatStyle = FlatStyle.Flat;
+            DeTaiNCBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            DeTaiNCBtn.ForeColor = Color.White;
+            DeTaiNCBtn.Location = new Point(3, 523);
+            DeTaiNCBtn.Name = "DeTaiNCBtn";
+            DeTaiNCBtn.Size = new Size(263, 59);
+            DeTaiNCBtn.TabIndex = 2;
+            DeTaiNCBtn.Text = "Đề tài Nghiên Cứu";
+            DeTaiNCBtn.UseVisualStyleBackColor = true;
+            DeTaiNCBtn.Click += DeTaiNCBtn_Click;
             // 
             // DangKyBtn
             // 
@@ -93,9 +111,9 @@
             DangKyBtn.FlatStyle = FlatStyle.Flat;
             DangKyBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             DangKyBtn.ForeColor = Color.White;
-            DangKyBtn.Location = new Point(3, 507);
+            DangKyBtn.Location = new Point(3, 458);
             DangKyBtn.Name = "DangKyBtn";
-            DangKyBtn.Size = new Size(263, 66);
+            DangKyBtn.Size = new Size(263, 59);
             DangKyBtn.TabIndex = 1;
             DangKyBtn.Text = "Lớp Giảng Dạy";
             DangKyBtn.UseVisualStyleBackColor = true;
@@ -108,9 +126,9 @@
             PhanCongBtn.FlatStyle = FlatStyle.Flat;
             PhanCongBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             PhanCongBtn.ForeColor = Color.White;
-            PhanCongBtn.Location = new Point(3, 435);
+            PhanCongBtn.Location = new Point(3, 393);
             PhanCongBtn.Name = "PhanCongBtn";
-            PhanCongBtn.Size = new Size(263, 66);
+            PhanCongBtn.Size = new Size(263, 59);
             PhanCongBtn.TabIndex = 1;
             PhanCongBtn.Text = "Bảng Phân Công";
             PhanCongBtn.UseVisualStyleBackColor = true;
@@ -127,7 +145,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(269, 144);
+            panel1.Size = new Size(269, 130);
             panel1.TabIndex = 1;
             // 
             // NotifyBtn
@@ -148,7 +166,7 @@
             nameLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             nameLabel.ForeColor = SystemColors.ControlLightLight;
             nameLabel.ImageAlign = ContentAlignment.MiddleLeft;
-            nameLabel.Location = new Point(21, 57);
+            nameLabel.Location = new Point(21, 50);
             nameLabel.Name = "nameLabel";
             nameLabel.Size = new Size(226, 20);
             nameLabel.TabIndex = 2;
@@ -176,7 +194,7 @@
             logoutBtn.Anchor = AnchorStyles.Bottom;
             logoutBtn.BackColor = SystemColors.ButtonHighlight;
             logoutBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            logoutBtn.Location = new Point(87, 105);
+            logoutBtn.Location = new Point(87, 91);
             logoutBtn.Name = "logoutBtn";
             logoutBtn.Size = new Size(94, 29);
             logoutBtn.TabIndex = 0;
@@ -191,9 +209,9 @@
             DSSinhVienBtn.FlatStyle = FlatStyle.Flat;
             DSSinhVienBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             DSSinhVienBtn.ForeColor = Color.White;
-            DSSinhVienBtn.Location = new Point(3, 147);
+            DSSinhVienBtn.Location = new Point(3, 133);
             DSSinhVienBtn.Name = "DSSinhVienBtn";
-            DSSinhVienBtn.Size = new Size(263, 66);
+            DSSinhVienBtn.Size = new Size(263, 59);
             DSSinhVienBtn.TabIndex = 0;
             DSSinhVienBtn.Text = "Danh Sách Sinh Viên";
             DSSinhVienBtn.UseVisualStyleBackColor = true;
@@ -206,9 +224,9 @@
             DSDonViBtn.FlatStyle = FlatStyle.Flat;
             DSDonViBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             DSDonViBtn.ForeColor = Color.White;
-            DSDonViBtn.Location = new Point(3, 219);
+            DSDonViBtn.Location = new Point(3, 198);
             DSDonViBtn.Name = "DSDonViBtn";
-            DSDonViBtn.Size = new Size(263, 66);
+            DSDonViBtn.Size = new Size(263, 59);
             DSDonViBtn.TabIndex = 0;
             DSDonViBtn.Text = "Danh Sách Đơn Vị";
             DSDonViBtn.UseVisualStyleBackColor = true;
@@ -221,9 +239,9 @@
             DSHocPhanBtn.FlatStyle = FlatStyle.Flat;
             DSHocPhanBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             DSHocPhanBtn.ForeColor = Color.White;
-            DSHocPhanBtn.Location = new Point(3, 291);
+            DSHocPhanBtn.Location = new Point(3, 263);
             DSHocPhanBtn.Name = "DSHocPhanBtn";
-            DSHocPhanBtn.Size = new Size(263, 66);
+            DSHocPhanBtn.Size = new Size(263, 59);
             DSHocPhanBtn.TabIndex = 0;
             DSHocPhanBtn.Text = "Danh Sách Học Phần";
             DSHocPhanBtn.UseVisualStyleBackColor = true;
@@ -236,9 +254,9 @@
             KHMOBtn.FlatStyle = FlatStyle.Flat;
             KHMOBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             KHMOBtn.ForeColor = Color.White;
-            KHMOBtn.Location = new Point(3, 363);
+            KHMOBtn.Location = new Point(3, 328);
             KHMOBtn.Name = "KHMOBtn";
-            KHMOBtn.Size = new Size(263, 66);
+            KHMOBtn.Size = new Size(263, 59);
             KHMOBtn.TabIndex = 0;
             KHMOBtn.Text = "Kế Hoạch Mở";
             KHMOBtn.UseVisualStyleBackColor = true;
@@ -251,20 +269,20 @@
             childFormPanel.Size = new Size(1315, 652);
             childFormPanel.TabIndex = 2;
             // 
-            // DeTaiNCBtn
+            // NhanSuBtn
             // 
-            DeTaiNCBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            DeTaiNCBtn.FlatAppearance.BorderSize = 0;
-            DeTaiNCBtn.FlatStyle = FlatStyle.Flat;
-            DeTaiNCBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            DeTaiNCBtn.ForeColor = Color.White;
-            DeTaiNCBtn.Location = new Point(3, 579);
-            DeTaiNCBtn.Name = "DeTaiNCBtn";
-            DeTaiNCBtn.Size = new Size(263, 70);
-            DeTaiNCBtn.TabIndex = 2;
-            DeTaiNCBtn.Text = "Đề tài Nghiên Cứu";
-            DeTaiNCBtn.UseVisualStyleBackColor = true;
-            DeTaiNCBtn.Click += DeTaiNCBtn_Click;
+            NhanSuBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            NhanSuBtn.FlatAppearance.BorderSize = 0;
+            NhanSuBtn.FlatStyle = FlatStyle.Flat;
+            NhanSuBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            NhanSuBtn.ForeColor = Color.White;
+            NhanSuBtn.Location = new Point(3, 588);
+            NhanSuBtn.Name = "NhanSuBtn";
+            NhanSuBtn.Size = new Size(263, 61);
+            NhanSuBtn.TabIndex = 3;
+            NhanSuBtn.Text = "Nhân Sự OLS";
+            NhanSuBtn.UseVisualStyleBackColor = true;
+            NhanSuBtn.Click += NhanSuBtn_Click;
             // 
             // TRUONGDV_Home
             // 
@@ -301,5 +319,6 @@
         private Button DangKyBtn;
         private Button PhanCongBtn;
         private Button DeTaiNCBtn;
+        private Button NhanSuBtn;
     }
 }
