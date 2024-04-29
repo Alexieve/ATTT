@@ -27,10 +27,35 @@ namespace PH2.GUI
         {
             List<GVU_SinhVienDTO> listSV = svBLL.getAll2();
             HocPhanTable.DataSource = listSV;
-            HocPhanTable.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            //HocPhanTable.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            SetColumnWidths(HocPhanTable);
+            //HocPhanTable.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             setColumnName();
 
+        }
+        private void SetColumnWidths(DataGridView dataGridView)
+        {
+            // Thiết lập kích thước cho mỗi cột
+            for (int i = 0; i < dataGridView.Columns.Count; i++)
+            {
+
+                if (i == 4) // Cột 2, 3, 4
+                {
+                    dataGridView.Columns[i].Width = dataGridView.Columns[i].Width * 4; // Độ rộng gấp đôi
+                }
+                if (i == 1 ) // Cột 2, 3, 4
+                    {
+                        dataGridView.Columns[i].Width = (dataGridView.Columns[i].Width * 3)/2; // Độ rộng gấp đôi
+                    }
+
+                    else
+                    {
+                        dataGridView.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+                        int colWidth = dataGridView.Columns[i].Width;
+                        dataGridView.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                        dataGridView.Columns[i].Width = colWidth;
+                    }
+                
+            }
         }
         private void LoadData(string keyword)
         {

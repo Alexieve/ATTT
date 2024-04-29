@@ -88,5 +88,14 @@ namespace PH2.DAL
                return 0;
            return 1;
        }
+        public DataTable getAllMaNganh()
+        {
+            string procName = "USP_GVU_SINHVIEN_GET_ALL_MANGANH";
+            OracleParameter[] Parameters =
+            {
+                new("P_RES", OracleDbType.RefCursor, ParameterDirection.Output)
+            };
+            return conn.ExecuteQuery(procName, CommandType.StoredProcedure, Parameters);
+        }
     }
 }

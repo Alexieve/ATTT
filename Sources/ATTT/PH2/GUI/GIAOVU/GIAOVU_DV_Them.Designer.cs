@@ -30,7 +30,6 @@
         {
             label3 = new Label();
             panel1 = new Panel();
-            textBox3 = new TextBox();
             label2 = new Label();
             textBox2 = new TextBox();
             label1 = new Label();
@@ -38,6 +37,7 @@
             button2 = new Button();
             button3 = new Button();
             label9 = new Label();
+            HKNamCbb = new ComboBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -56,7 +56,7 @@
             // 
             panel1.BackColor = SystemColors.Control;
             panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(textBox3);
+            panel1.Controls.Add(HKNamCbb);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(textBox2);
             panel1.Controls.Add(label1);
@@ -70,54 +70,44 @@
             panel1.Size = new Size(1054, 589);
             panel1.TabIndex = 19;
             // 
-            // textBox3
-            // 
-            textBox3.Font = new Font("Segoe UI", 15F);
-            textBox3.Location = new Point(473, 302);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "VD: NV00000001";
-            textBox3.Size = new Size(388, 48);
-            textBox3.TabIndex = 54;
-            // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 15F);
-            label2.Location = new Point(121, 315);
+            label2.Font = new Font("Segoe UI", 12F);
+            label2.Location = new Point(33, 331);
             label2.Name = "label2";
-            label2.Size = new Size(224, 35);
+            label2.Size = new Size(175, 28);
             label2.TabIndex = 38;
             label2.Text = "Mã Trưởng Đơn Vị:";
             // 
             // textBox2
             // 
-            textBox2.Font = new Font("Segoe UI", 15F);
-            textBox2.Location = new Point(473, 220);
+            textBox2.Font = new Font("Segoe UI", 12F);
+            textBox2.Location = new Point(269, 236);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.PlaceholderText = "VD: Văn phòng khoa";
-            textBox2.Size = new Size(388, 51);
+            textBox2.Size = new Size(401, 40);
             textBox2.TabIndex = 37;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15F);
-            label1.Location = new Point(121, 223);
+            label1.Font = new Font("Segoe UI", 12F);
+            label1.Location = new Point(33, 239);
             label1.Name = "label1";
-            label1.Size = new Size(141, 35);
+            label1.Size = new Size(109, 28);
             label1.TabIndex = 36;
             label1.Text = "Tên Đơn Vị:";
             // 
             // textBox1
             // 
-            textBox1.Font = new Font("Segoe UI", 15F);
-            textBox1.Location = new Point(473, 139);
+            textBox1.Font = new Font("Segoe UI", 12F);
+            textBox1.Location = new Point(269, 155);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "VD: VPK";
-            textBox1.Size = new Size(388, 51);
+            textBox1.Size = new Size(401, 39);
             textBox1.TabIndex = 35;
             // 
             // button2
@@ -141,12 +131,24 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 15F);
-            label9.Location = new Point(121, 142);
+            label9.Font = new Font("Segoe UI", 12F);
+            label9.Location = new Point(33, 158);
             label9.Name = "label9";
-            label9.Size = new Size(145, 35);
+            label9.Size = new Size(113, 28);
             label9.TabIndex = 31;
             label9.Text = "Mã Đơn Vị: ";
+            // 
+            // HKNamCbb
+            // 
+            HKNamCbb.DropDownHeight = 160;
+            HKNamCbb.DropDownStyle = ComboBoxStyle.DropDownList;
+            HKNamCbb.Font = new Font("Segoe UI", 12F);
+            HKNamCbb.FormattingEnabled = true;
+            HKNamCbb.IntegralHeight = false;
+            HKNamCbb.Location = new Point(269, 328);
+            HKNamCbb.Name = "HKNamCbb";
+            HKNamCbb.Size = new Size(730, 36);
+            HKNamCbb.TabIndex = 59;
             // 
             // GIAOVU_DV_Them
             // 
@@ -174,6 +176,6 @@
         private Label label2;
         private TextBox textBox2;
         private Label label1;
-        private TextBox textBox3;
+        private ComboBox HKNamCbb;
     }
 }

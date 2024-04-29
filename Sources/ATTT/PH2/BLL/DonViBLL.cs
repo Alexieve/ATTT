@@ -70,5 +70,15 @@ namespace PH2.BLL
 
             return _DonViDAL.UpdateDonVi(a);
         }
+        public List<string> getAllMaHoTenGV()
+        {
+            DataTable dt = _DonViDAL.getAllMaHoTenGV();
+            List<string> listNamHK = new List<string>();
+            foreach (DataRow row in dt.Rows)
+            {
+                listNamHK.Add(row["MAGV"] + " - " + row["HOTEN"]);
+            }
+            return listNamHK;
+        }
     }
 }

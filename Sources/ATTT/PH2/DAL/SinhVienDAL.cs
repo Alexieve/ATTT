@@ -72,8 +72,7 @@ namespace PH2.DAL
                    new OracleParameter("P_SDT", OracleDbType.Varchar2, sinhVien.SDT, ParameterDirection.Input ),
                    new OracleParameter("P_MaChuongTrinh", OracleDbType.Varchar2, sinhVien.MACT, ParameterDirection.Input ),
                    new OracleParameter("P_MaNganh", OracleDbType.Varchar2, sinhVien.MANGANH, ParameterDirection.Input ),
-                   new OracleParameter("P_TCTichLuy", OracleDbType.Int32, sinhVien.SOTCTL, ParameterDirection.Input ),
-                   new OracleParameter("P_DiemTB", OracleDbType.Decimal, sinhVien.DTBTL, ParameterDirection.Input),
+          
                     new OracleParameter("P_COSO", OracleDbType.Varchar2, sinhVien.COSO, ParameterDirection.Input),
                    new OracleParameter("P_RES", OracleDbType.Decimal, ParameterDirection.Output)
            };
@@ -96,8 +95,6 @@ namespace PH2.DAL
                    new OracleParameter("P_SDT", OracleDbType.Varchar2, sinhVien.SDT, ParameterDirection.Input ),
                    new OracleParameter("P_MaChuongTrinh", OracleDbType.Varchar2, sinhVien.MACT, ParameterDirection.Input ),
                    new OracleParameter("P_MaNganh", OracleDbType.Varchar2, sinhVien.MANGANH, ParameterDirection.Input ),
-                   new OracleParameter("P_TCTichLuy", OracleDbType.Int32, sinhVien.SOTCTL, ParameterDirection.Input ),
-                   new OracleParameter("P_DiemTB", OracleDbType.Decimal, sinhVien.DTBTL, ParameterDirection.Input),
                    new OracleParameter("P_COSO", OracleDbType.Varchar2, sinhVien.COSO, ParameterDirection.Input),
                    new OracleParameter("P_RES", OracleDbType.Decimal, ParameterDirection.Output)
            };
@@ -118,5 +115,14 @@ namespace PH2.DAL
            };
            return conn.ExecuteQuery(procName, CommandType.StoredProcedure, Parameters);
        }
+        public DataTable getAllMaNganh()
+        {
+            string procName = "USP_GVU_SINHVIEN_GET_ALL_MANGANH";
+            OracleParameter[] Parameters =
+            {
+                new("P_RES", OracleDbType.RefCursor, ParameterDirection.Output)
+            };
+            return conn.ExecuteQuery(procName, CommandType.StoredProcedure, Parameters);
+        }
     }
 }
