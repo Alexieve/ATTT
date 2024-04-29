@@ -42,7 +42,6 @@ namespace PH2.GUI
             textBox8 = new TextBox();
             label8 = new Label();
             textBox3 = new TextBox();
-            textBox4 = new TextBox();
             label4 = new Label();
             label2 = new Label();
             textBox2 = new TextBox();
@@ -50,6 +49,7 @@ namespace PH2.GUI
             button2 = new Button();
             button3 = new Button();
             label9 = new Label();
+            comboBox1 = new ComboBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -68,6 +68,7 @@ namespace PH2.GUI
             // 
             panel1.BackColor = SystemColors.Control;
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(comboBox1);
             panel1.Controls.Add(HKNamCbb);
             panel1.Controls.Add(textBox5);
             panel1.Controls.Add(textBox6);
@@ -78,7 +79,6 @@ namespace PH2.GUI
             panel1.Controls.Add(textBox8);
             panel1.Controls.Add(label8);
             panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(textBox4);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(textBox2);
@@ -185,31 +185,23 @@ namespace PH2.GUI
             textBox3.Size = new Size(137, 28);
             textBox3.TabIndex = 54;
             // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(254, 445);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(282, 28);
-            textBox4.TabIndex = 41;
-            // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Location = new Point(58, 448);
             label4.Name = "label4";
-            label4.Size = new Size(125, 20);
+            label4.Size = new Size(155, 20);
             label4.TabIndex = 40;
-            label4.Text = "Mã Chương Trình:";
+            label4.Text = "Mã Chương Trình Mới:";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(58, 403);
             label2.Name = "label2";
-            label2.Size = new Size(44, 20);
+            label2.Size = new Size(74, 20);
             label2.TabIndex = 38;
-            label2.Text = "Năm:";
+            label2.Text = "Năm Mới:";
             // 
             // textBox2
             // 
@@ -224,9 +216,9 @@ namespace PH2.GUI
             label1.AutoSize = true;
             label1.Location = new Point(58, 363);
             label1.Name = "label1";
-            label1.Size = new Size(54, 20);
+            label1.Size = new Size(84, 20);
             label1.TabIndex = 36;
-            label1.Text = "Học kì:";
+            label1.Text = "Học kì Mới:";
             // 
             // button2
             // 
@@ -251,9 +243,21 @@ namespace PH2.GUI
             label9.AutoSize = true;
             label9.Location = new Point(58, 322);
             label9.Name = "label9";
-            label9.Size = new Size(104, 20);
+            label9.Size = new Size(134, 20);
             label9.TabIndex = 31;
-            label9.Text = "Mã Học Phần: ";
+            label9.Text = "Mã Học Phần Mới: ";
+            // 
+            // comboBox1
+            // 
+            comboBox1.DropDownHeight = 160;
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1.Font = new Font("Segoe UI", 9F);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.IntegralHeight = false;
+            comboBox1.Location = new Point(254, 445);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(137, 28);
+            comboBox1.TabIndex = 63;
             // 
             // GIAOVU_KHMO_CapNhat
             // 
@@ -277,7 +281,6 @@ namespace PH2.GUI
         private Label label9;
         private Button button2;
         private Button button3;
-        private TextBox textBox4;
         private Label label4;
         private Label label2;
         private TextBox textBox2;
@@ -292,5 +295,6 @@ namespace PH2.GUI
         private TextBox textBox8;
         private Label label8;
         private ComboBox HKNamCbb;
+        private ComboBox comboBox1;
     }
 }

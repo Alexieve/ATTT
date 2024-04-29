@@ -27,7 +27,12 @@ namespace PH2.BLL
         {
             return nhanSuDAL.updateSDTProfile(SDT);
         }
-
+        public List<NhanSuDTO> getNhanSuOLS()
+        {
+            DataTable dt = nhanSuDAL.getNhanSuOLS();
+            List<NhanSuDTO> list = Utility.ToList<NhanSuDTO>(dt);
+            return list;
+        }
         public List<NhanSuDTO> getAll()
         {
             DataTable dt = nhanSuDAL.getAll();

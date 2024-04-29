@@ -30,9 +30,11 @@
         {
             label3 = new Label();
             panel1 = new Panel();
+            HKNamCbb = new ComboBox();
             textBox3 = new TextBox();
-            textBox7 = new TextBox();
             label7 = new Label();
+            textBox6 = new TextBox();
+            label6 = new Label();
             textBox5 = new TextBox();
             label5 = new Label();
             textBox4 = new TextBox();
@@ -44,8 +46,6 @@
             button2 = new Button();
             button3 = new Button();
             label9 = new Label();
-            label6 = new Label();
-            textBox6 = new TextBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -64,8 +64,8 @@
             // 
             panel1.BackColor = SystemColors.Control;
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(HKNamCbb);
             panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(textBox7);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(textBox6);
             panel1.Controls.Add(label6);
@@ -86,34 +86,55 @@
             panel1.Size = new Size(1054, 589);
             panel1.TabIndex = 19;
             // 
+            // HKNamCbb
+            // 
+            HKNamCbb.DropDownHeight = 160;
+            HKNamCbb.DropDownStyle = ComboBoxStyle.DropDownList;
+            HKNamCbb.Font = new Font("Segoe UI", 9F);
+            HKNamCbb.FormattingEnabled = true;
+            HKNamCbb.IntegralHeight = false;
+            HKNamCbb.Location = new Point(215, 372);
+            HKNamCbb.Name = "HKNamCbb";
+            HKNamCbb.Size = new Size(282, 28);
+            HKNamCbb.TabIndex = 58;
+            // 
             // textBox3
             // 
-            textBox3.Location = new Point(215, 188);
+            textBox3.Location = new Point(215, 193);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(137, 28);
             textBox3.TabIndex = 54;
             // 
-            // textBox7
-            // 
-            textBox7.Location = new Point(215, 367);
-            textBox7.Multiline = true;
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(282, 28);
-            textBox7.TabIndex = 47;
-            // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(19, 370);
+            label7.Location = new Point(19, 375);
             label7.Name = "label7";
             label7.Size = new Size(82, 20);
             label7.TabIndex = 46;
             label7.Text = "Mã Đơn Vị:";
             // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(215, 324);
+            textBox6.Multiline = true;
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(282, 28);
+            textBox6.TabIndex = 45;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(19, 327);
+            label6.Name = "label6";
+            label6.Size = new Size(142, 20);
+            label6.TabIndex = 44;
+            label6.Text = "Số Sinh Viên Tối Đa:";
+            // 
             // textBox5
             // 
-            textBox5.Location = new Point(215, 278);
+            textBox5.Location = new Point(215, 283);
             textBox5.Multiline = true;
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(704, 28);
@@ -122,7 +143,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(19, 281);
+            label5.Location = new Point(19, 286);
             label5.Name = "label5";
             label5.Size = new Size(133, 20);
             label5.TabIndex = 42;
@@ -130,7 +151,7 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(215, 233);
+            textBox4.Location = new Point(215, 238);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(282, 28);
@@ -139,7 +160,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(19, 236);
+            label4.Location = new Point(19, 241);
             label4.Name = "label4";
             label4.Size = new Size(123, 20);
             label4.TabIndex = 40;
@@ -148,7 +169,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(19, 191);
+            label2.Location = new Point(19, 196);
             label2.Name = "label2";
             label2.Size = new Size(78, 20);
             label2.TabIndex = 38;
@@ -156,7 +177,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(215, 148);
+            textBox2.Location = new Point(215, 150);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(282, 28);
@@ -165,7 +186,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(19, 151);
+            label1.Location = new Point(19, 153);
             label1.Name = "label1";
             label1.Size = new Size(102, 20);
             label1.TabIndex = 36;
@@ -206,23 +227,6 @@
             label9.TabIndex = 31;
             label9.Text = "Mã Học Phần: ";
             // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(19, 322);
-            label6.Name = "label6";
-            label6.Size = new Size(142, 20);
-            label6.TabIndex = 44;
-            label6.Text = "Số Sinh Viên Tối Đa:";
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(215, 319);
-            textBox6.Multiline = true;
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(282, 28);
-            textBox6.TabIndex = 45;
-            // 
             // GIAOVU_HP_Them
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -253,10 +257,10 @@
         private Label label2;
         private TextBox textBox2;
         private Label label1;
-        private TextBox textBox7;
         private Label label7;
         private TextBox textBox3;
         private TextBox textBox6;
         private Label label6;
+        private ComboBox HKNamCbb;
     }
 }

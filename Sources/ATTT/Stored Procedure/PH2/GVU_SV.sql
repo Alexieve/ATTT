@@ -32,8 +32,6 @@ CREATE OR REPLACE PROCEDURE USP_SINHVIEN_ADD (
   P_SDT IN VARCHAR2,
   P_MaChuongTrinh IN VARCHAR2,
   P_MaNganh IN VARCHAR2,
-  P_TCTichLuy IN INT,
-  P_DiemTB IN FLOAT,
    P_COSO IN VARCHAR2,
   P_ErrCode OUT NUMBER
 )
@@ -41,7 +39,7 @@ AS
 BEGIN
   -- Insert with error handling
   INSERT INTO SINHVIEN
-  VALUES (P_MaSinhVien, P_HoTen, P_Phai, TO_DATE(P_NgaySinh, 'DD-MM-YYYY'), P_DiaChi, P_SDT, P_MaChuongTrinh, P_MaNganh, P_TCTichLuy, P_DiemTB, P_COSO);
+  VALUES (P_MaSinhVien, P_HoTen, P_Phai, TO_DATE(P_NgaySinh, 'DD-MM-YYYY'), P_DiaChi, P_SDT, P_MaChuongTrinh, P_MaNganh, 0, null, P_COSO);
   
   -- Handle potential errors during insert
    P_ErrCode := 0;
@@ -73,8 +71,6 @@ CREATE OR REPLACE PROCEDURE USP_SINHVIEN_UPDATE (
   P_SDT IN VARCHAR2,
   P_MaChuongTrinh IN VARCHAR2,
   P_MaNganh IN VARCHAR2,
-  P_TCTichLuy IN INT,
-  P_DiemTB IN FLOAT,
      P_COSO IN VARCHAR2,
   P_ErrCode OUT NUMBER
 )
@@ -90,8 +86,6 @@ SET
     SDT = P_SDT,
     MACT = P_MaChuongTrinh,
     MANGANH = P_MaNganh,
-    SOTCTL = P_TCTichLuy,
-    DTBTL = P_DiemTB,
     COSO = P_COSO
 WHERE
     MASV = P_MaSinhVien;
@@ -105,3 +99,14 @@ WHERE
 END;
 /
 GRANT EXECUTE ON USP_SINHVIEN_UPDATE TO RL_GIAOVU;
+/
+CREATE OR REPLACE PROCEDURE USP_GVU_SINHVIEN_GET_ALL_MANGANH(P_RES OUT SYS_REFCURSOR)
+AS
+BEGIN
+    OPEN P_RES FOR
+        SELECT DISTINCT MADV
+        FROM DONVI
+        ORDER BY MADV;
+END;
+/
+GRANT EXECUTE ON USP_GVU_SINHVIEN_GET_ALL_MANGANH TO PUBLIC;

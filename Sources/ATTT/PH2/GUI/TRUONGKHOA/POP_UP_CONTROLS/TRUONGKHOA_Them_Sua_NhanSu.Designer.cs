@@ -33,23 +33,23 @@
             rbtnNU = new RadioButton();
             rbtnNAM = new RadioButton();
             dtpkDOB = new DateTimePicker();
+            label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             tbSDT = new TextBox();
             label6 = new Label();
             tbHOTEN = new TextBox();
+            tbMANV = new TextBox();
             groupBox2 = new GroupBox();
+            cbboxCoSo = new ComboBox();
+            cbboxMaDV = new ComboBox();
+            cbboxVaiTro = new ComboBox();
             label5 = new Label();
             tbPHUCAP = new TextBox();
-            tbVAITRO = new TextBox();
-            tbMADONVI = new TextBox();
-            tbCOSO = new TextBox();
             label7 = new Label();
             label9 = new Label();
             label8 = new Label();
-            tbMANV = new TextBox();
-            label1 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -118,6 +118,16 @@
             dtpkDOB.Size = new Size(410, 38);
             dtpkDOB.TabIndex = 21;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold);
+            label1.Location = new Point(7, 72);
+            label1.Name = "label1";
+            label1.Size = new Size(159, 31);
+            label1.TabIndex = 0;
+            label1.Text = "Mã nhân viên:";
+            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -174,13 +184,21 @@
             tbHOTEN.Size = new Size(410, 38);
             tbHOTEN.TabIndex = 3;
             // 
+            // tbMANV
+            // 
+            tbMANV.Font = new Font("Segoe UI", 13.8F);
+            tbMANV.Location = new Point(210, 68);
+            tbMANV.Name = "tbMANV";
+            tbMANV.Size = new Size(410, 38);
+            tbMANV.TabIndex = 1;
+            // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(cbboxCoSo);
+            groupBox2.Controls.Add(cbboxMaDV);
+            groupBox2.Controls.Add(cbboxVaiTro);
             groupBox2.Controls.Add(label5);
             groupBox2.Controls.Add(tbPHUCAP);
-            groupBox2.Controls.Add(tbVAITRO);
-            groupBox2.Controls.Add(tbMADONVI);
-            groupBox2.Controls.Add(tbCOSO);
             groupBox2.Controls.Add(label7);
             groupBox2.Controls.Add(label9);
             groupBox2.Controls.Add(label8);
@@ -191,6 +209,36 @@
             groupBox2.TabIndex = 26;
             groupBox2.TabStop = false;
             groupBox2.Text = "Thông tin công việc";
+            // 
+            // cbboxCoSo
+            // 
+            cbboxCoSo.Font = new Font("Segoe UI", 13.8F);
+            cbboxCoSo.FormattingEnabled = true;
+            cbboxCoSo.Items.AddRange(new object[] { "CS2", "CS1" });
+            cbboxCoSo.Location = new Point(207, 418);
+            cbboxCoSo.Name = "cbboxCoSo";
+            cbboxCoSo.Size = new Size(410, 39);
+            cbboxCoSo.TabIndex = 20;
+            // 
+            // cbboxMaDV
+            // 
+            cbboxMaDV.Font = new Font("Segoe UI", 13.8F);
+            cbboxMaDV.FormattingEnabled = true;
+            cbboxMaDV.Items.AddRange(new object[] { "VPK", "HTTT", "CNPM", "KHMT", "CNTT", "TGMT", "MMT" });
+            cbboxMaDV.Location = new Point(207, 301);
+            cbboxMaDV.Name = "cbboxMaDV";
+            cbboxMaDV.Size = new Size(410, 39);
+            cbboxMaDV.TabIndex = 19;
+            // 
+            // cbboxVaiTro
+            // 
+            cbboxVaiTro.Font = new Font("Segoe UI", 13.8F);
+            cbboxVaiTro.FormattingEnabled = true;
+            cbboxVaiTro.Items.AddRange(new object[] { "Trưởng khoa", "Trưởng đơn vị", "Giáo vụ", "Nhân viên cơ bản", "Giảng viên" });
+            cbboxVaiTro.Location = new Point(207, 184);
+            cbboxVaiTro.Name = "cbboxVaiTro";
+            cbboxVaiTro.Size = new Size(410, 39);
+            cbboxVaiTro.TabIndex = 18;
             // 
             // label5
             // 
@@ -209,30 +257,6 @@
             tbPHUCAP.Name = "tbPHUCAP";
             tbPHUCAP.Size = new Size(410, 38);
             tbPHUCAP.TabIndex = 9;
-            // 
-            // tbVAITRO
-            // 
-            tbVAITRO.Font = new Font("Segoe UI", 13.8F);
-            tbVAITRO.Location = new Point(207, 186);
-            tbVAITRO.Name = "tbVAITRO";
-            tbVAITRO.Size = new Size(410, 38);
-            tbVAITRO.TabIndex = 13;
-            // 
-            // tbMADONVI
-            // 
-            tbMADONVI.Font = new Font("Segoe UI", 13.8F);
-            tbMADONVI.Location = new Point(207, 304);
-            tbMADONVI.Name = "tbMADONVI";
-            tbMADONVI.Size = new Size(410, 38);
-            tbMADONVI.TabIndex = 15;
-            // 
-            // tbCOSO
-            // 
-            tbCOSO.Font = new Font("Segoe UI", 13.8F);
-            tbCOSO.Location = new Point(207, 420);
-            tbCOSO.Name = "tbCOSO";
-            tbCOSO.Size = new Size(410, 38);
-            tbCOSO.TabIndex = 17;
             // 
             // label7
             // 
@@ -263,24 +287,6 @@
             label8.Size = new Size(124, 31);
             label8.TabIndex = 14;
             label8.Text = "Mã đơn vị:";
-            // 
-            // tbMANV
-            // 
-            tbMANV.Font = new Font("Segoe UI", 13.8F);
-            tbMANV.Location = new Point(210, 68);
-            tbMANV.Name = "tbMANV";
-            tbMANV.Size = new Size(410, 38);
-            tbMANV.TabIndex = 1;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold);
-            label1.Location = new Point(7, 72);
-            label1.Name = "label1";
-            label1.Size = new Size(159, 31);
-            label1.TabIndex = 0;
-            label1.Text = "Mã nhân viên:";
             // 
             // TRUONGKHOA_Them_Sua_NhanSu
             // 
@@ -316,13 +322,13 @@
         private GroupBox groupBox2;
         private Label label5;
         private TextBox tbPHUCAP;
-        private TextBox tbVAITRO;
-        private TextBox tbMADONVI;
-        private TextBox tbCOSO;
         private Label label7;
         private Label label9;
         private Label label8;
         private Label label1;
         private TextBox tbMANV;
+        private ComboBox cbboxCoSo;
+        private ComboBox cbboxMaDV;
+        private ComboBox cbboxVaiTro;
     }
 }

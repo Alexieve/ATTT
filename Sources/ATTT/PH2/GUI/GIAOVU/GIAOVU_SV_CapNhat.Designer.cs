@@ -30,14 +30,12 @@ namespace PH2.GUI
         {
             label3 = new Label();
             panel1 = new Panel();
-            textBox3 = new TextBox();
-            textBox10 = new TextBox();
-            label11 = new Label();
-            textBox9 = new TextBox();
-            label10 = new Label();
-            textBox8 = new TextBox();
+            comboBox3 = new ComboBox();
+            comboBox2 = new ComboBox();
+            comboBox1 = new ComboBox();
+            HKNamCbb = new ComboBox();
+            label12 = new Label();
             label8 = new Label();
-            textBox7 = new TextBox();
             label7 = new Label();
             textBox6 = new TextBox();
             label6 = new Label();
@@ -52,8 +50,14 @@ namespace PH2.GUI
             button2 = new Button();
             button3 = new Button();
             label9 = new Label();
-            textBox11 = new TextBox();
-            label12 = new Label();
+            textBox3 = new TextBox();
+            textBox7 = new TextBox();
+            textBox8 = new TextBox();
+            label10 = new Label();
+            label11 = new Label();
+            label13 = new Label();
+            textBox9 = new TextBox();
+            label14 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -72,16 +76,20 @@ namespace PH2.GUI
             // 
             panel1.BackColor = SystemColors.Control;
             panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(textBox11);
-            panel1.Controls.Add(label12);
-            panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(textBox10);
-            panel1.Controls.Add(label11);
+            panel1.Controls.Add(label14);
             panel1.Controls.Add(textBox9);
+            panel1.Controls.Add(label13);
+            panel1.Controls.Add(label11);
             panel1.Controls.Add(label10);
             panel1.Controls.Add(textBox8);
-            panel1.Controls.Add(label8);
             panel1.Controls.Add(textBox7);
+            panel1.Controls.Add(textBox3);
+            panel1.Controls.Add(comboBox3);
+            panel1.Controls.Add(comboBox2);
+            panel1.Controls.Add(comboBox1);
+            panel1.Controls.Add(HKNamCbb);
+            panel1.Controls.Add(label12);
+            panel1.Controls.Add(label8);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(textBox6);
             panel1.Controls.Add(label6);
@@ -102,86 +110,80 @@ namespace PH2.GUI
             panel1.Size = new Size(1054, 589);
             panel1.TabIndex = 19;
             // 
-            // textBox3
+            // comboBox3
             // 
-            textBox3.Location = new Point(215, 146);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "VD: Nam";
-            textBox3.Size = new Size(137, 28);
-            textBox3.TabIndex = 54;
+            comboBox3.DropDownHeight = 160;
+            comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox3.Font = new Font("Segoe UI", 9F);
+            comboBox3.FormattingEnabled = true;
+            comboBox3.IntegralHeight = false;
+            comboBox3.Location = new Point(637, 425);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(156, 28);
+            comboBox3.TabIndex = 61;
             // 
-            // textBox10
+            // comboBox2
             // 
-            textBox10.Location = new Point(215, 466);
-            textBox10.Multiline = true;
-            textBox10.Name = "textBox10";
-            textBox10.PlaceholderText = "VD: 8.0";
-            textBox10.Size = new Size(137, 28);
-            textBox10.TabIndex = 53;
+            comboBox2.DropDownHeight = 160;
+            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox2.Font = new Font("Segoe UI", 9F);
+            comboBox2.FormattingEnabled = true;
+            comboBox2.IntegralHeight = false;
+            comboBox2.Location = new Point(637, 325);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(282, 28);
+            comboBox2.TabIndex = 60;
             // 
-            // label11
+            // comboBox1
             // 
-            label11.AutoSize = true;
-            label11.Location = new Point(19, 469);
-            label11.Name = "label11";
-            label11.Size = new Size(122, 20);
-            label11.TabIndex = 52;
-            label11.Text = "Điểm Trung Bình:";
+            comboBox1.DropDownHeight = 160;
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1.Font = new Font("Segoe UI", 9F);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.IntegralHeight = false;
+            comboBox1.Location = new Point(637, 154);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(156, 28);
+            comboBox1.TabIndex = 59;
             // 
-            // textBox9
+            // HKNamCbb
             // 
-            textBox9.Location = new Point(215, 420);
-            textBox9.Multiline = true;
-            textBox9.Name = "textBox9";
-            textBox9.PlaceholderText = "VD: 1";
-            textBox9.Size = new Size(137, 28);
-            textBox9.TabIndex = 51;
+            HKNamCbb.DropDownHeight = 160;
+            HKNamCbb.DropDownStyle = ComboBoxStyle.DropDownList;
+            HKNamCbb.Font = new Font("Segoe UI", 9F);
+            HKNamCbb.FormattingEnabled = true;
+            HKNamCbb.IntegralHeight = false;
+            HKNamCbb.Location = new Point(637, 375);
+            HKNamCbb.Name = "HKNamCbb";
+            HKNamCbb.Size = new Size(282, 28);
+            HKNamCbb.TabIndex = 58;
             // 
-            // label10
+            // label12
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(19, 423);
-            label10.Name = "label10";
-            label10.Size = new Size(135, 20);
-            label10.TabIndex = 50;
-            label10.Text = "Số Tín Chỉ Tích Lũy:";
-            // 
-            // textBox8
-            // 
-            textBox8.Location = new Point(215, 375);
-            textBox8.Multiline = true;
-            textBox8.Name = "textBox8";
-            textBox8.PlaceholderText = "VD: HTTT";
-            textBox8.Size = new Size(282, 28);
-            textBox8.TabIndex = 49;
+            label12.AutoSize = true;
+            label12.Location = new Point(19, 428);
+            label12.Name = "label12";
+            label12.Size = new Size(72, 20);
+            label12.TabIndex = 57;
+            label12.Text = "Cơ Sở Cũ:";
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Location = new Point(19, 378);
             label8.Name = "label8";
-            label8.Size = new Size(81, 20);
+            label8.Size = new Size(102, 20);
             label8.TabIndex = 48;
-            label8.Text = "Mã Ngành:";
-            // 
-            // textBox7
-            // 
-            textBox7.Location = new Point(215, 325);
-            textBox7.Multiline = true;
-            textBox7.Name = "textBox7";
-            textBox7.PlaceholderText = "VD: CLC";
-            textBox7.Size = new Size(282, 28);
-            textBox7.TabIndex = 47;
+            label8.Text = "Mã Ngành Cũ:";
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Location = new Point(19, 328);
             label7.Name = "label7";
-            label7.Size = new Size(125, 20);
+            label7.Size = new Size(146, 20);
             label7.TabIndex = 46;
-            label7.Text = "Mã Chương Trình:";
+            label7.Text = "Mã Chương Trình Cũ:";
             // 
             // textBox6
             // 
@@ -242,9 +244,9 @@ namespace PH2.GUI
             label2.AutoSize = true;
             label2.Location = new Point(19, 149);
             label2.Name = "label2";
-            label2.Size = new Size(40, 20);
+            label2.Size = new Size(61, 20);
             label2.TabIndex = 38;
-            label2.Text = "Phái:";
+            label2.Text = "Phái Cũ:";
             // 
             // textBox2
             // 
@@ -299,23 +301,77 @@ namespace PH2.GUI
             label9.TabIndex = 31;
             label9.Text = "Mã Sinh Viên: ";
             // 
-            // textBox11
+            // textBox3
             // 
-            textBox11.Location = new Point(782, 466);
-            textBox11.Multiline = true;
-            textBox11.Name = "textBox11";
-            textBox11.PlaceholderText = "VD: CS1";
-            textBox11.Size = new Size(137, 28);
-            textBox11.TabIndex = 58;
+            textBox3.Location = new Point(215, 146);
+            textBox3.Multiline = true;
+            textBox3.Name = "textBox3";
+            textBox3.ReadOnly = true;
+            textBox3.Size = new Size(156, 28);
+            textBox3.TabIndex = 62;
             // 
-            // label12
+            // textBox7
             // 
-            label12.AutoSize = true;
-            label12.Location = new Point(684, 469);
-            label12.Name = "label12";
-            label12.Size = new Size(51, 20);
-            label12.TabIndex = 57;
-            label12.Text = "Cơ Sở:";
+            textBox7.Location = new Point(215, 325);
+            textBox7.Multiline = true;
+            textBox7.Name = "textBox7";
+            textBox7.ReadOnly = true;
+            textBox7.Size = new Size(282, 28);
+            textBox7.TabIndex = 63;
+            // 
+            // textBox8
+            // 
+            textBox8.Location = new Point(215, 375);
+            textBox8.Multiline = true;
+            textBox8.Name = "textBox8";
+            textBox8.ReadOnly = true;
+            textBox8.Size = new Size(282, 28);
+            textBox8.TabIndex = 64;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(568, 157);
+            label10.Name = "label10";
+            label10.Size = new Size(38, 20);
+            label10.TabIndex = 65;
+            label10.Text = "Mới:";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(568, 328);
+            label11.Name = "label11";
+            label11.Size = new Size(38, 20);
+            label11.TabIndex = 66;
+            label11.Text = "Mới:";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(568, 428);
+            label13.Name = "label13";
+            label13.Size = new Size(38, 20);
+            label13.TabIndex = 67;
+            label13.Text = "Mới:";
+            // 
+            // textBox9
+            // 
+            textBox9.Location = new Point(215, 425);
+            textBox9.Multiline = true;
+            textBox9.Name = "textBox9";
+            textBox9.ReadOnly = true;
+            textBox9.Size = new Size(156, 28);
+            textBox9.TabIndex = 68;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(568, 375);
+            label14.Name = "label14";
+            label14.Size = new Size(38, 20);
+            label14.TabIndex = 69;
+            label14.Text = "Mới:";
             // 
             // GIAOVU_SV_CapNhat
             // 
@@ -349,16 +405,20 @@ namespace PH2.GUI
         private Label label2;
         private TextBox textBox2;
         private Label label1;
+        private Label label8;
+        private Label label7;
+        private Label label12;
+        private ComboBox HKNamCbb;
+        private ComboBox comboBox1;
+        private ComboBox comboBox2;
+        private ComboBox comboBox3;
+        private TextBox textBox3;
+        private Label label14;
         private TextBox textBox9;
+        private Label label13;
+        private Label label11;
         private Label label10;
         private TextBox textBox8;
-        private Label label8;
         private TextBox textBox7;
-        private Label label7;
-        private TextBox textBox10;
-        private Label label11;
-        private TextBox textBox3;
-        private TextBox textBox11;
-        private Label label12;
     }
 }

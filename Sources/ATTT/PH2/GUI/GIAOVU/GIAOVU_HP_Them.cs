@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using PH2.BLL;
 using PH2.DAL;
 using PH2.DTO;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 namespace PH2.GUI
 {
     public partial class GIAOVU_HP_Them : Form
@@ -18,6 +19,17 @@ namespace PH2.GUI
         public GIAOVU_HP_Them()
         {
             InitializeComponent();
+            LoadNamHKCbb();
+        }
+        private void LoadNamHKCbb()
+        {
+            //HKNamCbb.Items.Add("Tất cả học kỳ và năm học");
+            List<string> hkNamList = hpBLL.getAllMaNganh();
+            foreach (string hkNam in hkNamList)
+            {
+                HKNamCbb.Items.Add(hkNam);
+            }
+            HKNamCbb.SelectedIndex = 0;
         }
         private void button3_Click(object sender, EventArgs e)
         {
@@ -34,7 +46,7 @@ namespace PH2.GUI
             //sv.STLT = textBox4.Text;
             //sv.STTH = textBox5.Text;
             //sv.SOSVTD = textBox6.Text;
-            sv.MADV = textBox7.Text;
+            sv.MADV = HKNamCbb.SelectedItem.ToString();
             int tmp1 = -1,tmp2 = -1,tmp3 = -1,tmp4 = -1, tmp5 = -1;
             if (string.IsNullOrWhiteSpace(textBox3.Text) || string.IsNullOrWhiteSpace(textBox4.Text)
                 || string.IsNullOrWhiteSpace(textBox5.Text) || string.IsNullOrWhiteSpace(textBox6.Text))

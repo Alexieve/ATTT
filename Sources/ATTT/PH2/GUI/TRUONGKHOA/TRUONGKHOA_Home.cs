@@ -59,6 +59,12 @@ namespace PH2.GUI
             openChildForm(new GV_XemDangKy());
         }
 
+        private void DeTaiNCBtn_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender);
+            openChildForm(new DeTaiNC());
+        }
+
         private void logoutBtn_Click(object sender, EventArgs e)
         {
             DbConnection conn = new DbConnection();
@@ -109,5 +115,15 @@ namespace PH2.GUI
             }
         }
 
+        private void tableSidePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void NhanSuOLS_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender);
+            openChildForm(new XemNhanSu());
+        }
     }
 }

@@ -19,6 +19,17 @@ namespace PH2.GUI
         public GIAOVU_DV_CapNhat()
         {
             InitializeComponent();
+            LoadNamHKCbb();
+        }
+        private void LoadNamHKCbb()
+        {
+            //HKNamCbb.Items.Add("Tất cả học kỳ và năm học");
+            List<string> hkNamList = dvBLL.getAllMaHoTenGV();
+            foreach (string hkNam in hkNamList)
+            {
+                HKNamCbb.Items.Add(hkNam);
+            }
+            HKNamCbb.SelectedIndex = 0;
         }
         public void Loadd(string MyString)
         {
@@ -41,7 +52,9 @@ namespace PH2.GUI
             DonViDTO sv = new DonViDTO();
             sv.MADV = textBox1.Text;
             sv.TENDV = textBox2.Text;
-            sv.TRUONGDV = textBox3.Text;
+            string[] hkNam = HKNamCbb.SelectedItem.ToString().Split(" - ");
+            sv.TRUONGDV = hkNam[0];
+            //sv.TRUONGDV = textBox3.Text;
             
             int tmp = dvBLL.UpdateDonVi(sv);
             if (tmp == 1)

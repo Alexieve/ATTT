@@ -81,5 +81,14 @@ namespace PH2.DAL
                 return 0;
             return 1;
         }
+        public DataTable getAllMaHoTenGV()
+        {
+            string procName = "USP_GVU_DONVI_GET_ALL_MAGV_HOTEN";
+            OracleParameter[] Parameters =
+            {
+                new("P_RES", OracleDbType.RefCursor, ParameterDirection.Output)
+            };
+            return conn.ExecuteQuery(procName, CommandType.StoredProcedure, Parameters);
+        }
     }
 }

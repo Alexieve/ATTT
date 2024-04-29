@@ -89,5 +89,15 @@ namespace PH2.BLL
 
            return hpDAL.UpdateHocPhan(a);
        }
+        public List<string> getAllMaNganh()
+        {
+            DataTable dt = hpDAL.getAllMaNganh();
+            List<string> listNamHK = new List<string>();
+            foreach (DataRow row in dt.Rows)
+            {
+                listNamHK.Add(row["MADV"].ToString());
+            }
+            return listNamHK;
+        }
     }
 }

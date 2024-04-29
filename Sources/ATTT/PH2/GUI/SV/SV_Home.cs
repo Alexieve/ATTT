@@ -43,6 +43,11 @@ namespace PH2.GUI
         }
 
 
+        private void DeTaiNCBtn_Click(object sender, EventArgs e)
+        {
+            openChildForm(new DeTaiNC());
+            ActiveButton(sender);
+        }
 
         private void logoutBtn_Click(object sender, EventArgs e)
         {
@@ -93,5 +98,6 @@ namespace PH2.GUI
                 currentButton.BackColor = Color.FromArgb(64, 64, 64);
             }
         }
+
     }
 }

@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace PH2.GUI.TRUONGKHOA.POP_UP_CONTROLS
 {
@@ -25,6 +26,7 @@ namespace PH2.GUI.TRUONGKHOA.POP_UP_CONTROLS
             this.type = type;
             if (type == "update")
                 loadUpdate(_NhanSuDTO);
+            cbboxVaiTro.SelectedIndexChanged += VaiTro_changed;
         }
 
         public void loadUpdate(NhanSuDTO _NhanSuDTO)
@@ -40,9 +42,9 @@ namespace PH2.GUI.TRUONGKHOA.POP_UP_CONTROLS
             dtpkDOB.Value = DateTime.Parse(_NhanSuDTO.NGSINH.Trim());
             tbPHUCAP.Text = _NhanSuDTO.PHUCAP.Trim();
             tbSDT.Text = _NhanSuDTO.SDT.Trim();
-            tbVAITRO.Text = _NhanSuDTO.VAITRO.Trim();
-            tbMADONVI.Text = _NhanSuDTO.MADV.Trim();
-            tbCOSO.Text = _NhanSuDTO.COSO.Trim();
+            cbboxVaiTro.Text = _NhanSuDTO.VAITRO.Trim();
+            cbboxMaDV.Text = _NhanSuDTO.MADV.Trim();
+            cbboxCoSo.Text = _NhanSuDTO.COSO.Trim();
         }
 
         private void CheckNumeric(object sender, KeyPressEventArgs e)
@@ -50,9 +52,29 @@ namespace PH2.GUI.TRUONGKHOA.POP_UP_CONTROLS
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
 
+        private void VaiTro_changed(object sender, EventArgs e)
+        {
+            cbboxMaDV.SelectedIndex = -1;
+            if (cbboxVaiTro.Text == "Trưởng khoa")
+            {
+                cbboxMaDV.Items.Clear();
+                cbboxMaDV.Items.Add("VPK");
+            }
+            else
+            {
+                cbboxMaDV.Items.Clear();
+                cbboxMaDV.Items.Add("HTTT");
+                cbboxMaDV.Items.Add("CNPM");               
+                cbboxMaDV.Items.Add("KHMT");               
+                cbboxMaDV.Items.Add("CNTT");               
+                cbboxMaDV.Items.Add("TGMT");               
+                cbboxMaDV.Items.Add("MMT");               
+            }    
+        }
+
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (tbMANV.Text == "" || tbHOTEN.Text == "" || tbPHUCAP.Text == "" || tbSDT.Text == "" || tbVAITRO.Text == "" || tbMADONVI.Text == "" || tbCOSO.Text == "")
+            if (tbMANV.Text == "" || tbHOTEN.Text == "" || tbPHUCAP.Text == "" || tbSDT.Text == "" || cbboxVaiTro.Text == "" || cbboxMaDV.Text == "" || cbboxCoSo.Text == "")
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin");
                 return;
@@ -63,9 +85,9 @@ namespace PH2.GUI.TRUONGKHOA.POP_UP_CONTROLS
             DateTime NGSINH = dtpkDOB.Value;
             float PHUCAP = float.Parse(tbPHUCAP.Text.Trim());
             string SDT = tbSDT.Text.Trim();
-            string VAITRO = tbVAITRO.Text.Trim();
-            string MADV = tbMADONVI.Text.Trim();
-            string COSO = tbCOSO.Text.Trim();
+            string VAITRO = cbboxVaiTro.Text.Trim();
+            string MADV = cbboxMaDV.Text.Trim();
+            string COSO = cbboxCoSo.Text.Trim();
             string status;
             if (type == "update")
                 status = _NhanSuBLL.update(MANV, HOTEN, PHAI, NGSINH, PHUCAP, SDT, VAITRO, MADV, COSO);

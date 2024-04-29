@@ -34,6 +34,7 @@ namespace PH2.BLL
                 }
                 GVU_PhanCongDTO svDTO = new GVU_PhanCongDTO(
                 dr["MAGV"].ToString(),
+                dr["HOTEN"].ToString(),
                 dr["MAHP"].ToString(),
                 dr["TENHP"].ToString(),
                 int.Parse(dr["HK"].ToString()),
@@ -58,6 +59,7 @@ namespace PH2.BLL
                 }
                 GVU_PhanCongDTO svDTO = new GVU_PhanCongDTO(
                 dr["MAGV"].ToString(),
+                 dr["HOTEN"].ToString(),
                 dr["MAHP"].ToString(),
                 dr["TENHP"].ToString(),
                 int.Parse(dr["HK"].ToString()),

@@ -20,6 +20,17 @@ namespace PH2.GUI
         public GIAOVU_HP_CapNhat()
         {
             InitializeComponent();
+            LoadNamHKCbb();
+        }
+        private void LoadNamHKCbb()
+        {
+            //HKNamCbb.Items.Add("Tất cả học kỳ và năm học");
+            List<string> hkNamList = hpBLL.getAllMaNganh();
+            foreach (string hkNam in hkNamList)
+            {
+                HKNamCbb.Items.Add(hkNam);
+            }
+            HKNamCbb.SelectedIndex = 0;
         }
         public void Loadd(string MyString)
         {
@@ -51,7 +62,7 @@ namespace PH2.GUI
             //sv.STLT = textBox4.Text;
             //sv.STTH = textBox5.Text;
             //sv.SOSVTD = textBox6.Text;
-            sv.MADV = textBox7.Text;
+            sv.MADV = HKNamCbb.SelectedItem.ToString();
             int tmp1 = -1, tmp2 = -1, tmp3 = -1, tmp4 = -1;
             if (string.IsNullOrWhiteSpace(textBox3.Text) || string.IsNullOrWhiteSpace(textBox4.Text)
                 || string.IsNullOrWhiteSpace(textBox5.Text) || string.IsNullOrWhiteSpace(textBox6.Text))

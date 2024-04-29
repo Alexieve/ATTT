@@ -127,5 +127,14 @@ namespace PH2.DAL
             }
 
         }
+        public DataTable getNhanSuOLS()
+        {
+            string ProcName = "USP_OLS_QUANLY";
+            OracleParameter[] Parameters =
+            {
+                new("P_RES", OracleDbType.RefCursor, ParameterDirection.Output)
+            };
+            return conn.ExecuteQuery(ProcName, CommandType.StoredProcedure, Parameters);
+        }
     }
 }

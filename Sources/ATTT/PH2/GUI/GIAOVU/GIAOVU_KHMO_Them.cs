@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using PH2.BLL;
 using PH2.DAL;
 using PH2.DTO;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace PH2.GUI
 {
@@ -33,7 +34,7 @@ namespace PH2.GUI
             sv.MAHP = HKNamCbb.SelectedItem.ToString();
             //sv.HK = textBox2.Text;
             //sv.NAM = textBox3.Text;
-            sv.MACT = textBox4.Text;
+            sv.MACT = comboBox1.SelectedItem.ToString();
 
             //sv.SOTCTL = int.Parse(textBox9.Text); 
             //sv.DTBTL = float.Parse(textBox10.Text);
@@ -74,6 +75,11 @@ namespace PH2.GUI
                 HKNamCbb.Items.Add(hkNam);
             }
             HKNamCbb.SelectedIndex = 0;
+            comboBox1.Items.Add("CLC");
+            comboBox1.Items.Add("VP");
+            comboBox1.Items.Add("CQ");
+            comboBox1.Items.Add("CTTT");
+            comboBox1.SelectedIndex = 0;
         }
     }
 }

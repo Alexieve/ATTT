@@ -41,6 +41,7 @@
             DKHPPanel = new Button();
             KQHPPanel = new Button();
             childFormPanel = new Panel();
+            DeTaiNCBtn = new Button();
             sidePanel.SuspendLayout();
             tableSidePanel.SuspendLayout();
             panel1.SuspendLayout();
@@ -60,6 +61,7 @@
             // 
             tableSidePanel.ColumnCount = 1;
             tableSidePanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableSidePanel.Controls.Add(DeTaiNCBtn, 0, 5);
             tableSidePanel.Controls.Add(panel1, 0, 0);
             tableSidePanel.Controls.Add(HOCPHANPanel, 0, 1);
             tableSidePanel.Controls.Add(KHMOPanel, 0, 2);
@@ -68,12 +70,13 @@
             tableSidePanel.Location = new Point(0, 0);
             tableSidePanel.Margin = new Padding(0);
             tableSidePanel.Name = "tableSidePanel";
-            tableSidePanel.RowCount = 5;
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableSidePanel.RowCount = 6;
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 23.1213875F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 15.3757229F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 15.3757229F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 15.3757229F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 15.3757229F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 15.3757229F));
             tableSidePanel.Size = new Size(269, 652);
             tableSidePanel.TabIndex = 0;
             // 
@@ -88,7 +91,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(269, 130);
+            panel1.Size = new Size(269, 150);
             panel1.TabIndex = 1;
             // 
             // NotifyBtn
@@ -109,7 +112,7 @@
             nameLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             nameLabel.ForeColor = SystemColors.ControlLightLight;
             nameLabel.ImageAlign = ContentAlignment.MiddleLeft;
-            nameLabel.Location = new Point(21, 50);
+            nameLabel.Location = new Point(21, 60);
             nameLabel.Name = "nameLabel";
             nameLabel.Size = new Size(226, 20);
             nameLabel.TabIndex = 2;
@@ -137,7 +140,7 @@
             logoutBtn.Anchor = AnchorStyles.Bottom;
             logoutBtn.BackColor = SystemColors.ButtonHighlight;
             logoutBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            logoutBtn.Location = new Point(87, 91);
+            logoutBtn.Location = new Point(87, 111);
             logoutBtn.Name = "logoutBtn";
             logoutBtn.Size = new Size(94, 29);
             logoutBtn.TabIndex = 0;
@@ -152,9 +155,9 @@
             HOCPHANPanel.FlatStyle = FlatStyle.Flat;
             HOCPHANPanel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             HOCPHANPanel.ForeColor = Color.White;
-            HOCPHANPanel.Location = new Point(3, 133);
+            HOCPHANPanel.Location = new Point(3, 153);
             HOCPHANPanel.Name = "HOCPHANPanel";
-            HOCPHANPanel.Size = new Size(263, 124);
+            HOCPHANPanel.Size = new Size(263, 94);
             HOCPHANPanel.TabIndex = 0;
             HOCPHANPanel.Text = "Danh Sách Học Phần";
             HOCPHANPanel.UseVisualStyleBackColor = true;
@@ -167,9 +170,9 @@
             KHMOPanel.FlatStyle = FlatStyle.Flat;
             KHMOPanel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             KHMOPanel.ForeColor = Color.White;
-            KHMOPanel.Location = new Point(3, 263);
+            KHMOPanel.Location = new Point(3, 253);
             KHMOPanel.Name = "KHMOPanel";
-            KHMOPanel.Size = new Size(263, 124);
+            KHMOPanel.Size = new Size(263, 94);
             KHMOPanel.TabIndex = 0;
             KHMOPanel.Text = "Kế Hoạch Mở Môn";
             KHMOPanel.UseVisualStyleBackColor = true;
@@ -182,9 +185,9 @@
             DKHPPanel.FlatStyle = FlatStyle.Flat;
             DKHPPanel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             DKHPPanel.ForeColor = Color.White;
-            DKHPPanel.Location = new Point(3, 393);
+            DKHPPanel.Location = new Point(3, 353);
             DKHPPanel.Name = "DKHPPanel";
-            DKHPPanel.Size = new Size(263, 124);
+            DKHPPanel.Size = new Size(263, 94);
             DKHPPanel.TabIndex = 0;
             DKHPPanel.Text = "Đăng Ký Học Phần";
             DKHPPanel.UseVisualStyleBackColor = true;
@@ -197,9 +200,9 @@
             KQHPPanel.FlatStyle = FlatStyle.Flat;
             KQHPPanel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             KQHPPanel.ForeColor = Color.White;
-            KQHPPanel.Location = new Point(3, 523);
+            KQHPPanel.Location = new Point(3, 453);
             KQHPPanel.Name = "KQHPPanel";
-            KQHPPanel.Size = new Size(263, 126);
+            KQHPPanel.Size = new Size(263, 94);
             KQHPPanel.TabIndex = 0;
             KQHPPanel.Text = "Kết Quả Học Phần";
             KQHPPanel.UseVisualStyleBackColor = true;
@@ -211,6 +214,21 @@
             childFormPanel.Name = "childFormPanel";
             childFormPanel.Size = new Size(1315, 652);
             childFormPanel.TabIndex = 2;
+            // 
+            // DeTaiNCBtn
+            // 
+            DeTaiNCBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            DeTaiNCBtn.FlatAppearance.BorderSize = 0;
+            DeTaiNCBtn.FlatStyle = FlatStyle.Flat;
+            DeTaiNCBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            DeTaiNCBtn.ForeColor = Color.White;
+            DeTaiNCBtn.Location = new Point(3, 553);
+            DeTaiNCBtn.Name = "DeTaiNCBtn";
+            DeTaiNCBtn.Size = new Size(263, 96);
+            DeTaiNCBtn.TabIndex = 2;
+            DeTaiNCBtn.Text = "Đề tài Nghiên cứu";
+            DeTaiNCBtn.UseVisualStyleBackColor = true;
+            DeTaiNCBtn.Click += DeTaiNCBtn_Click;
             // 
             // SV_Home
             // 
@@ -244,5 +262,6 @@
         private Label nameLabel;
         private TableLayoutPanel tableSidePanel;
         private Button NotifyBtn;
+        private Button DeTaiNCBtn;
     }
 }

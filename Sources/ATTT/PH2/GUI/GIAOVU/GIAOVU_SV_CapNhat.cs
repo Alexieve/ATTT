@@ -26,9 +26,28 @@ namespace PH2.GUI
         public GIAOVU_SV_CapNhat()
         {
             InitializeComponent();
-            //if (MyString != null)
-            //    Loadd();
-            //Loadd();
+            LoadNamHKCbb();
+        }
+        private void LoadNamHKCbb()
+        {
+            //HKNamCbb.Items.Add("Tất cả học kỳ và năm học");
+            List<string> hkNamList = svBLL.getAllMaNganh();
+            foreach (string hkNam in hkNamList)
+            {
+                HKNamCbb.Items.Add(hkNam);
+            }
+            HKNamCbb.SelectedIndex = 0;
+            comboBox1.Items.Add("Nam");
+            comboBox1.Items.Add("Nữ");
+            comboBox1.SelectedIndex = 0;
+            comboBox2.Items.Add("CLC");
+            comboBox2.Items.Add("VP");
+            comboBox2.Items.Add("CQ");
+            comboBox2.Items.Add("CTTT");
+            comboBox2.SelectedIndex = 0;
+            comboBox3.Items.Add("CS1");
+            comboBox3.Items.Add("CS2");
+            comboBox3.SelectedIndex = 0;
         }
         public void Loadd(string MyString)
         {
@@ -43,9 +62,7 @@ namespace PH2.GUI
             textBox6.Text = svDTO.SDT;
             textBox7.Text = svDTO.MACT;
             textBox8.Text = svDTO.MANGANH;
-            textBox9.Text = svDTO.SOTCTL.ToString();
-            textBox10.Text = svDTO.DTBTL.ToString();
-            textBox11.Text = svDTO.COSO;
+            textBox9.Text = svDTO.COSO;
 
         }
         private void button3_Click(object sender, EventArgs e)
@@ -60,32 +77,16 @@ namespace PH2.GUI
             GVU_SinhVienDTO sv = new GVU_SinhVienDTO();
             sv.MASV = textBox1.Text;
             sv.HOTEN = textBox2.Text;
-            sv.PHAI = textBox3.Text;
+            sv.PHAI = comboBox1.SelectedItem.ToString();
             sv.NGSINH = textBox4.Text;
             sv.DCHI = textBox5.Text;
             sv.SDT = textBox6.Text;
-            sv.MACT = textBox7.Text;
-            sv.MANGANH = textBox8.Text;
+            sv.MACT = comboBox2.SelectedItem.ToString();
+            sv.MANGANH = HKNamCbb.SelectedItem.ToString();
             //sv.SOTCTL = int.Parse(textBox9.Text); 
             //sv.DTBTL = float.Parse(textBox10.Text);
-            sv.COSO = textBox11.Text;
-            int sotctl = -1;
-            float dtbtl = -1;
-            if (string.IsNullOrWhiteSpace(textBox9.Text) || string.IsNullOrWhiteSpace(textBox10.Text))
-            {
-                sv.SOTCTL = -1;
-                sv.DTBTL = -1;
-            }
-            else if (int.TryParse(textBox9.Text, out sotctl) && float.TryParse(textBox10.Text, out dtbtl))
-            {
-                sv.SOTCTL = sotctl;
-                sv.DTBTL = dtbtl;
-            }
-            else
-            {
-                sv.SOTCTL = -1;
-                sv.DTBTL = -1;
-            }
+            sv.COSO = comboBox3.SelectedItem.ToString();
+            
             int tmp = svBLL.UpdateSinhVien(sv);
             if (tmp == 1)
             {

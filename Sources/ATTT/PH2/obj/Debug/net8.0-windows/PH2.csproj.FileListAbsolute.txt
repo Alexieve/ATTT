@@ -231,4 +231,10 @@ D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GU
 D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.TRUONGKHOA.TRUONGKHOA_BangPhanCong.resources
 D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.TRUONGKHOA.TRUONGKHOA_DanhSachDangKy.resources
 D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.TRUONGKHOA.TRUONGKHOA_DanhSachNhanSu.resources
+<<<<<<< HEAD
 D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.TRUONGKHOA.POP_UP_CONTROLS.TRUONGKHOA_SuaPhanCong.resources
+=======
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.DeTaiNC.resources
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.GIANGVIEN.XemNhanSu.resources
+C:\Users\Admin\Desktop\CSDL\ATTT\ATTT\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.TRUONGKHOA.POP_UP_CONTROLS.TRUONGKHOA_SuaPhanCong.resources
+>>>>>>> b459d98c4be13dcb47eb9fc2a09785cf90c6d401
