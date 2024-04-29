@@ -39,7 +39,7 @@ AS
 BEGIN
   -- Insert with error handling
   INSERT INTO SINHVIEN
-  VALUES (P_MaSinhVien, P_HoTen, P_Phai, TO_DATE(P_NgaySinh, 'DD-MM-YYYY'), P_DiaChi, P_SDT, P_MaChuongTrinh, P_MaNganh, 0, null, P_COSO);
+  VALUES (P_MaSinhVien, P_HoTen, P_Phai, TO_DATE(P_NgaySinh, 'DD-MM-YYYY'), P_DiaChi, P_SDT, P_MaChuongTrinh, P_MaNganh, 0, 0, P_COSO);
   
   -- Handle potential errors during insert
    P_ErrCode := 0;
