@@ -231,3 +231,4 @@ D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GU
 D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.TRUONGKHOA.TRUONGKHOA_BangPhanCong.resources
 D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.TRUONGKHOA.TRUONGKHOA_DanhSachDangKy.resources
 D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.TRUONGKHOA.TRUONGKHOA_DanhSachNhanSu.resources
+D:\Study\Year3\HK2\ATTT\Project\Sources\ATTT\PH2\obj\Debug\net8.0-windows\PH2.GUI.TRUONGKHOA.POP_UP_CONTROLS.TRUONGKHOA_SuaPhanCong.resources

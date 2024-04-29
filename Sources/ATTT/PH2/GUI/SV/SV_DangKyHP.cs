@@ -25,6 +25,7 @@ namespace PH2.GUI
             List<DangKyHPDTO> listHPDaDK = dangKyHPBLL.getDaDK();
             HPDaDKTable.DataSource = listHPDaDK;
             HPDaDKTable.Columns[2].Visible = false;
+            HPDaDKTable.Columns[6].Visible = false;
             HPDaDKTable.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             HPDaDKTable.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
@@ -32,6 +33,7 @@ namespace PH2.GUI
             List<DangKyHPDTO> listHPChuaDK = dangKyHPBLL.getChuaDK();
             HPChuaDKTable.DataSource = listHPChuaDK;
             HPChuaDKTable.Columns[2].Visible = false;
+            HPChuaDKTable.Columns[6].Visible = false;
             HPChuaDKTable.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             HPChuaDKTable.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
@@ -46,14 +48,14 @@ namespace PH2.GUI
             HPDaDKTable.Columns[3].HeaderText = "Tên GV";
             HPDaDKTable.Columns[4].HeaderText = "Số TC";
             HPDaDKTable.Columns[5].HeaderText = "Số SV";
-            HPDaDKTable.Columns[6].HeaderText = "Đã ĐK";
+            //HPDaDKTable.Columns[6].HeaderText = "Đã ĐK";
 
             HPChuaDKTable.Columns[0].HeaderText = "Mã HP";
             HPChuaDKTable.Columns[1].HeaderText = "Tên HP";
             HPChuaDKTable.Columns[3].HeaderText = "Tên GV";
             HPChuaDKTable.Columns[4].HeaderText = "Số TC";
             HPChuaDKTable.Columns[5].HeaderText = "Số SV";
-            HPChuaDKTable.Columns[6].HeaderText = "Đã ĐK";
+            //HPChuaDKTable.Columns[6].HeaderText = "Đã ĐK";
         }
 
         private void HuyBtn_Click(object sender, EventArgs e)

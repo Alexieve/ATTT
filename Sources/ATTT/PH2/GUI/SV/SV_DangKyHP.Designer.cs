@@ -188,5 +188,17 @@
         private Label label2;
         private Button HuyBtn;
         private Button DKBtn;
+        private DataGridViewTextBoxColumn MAHP;
+        private DataGridViewTextBoxColumn TENHP;
+        private DataGridViewTextBoxColumn MAGV;
+        private DataGridViewTextBoxColumn TENGV;
+        private DataGridViewTextBoxColumn SOTC;
+        private DataGridViewTextBoxColumn SOSVTD;
+        private DataGridViewTextBoxColumn MAHP2;
+        private DataGridViewTextBoxColumn TENHP2;
+        private DataGridViewTextBoxColumn MAGV2;
+        private DataGridViewTextBoxColumn TENGV2;
+        private DataGridViewTextBoxColumn SOTC2;
+        private DataGridViewTextBoxColumn SOSVTD2;
     }
 }

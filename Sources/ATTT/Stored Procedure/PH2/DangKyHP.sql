@@ -63,8 +63,9 @@ BEGIN
                 JOIN DANGKY_FILTERED DK ON NS.MANV = DK.MAGV
             )
             SELECT HP.MAHP, HP.TENHP, DK.MAGV, NS.HOTEN AS TENGV, 
-                   HP.SOTC, HP.SOSVTD,
-                   USP_COUNT_SINHVIEN_IN_HOCPHAN(DK.MAGV, DK.HK, DK.NAM, DK.MACT, DK.MAHP) AS SOSVDK
+                   HP.SOTC, HP.SOSVTD
+--                   ,
+--                   USP_COUNT_SINHVIEN_IN_HOCPHAN(DK.MAGV, DK.HK, DK.NAM, DK.MACT, DK.MAHP) AS SOSVDK
             FROM DANGKY_FILTERED DK 
             JOIN HOCPHAN_INFO HP ON DK.MAHP = HP.MAHP
             JOIN NHANSU_INFO NS ON DK.MAGV = NS.MANV;
@@ -131,8 +132,9 @@ BEGIN
                     JOIN PHANCONG_FILTERED PC ON NS.MANV = PC.MAGV
                 )
                 SELECT HP.MAHP, HP.TENHP, PC.MAGV, NS.HOTEN AS TENGV, 
-                       HP.SOTC, HP.SOSVTD,
-                       USP_COUNT_SINHVIEN_IN_HOCPHAN(PC.MAGV, PC.HK, PC.NAM, PC.MACT, PC.MAHP) AS SOSVDK
+                       HP.SOTC, HP.SOSVTD
+--                       ,
+--                       USP_COUNT_SINHVIEN_IN_HOCPHAN(PC.MAGV, PC.HK, PC.NAM, PC.MACT, PC.MAHP) AS SOSVDK
                 FROM PHANCONG_FILTERED PC 
                 JOIN HOCPHAN_INFO HP ON PC.MAHP = HP.MAHP
                 JOIN NHANSU_INFO NS ON PC.MAGV = NS.MANV;
