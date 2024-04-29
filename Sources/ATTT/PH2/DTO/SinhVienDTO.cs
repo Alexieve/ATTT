@@ -18,6 +18,7 @@ namespace PH2.DTO
         private string _MANGANH;
         private int _SOTCTL;
         private float _DTBTL;
+        private string _COSO;
 
         public string MASV { get => _MASV; set => _MASV = value; }
         public string HOTEN { get => _HOTEN; set => _HOTEN = value; }
@@ -29,6 +30,7 @@ namespace PH2.DTO
         public string MANGANH { get => _MANGANH; set => _MANGANH = value; }
         public int SOTCTL { get => _SOTCTL; set => _SOTCTL = value; }
         public float DTBTL { get => _DTBTL; set => _DTBTL = value; }
+        public string COSO { get => _COSO; set => _COSO = value; }
 
         public SinhVienDTO()
         {
@@ -42,10 +44,11 @@ namespace PH2.DTO
             this.MANGANH = "";
             this.SOTCTL = 0;
             this.DTBTL = 0;
+            this.COSO = "";
         }
 
         public SinhVienDTO(string MASV, string HOTEN, string PHAI, string NGSINH, string DCHI, string SDT, string MACT,
-            string MANGANH, int SOTCTL, float DTBTL)
+            string MANGANH, int SOTCTL, float DTBTL, string COSO)
         {
             this.MASV = MASV;
             this.HOTEN = HOTEN;
@@ -57,6 +60,7 @@ namespace PH2.DTO
             this.MANGANH = MANGANH;
             this.SOTCTL = SOTCTL;
             this.DTBTL = DTBTL;
+            this.COSO = COSO;
         }
 
         public SinhVienDTO(SinhVienDTO sv)
@@ -71,6 +75,7 @@ namespace PH2.DTO
             this.MANGANH = sv.MANGANH;
             this.SOTCTL = sv.SOTCTL;
             this.DTBTL = sv.DTBTL;
+            this.COSO = sv.COSO;
         }
 
     }

@@ -67,6 +67,7 @@ namespace PH2.GUI.NV
             dtgviewSinhVien.Columns[7].HeaderText = "Mã Ngành";
             dtgviewSinhVien.Columns[8].HeaderText = "Số Tín Chỉ Tích Lũy";
             dtgviewSinhVien.Columns[9].HeaderText = "Điểm Trung Bình Tích Lũy";
+            dtgviewSinhVien.Columns[10].HeaderText = "Cở sở";
         }
 
         private void TextChanged(object sender, EventArgs e)
