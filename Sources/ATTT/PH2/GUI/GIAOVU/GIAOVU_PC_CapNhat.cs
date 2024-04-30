@@ -94,6 +94,10 @@ namespace PH2.GUI
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
+        if (tmp == 5)
+        {
+                MessageBox.Show("Đã có đăng ký với phân công cũ!!");
+        }
         if (tmp == 0) MessageBox.Show("Vui lòng kiểm tra lại hoặc có lỗi xảy ra!");
 
 
