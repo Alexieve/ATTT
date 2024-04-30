@@ -97,6 +97,7 @@ namespace PH2.GUI.TRUONGKHOA.POP_UP_CONTROLS
             }
             
             string status = _PhanCongBLL.doiMAGV(cMAGV, cMAHP, cHOCKY, cNAM, cMACT, _GiangVienDTO.MAGV);
+            //MessageBox.Show(status);
             if (status == "")
             {
                 MessageBox.Show("Sửa thành công");
@@ -105,7 +106,7 @@ namespace PH2.GUI.TRUONGKHOA.POP_UP_CONTROLS
             }
             else if (status.Contains("-20001"))
                 MessageBox.Show("Giáo viên đã được phân công cho kế hoạch mở này");
-            else if (status.Contains("-20002"))
+            else if (status.Contains("-20002") || status != "")
                 MessageBox.Show("Phân công chứa học phần không thuộc quản lý của Văn Phòng Khoa");
         }
     }
