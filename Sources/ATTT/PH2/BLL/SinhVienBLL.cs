@@ -31,7 +31,8 @@ namespace PH2.BLL
                 dr["MACT"].ToString(),
                 dr["MANGANH"].ToString(), 
                 int.Parse(dr["SOTCTL"].ToString()), 
-                float.Parse(dr["DTBTL"].ToString()));
+                float.Parse(dr["DTBTL"].ToString()),
+                dr["COSO"].ToString());
             return svDTO;
         }
 
