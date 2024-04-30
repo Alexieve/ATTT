@@ -54,6 +54,8 @@ namespace PH2.DAL
             object resValue = Parameters[Parameters.Length - 1].Value; // Lấy giá trị của tham số đầu ra P_RES
             if (resValue.ToString() == "1")
                 return 0;
+             if (resValue.ToString() == "5")
+                return 5;
             return 1;
         }
 
