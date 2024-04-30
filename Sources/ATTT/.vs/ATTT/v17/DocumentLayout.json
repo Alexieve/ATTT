@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|d:\\study\\year3\\hk2\\attt\\project\\sources\\attt\\ph2\\gui\\truongkhoa\\pop_up_controls\\truongkhoa_suaphancong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\truongkhoa\\pop_up_controls\\truongkhoa_suaphancong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|PH1\\PH1.csproj|d:\\study\\year3\\hk2\\attt\\project\\sources\\attt\\ph1\\audit_view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{381605AB-FE1E-4EEE-A7B0-8F533743160D}|PH1\\PH1.csproj|solutionrelative:ph1\\audit_view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|d:\\study\\year3\\hk2\\attt\\project\\sources\\attt\\ph2\\gui\\truongkhoa\\pop_up_controls\\truongkhoa_suaphancong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\ph2\\gui\\truongkhoa\\pop_up_controls\\truongkhoa_suaphancong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\truongkhoa\\pop_up_controls\\truongkhoa_suaphancong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|d:\\study\\year3\\hk2\\attt\\project\\sources\\attt\\ph2\\gui\\truongkhoa\\truongkhoa_bangphancong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\ph2\\gui\\truongkhoa\\truongkhoa_bangphancong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1FFEA729-250E-4035-988A-088C3C419AB2}|PH2\\PH2.csproj|solutionrelative:ph2\\gui\\truongkhoa\\truongkhoa_bangphancong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -43,14 +43,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TRUONGKHOA_SuaPhanCong.cs",
-              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH2\\GUI\\TRUONGKHOA\\POP_UP_CONTROLS\\TRUONGKHOA_SuaPhanCong.cs",
-              "RelativeDocumentMoniker": "PH2\\GUI\\TRUONGKHOA\\POP_UP_CONTROLS\\TRUONGKHOA_SuaPhanCong.cs",
-              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH2\\GUI\\TRUONGKHOA\\POP_UP_CONTROLS\\TRUONGKHOA_SuaPhanCong.cs",
-              "RelativeToolTip": "PH2\\GUI\\TRUONGKHOA\\POP_UP_CONTROLS\\TRUONGKHOA_SuaPhanCong.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAlwDEAAAAAAAAA",
+              "Title": "Audit_View.cs",
+              "DocumentMoniker": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH1\\Audit_View.cs",
+              "RelativeDocumentMoniker": "PH1\\Audit_View.cs",
+              "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH1\\Audit_View.cs",
+              "RelativeToolTip": "PH1\\Audit_View.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAiwA4AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T09:48:02.651Z",
+              "WhenOpened": "2024-04-30T11:40:52.618Z",
               "EditorCaption": ""
             },
             {
@@ -62,8 +62,7 @@
               "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH2\\GUI\\TRUONGKHOA\\POP_UP_CONTROLS\\TRUONGKHOA_SuaPhanCong.cs [Design]",
               "RelativeToolTip": "PH2\\GUI\\TRUONGKHOA\\POP_UP_CONTROLS\\TRUONGKHOA_SuaPhanCong.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T09:48:00.025Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-30T09:48:00.025Z"
             },
             {
               "$type": "Document",
@@ -74,8 +73,7 @@
               "ToolTip": "D:\\Study\\Year3\\HK2\\ATTT\\Project\\Sources\\ATTT\\PH2\\GUI\\TRUONGKHOA\\TRUONGKHOA_BangPhanCong.cs [Design]",
               "RelativeToolTip": "PH2\\GUI\\TRUONGKHOA\\TRUONGKHOA_BangPhanCong.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T09:47:44.478Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-30T09:47:44.478Z"
             }
           ]
         }

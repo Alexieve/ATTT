@@ -18,7 +18,6 @@ namespace PH1
         {
             InitializeComponent();
             Load(null);
-            Load_State();
         }
         private void Load(string keyword)
         {

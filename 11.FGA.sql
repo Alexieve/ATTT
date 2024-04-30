@@ -3,10 +3,10 @@
 
 -- Drop policy
 BEGIN
-DBMS_FGA.DROP_POLICY(
-  object_schema      => 'C##ADMIN',
-  object_name        => 'DANGKY',
-  policy_name        => 'FGA_CHECK_UPDATE_DIEM_DANGKY_GIANGVIEN');
+    DBMS_FGA.DROP_POLICY(
+      object_schema      => 'C##ADMIN',
+      object_name        => 'DANGKY',
+      policy_name        => 'FGA_CHECK_UPDATE_DIEM_DANGKY_GIANGVIEN');
 END;
 /
 -- Add policy
@@ -18,7 +18,7 @@ BEGIN
    enable             =>  TRUE,
    statement_types    => 'UPDATE',
    audit_column       => 'DIEMTH, DIEMQT, DIEMCK, DIEMTK',
-   audit_condition    => 'NOT EXISTS (SELECT 1 FROM DBA_ROLE_PRIVS WHERE GRANTEE = SYS_CONTEXT(''USERENV'', ''SESSION_USER'') AND GRANTED_ROLE = ''RL_GiangVien'')',
+   audit_condition    => 'SYS_CONTEXT(''SYS_SESSION_ROLES'', ''RL_GIANGVIEN'') = ''FALSE''',
    audit_trail        =>  DBMS_FGA.DB + DBMS_FGA.EXTENDED);
 END;
 /
