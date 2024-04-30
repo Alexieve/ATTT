@@ -48,7 +48,11 @@ namespace PH2.GUI
             openChildForm(new DeTaiNC());
             ActiveButton(sender);
         }
-
+        private void TaiLieuBtn_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender);
+            openChildForm(new TaiLieu());
+        }
         private void logoutBtn_Click(object sender, EventArgs e)
         {
             DbConnection conn = new DbConnection();
@@ -98,6 +102,5 @@ namespace PH2.GUI
                 currentButton.BackColor = Color.FromArgb(64, 64, 64);
             }
         }
-
     }
 }

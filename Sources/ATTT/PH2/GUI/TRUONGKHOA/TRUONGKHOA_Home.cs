@@ -58,6 +58,16 @@ namespace PH2.GUI
             ActiveButton(sender);
             openChildForm(new GV_XemDangKy());
         }
+        private void TaiLieuBtn_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender);
+            openChildForm(new TaiLieu());
+        }
+        private void NhanSuOLS_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender);
+            openChildForm(new XemNhanSu());
+        }
 
         private void DeTaiNCBtn_Click(object sender, EventArgs e)
         {
@@ -115,15 +125,6 @@ namespace PH2.GUI
             }
         }
 
-        private void tableSidePanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void NhanSuOLS_Click(object sender, EventArgs e)
-        {
-            ActiveButton(sender);
-            openChildForm(new XemNhanSu());
-        }
+        
     }
 }

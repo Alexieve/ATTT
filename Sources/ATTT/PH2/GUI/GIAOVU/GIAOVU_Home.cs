@@ -7,7 +7,7 @@ namespace PH2.GUI
     {
         private Button currentButton;
         private Form activeForm = null;
-        
+
         public GIAOVU_Home(string username)
         {
             InitializeComponent();
@@ -52,7 +52,11 @@ namespace PH2.GUI
             openChildForm(new GIAOVU_DK());
             ActiveButton(sender);
         }
-
+        private void TaiLieuBtn_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender);
+            openChildForm(new TaiLieu());
+        }
         private void logoutBtn_Click(object sender, EventArgs e)
         {
             DbConnection conn = new DbConnection();
@@ -102,5 +106,7 @@ namespace PH2.GUI
                 currentButton.BackColor = Color.FromArgb(64, 64, 64);
             }
         }
+
+        
     }
 }

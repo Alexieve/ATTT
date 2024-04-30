@@ -52,7 +52,16 @@ namespace PH2.GUI
             openChildForm(new GV_XemDangKy());
             ActiveButton(sender);
         }
-
+        private void TaiLieuBtn_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender);
+            openChildForm(new TaiLieu());
+        }
+        private void NhanSuBtn_Click(object sender, EventArgs e)
+        {
+            openChildForm(new XemNhanSu());
+            ActiveButton(sender);
+        }
         private void DeTaiNCBtn_Click(object sender, EventArgs e)
         {
             openChildForm(new DeTaiNC());
@@ -108,11 +117,6 @@ namespace PH2.GUI
                 currentButton.BackColor = Color.FromArgb(64, 64, 64);
             }
         }
-
-        private void NhanSuBtn_Click(object sender, EventArgs e)
-        {
-            openChildForm(new XemNhanSu());
-            ActiveButton(sender);
-        }
+        
     }
 }

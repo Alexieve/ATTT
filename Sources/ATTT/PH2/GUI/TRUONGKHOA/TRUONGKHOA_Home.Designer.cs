@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TRUONGKHOA_Home));
             sidePanel = new FlowLayoutPanel();
             tableSidePanel = new TableLayoutPanel();
+            NhanSuOLS = new Button();
             DeTaiNCBtn = new Button();
             NhanSuBtn = new Button();
             panel1 = new Panel();
@@ -45,7 +46,7 @@
             DSDonViBtn = new Button();
             DSSinhVienBtn = new Button();
             childFormPanel = new Panel();
-            NhanSuOLS = new Button();
+            TaiLieuBtn = new Button();
             sidePanel.SuspendLayout();
             tableSidePanel.SuspendLayout();
             panel1.SuspendLayout();
@@ -65,8 +66,8 @@
             // 
             tableSidePanel.ColumnCount = 1;
             tableSidePanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableSidePanel.Controls.Add(TaiLieuBtn, 0, 8);
             tableSidePanel.Controls.Add(NhanSuOLS, 0, 9);
-            tableSidePanel.Controls.Add(DeTaiNCBtn, 0, 8);
             tableSidePanel.Controls.Add(NhanSuBtn, 0, 2);
             tableSidePanel.Controls.Add(panel1, 0, 0);
             tableSidePanel.Controls.Add(DangKyBtn, 0, 7);
@@ -75,23 +76,40 @@
             tableSidePanel.Controls.Add(DSHocPhanBtn, 0, 4);
             tableSidePanel.Controls.Add(DSDonViBtn, 0, 3);
             tableSidePanel.Controls.Add(DSSinhVienBtn, 0, 1);
+            tableSidePanel.Controls.Add(DeTaiNCBtn, 0, 10);
             tableSidePanel.Location = new Point(0, 0);
             tableSidePanel.Margin = new Padding(0);
             tableSidePanel.Name = "tableSidePanel";
             tableSidePanel.RowCount = 11;
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 18.181818F));
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
-            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 9.090909F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 8F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 8F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 8F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 8F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 8F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 8F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 8F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 8F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 8F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 8F));
+            tableSidePanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableSidePanel.Size = new Size(269, 652);
             tableSidePanel.TabIndex = 0;
-            tableSidePanel.Paint += tableSidePanel_Paint;
+            // 
+            // NhanSuOLS
+            // 
+            NhanSuOLS.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            NhanSuOLS.FlatAppearance.BorderSize = 0;
+            NhanSuOLS.FlatStyle = FlatStyle.Flat;
+            NhanSuOLS.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            NhanSuOLS.ForeColor = Color.White;
+            NhanSuOLS.Location = new Point(3, 549);
+            NhanSuOLS.Name = "NhanSuOLS";
+            NhanSuOLS.Size = new Size(263, 46);
+            NhanSuOLS.TabIndex = 3;
+            NhanSuOLS.Text = "Nhân Sự OLS";
+            NhanSuOLS.UseVisualStyleBackColor = true;
+            NhanSuOLS.Click += NhanSuOLS_Click;
             // 
             // DeTaiNCBtn
             // 
@@ -100,9 +118,9 @@
             DeTaiNCBtn.FlatStyle = FlatStyle.Flat;
             DeTaiNCBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             DeTaiNCBtn.ForeColor = Color.White;
-            DeTaiNCBtn.Location = new Point(3, 534);
+            DeTaiNCBtn.Location = new Point(3, 601);
             DeTaiNCBtn.Name = "DeTaiNCBtn";
-            DeTaiNCBtn.Size = new Size(263, 53);
+            DeTaiNCBtn.Size = new Size(263, 48);
             DeTaiNCBtn.TabIndex = 2;
             DeTaiNCBtn.Text = "Đề tài Nghiên cứu";
             DeTaiNCBtn.UseVisualStyleBackColor = true;
@@ -115,9 +133,9 @@
             NhanSuBtn.FlatStyle = FlatStyle.Flat;
             NhanSuBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             NhanSuBtn.ForeColor = Color.White;
-            NhanSuBtn.Location = new Point(3, 180);
+            NhanSuBtn.Location = new Point(3, 185);
             NhanSuBtn.Name = "NhanSuBtn";
-            NhanSuBtn.Size = new Size(263, 53);
+            NhanSuBtn.Size = new Size(263, 46);
             NhanSuBtn.TabIndex = 1;
             NhanSuBtn.Text = "Danh Sách Nhân Sự";
             NhanSuBtn.UseVisualStyleBackColor = true;
@@ -134,7 +152,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(269, 118);
+            panel1.Size = new Size(269, 130);
             panel1.TabIndex = 1;
             // 
             // NotifyBtn
@@ -155,7 +173,7 @@
             nameLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             nameLabel.ForeColor = SystemColors.ControlLightLight;
             nameLabel.ImageAlign = ContentAlignment.MiddleLeft;
-            nameLabel.Location = new Point(35, 54);
+            nameLabel.Location = new Point(35, 62);
             nameLabel.Name = "nameLabel";
             nameLabel.Size = new Size(198, 20);
             nameLabel.TabIndex = 2;
@@ -183,7 +201,7 @@
             logoutBtn.Anchor = AnchorStyles.Bottom;
             logoutBtn.BackColor = SystemColors.ButtonHighlight;
             logoutBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            logoutBtn.Location = new Point(89, 87);
+            logoutBtn.Location = new Point(89, 99);
             logoutBtn.Name = "logoutBtn";
             logoutBtn.Size = new Size(94, 29);
             logoutBtn.TabIndex = 0;
@@ -198,9 +216,9 @@
             DangKyBtn.FlatStyle = FlatStyle.Flat;
             DangKyBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             DangKyBtn.ForeColor = Color.White;
-            DangKyBtn.Location = new Point(3, 475);
+            DangKyBtn.Location = new Point(3, 445);
             DangKyBtn.Name = "DangKyBtn";
-            DangKyBtn.Size = new Size(263, 53);
+            DangKyBtn.Size = new Size(263, 46);
             DangKyBtn.TabIndex = 1;
             DangKyBtn.Text = "Lớp Giảng Dạy";
             DangKyBtn.UseVisualStyleBackColor = true;
@@ -213,9 +231,9 @@
             PhanCongBtn.FlatStyle = FlatStyle.Flat;
             PhanCongBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             PhanCongBtn.ForeColor = Color.White;
-            PhanCongBtn.Location = new Point(3, 416);
+            PhanCongBtn.Location = new Point(3, 393);
             PhanCongBtn.Name = "PhanCongBtn";
-            PhanCongBtn.Size = new Size(263, 53);
+            PhanCongBtn.Size = new Size(263, 46);
             PhanCongBtn.TabIndex = 1;
             PhanCongBtn.Text = "Bảng Phân Công";
             PhanCongBtn.UseVisualStyleBackColor = true;
@@ -228,9 +246,9 @@
             KHMOBtn.FlatStyle = FlatStyle.Flat;
             KHMOBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             KHMOBtn.ForeColor = Color.White;
-            KHMOBtn.Location = new Point(3, 357);
+            KHMOBtn.Location = new Point(3, 341);
             KHMOBtn.Name = "KHMOBtn";
-            KHMOBtn.Size = new Size(263, 53);
+            KHMOBtn.Size = new Size(263, 46);
             KHMOBtn.TabIndex = 0;
             KHMOBtn.Text = "Kế Hoạch Mở";
             KHMOBtn.UseVisualStyleBackColor = true;
@@ -243,9 +261,9 @@
             DSHocPhanBtn.FlatStyle = FlatStyle.Flat;
             DSHocPhanBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             DSHocPhanBtn.ForeColor = Color.White;
-            DSHocPhanBtn.Location = new Point(3, 298);
+            DSHocPhanBtn.Location = new Point(3, 289);
             DSHocPhanBtn.Name = "DSHocPhanBtn";
-            DSHocPhanBtn.Size = new Size(263, 53);
+            DSHocPhanBtn.Size = new Size(263, 46);
             DSHocPhanBtn.TabIndex = 0;
             DSHocPhanBtn.Text = "Danh Sách Học Phần";
             DSHocPhanBtn.UseVisualStyleBackColor = true;
@@ -258,9 +276,9 @@
             DSDonViBtn.FlatStyle = FlatStyle.Flat;
             DSDonViBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             DSDonViBtn.ForeColor = Color.White;
-            DSDonViBtn.Location = new Point(3, 239);
+            DSDonViBtn.Location = new Point(3, 237);
             DSDonViBtn.Name = "DSDonViBtn";
-            DSDonViBtn.Size = new Size(263, 53);
+            DSDonViBtn.Size = new Size(263, 46);
             DSDonViBtn.TabIndex = 0;
             DSDonViBtn.Text = "Danh Sách Đơn Vị";
             DSDonViBtn.UseVisualStyleBackColor = true;
@@ -273,9 +291,9 @@
             DSSinhVienBtn.FlatStyle = FlatStyle.Flat;
             DSSinhVienBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             DSSinhVienBtn.ForeColor = Color.White;
-            DSSinhVienBtn.Location = new Point(3, 121);
+            DSSinhVienBtn.Location = new Point(3, 133);
             DSSinhVienBtn.Name = "DSSinhVienBtn";
-            DSSinhVienBtn.Size = new Size(263, 53);
+            DSSinhVienBtn.Size = new Size(263, 46);
             DSSinhVienBtn.TabIndex = 0;
             DSSinhVienBtn.Text = "Danh Sách Sinh Viên";
             DSSinhVienBtn.UseVisualStyleBackColor = true;
@@ -288,20 +306,20 @@
             childFormPanel.Size = new Size(1315, 652);
             childFormPanel.TabIndex = 2;
             // 
-            // NhanSuOLS
+            // TaiLieuBtn
             // 
-            NhanSuOLS.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            NhanSuOLS.FlatAppearance.BorderSize = 0;
-            NhanSuOLS.FlatStyle = FlatStyle.Flat;
-            NhanSuOLS.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            NhanSuOLS.ForeColor = Color.White;
-            NhanSuOLS.Location = new Point(3, 593);
-            NhanSuOLS.Name = "NhanSuOLS";
-            NhanSuOLS.Size = new Size(263, 53);
-            NhanSuOLS.TabIndex = 3;
-            NhanSuOLS.Text = "Nhân Sự OLS";
-            NhanSuOLS.UseVisualStyleBackColor = true;
-            NhanSuOLS.Click += NhanSuOLS_Click;
+            TaiLieuBtn.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            TaiLieuBtn.FlatAppearance.BorderSize = 0;
+            TaiLieuBtn.FlatStyle = FlatStyle.Flat;
+            TaiLieuBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            TaiLieuBtn.ForeColor = Color.White;
+            TaiLieuBtn.Location = new Point(3, 497);
+            TaiLieuBtn.Name = "TaiLieuBtn";
+            TaiLieuBtn.Size = new Size(263, 46);
+            TaiLieuBtn.TabIndex = 3;
+            TaiLieuBtn.Text = "Tài liệu";
+            TaiLieuBtn.UseVisualStyleBackColor = true;
+            TaiLieuBtn.Click += TaiLieuBtn_Click;
             // 
             // TRUONGKHOA_Home
             // 
@@ -340,5 +358,6 @@
         private Button NhanSuBtn;
         private Button DeTaiNCBtn;
         private Button NhanSuOLS;
+        private Button TaiLieuBtn;
     }
 }

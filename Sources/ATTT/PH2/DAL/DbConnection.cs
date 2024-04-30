@@ -114,7 +114,6 @@ namespace PH2.DAL
                 cmd.CommandType = cmdType;
                 if (parameters != null)
                     cmd.Parameters.AddRange(parameters);
-                //adapter.SelectCommand = cmd;
                 cmd.ExecuteNonQuery();
             }
             catch (OracleException ex)
